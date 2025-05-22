@@ -2,7 +2,7 @@
  
 
 echo -e "Fetching NCPA Rovers IP Address..\n"
-addr=$(sudo arp-scan -I wlp2s0 -l | grep "00:91:9e:fd:c9:dd" | cut -f1)
+addr=$(sudo arp-scan -I wlp2s0 -l | grep "enter:the:rovers:wifi:mac:address" | cut -f1)
 
 
 if [ -n "$addr" ]
