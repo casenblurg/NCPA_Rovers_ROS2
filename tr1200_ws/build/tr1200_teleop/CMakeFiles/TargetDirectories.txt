@@ -1,9 +1,0 @@
-/home/ncpa/tr1200_ws/build/tr1200_teleop/CMakeFiles/uninstall.dir
-/home/ncpa/tr1200_ws/build/tr1200_teleop/CMakeFiles/tr1200_teleop_uninstall.dir
-/home/ncpa/tr1200_ws/build/tr1200_teleop/CMakeFiles/test.dir
-/home/ncpa/tr1200_ws/build/tr1200_teleop/CMakeFiles/edit_cache.dir
-/home/ncpa/tr1200_ws/build/tr1200_teleop/CMakeFiles/rebuild_cache.dir
-/home/ncpa/tr1200_ws/build/tr1200_teleop/CMakeFiles/list_install_components.dir
-/home/ncpa/tr1200_ws/build/tr1200_teleop/CMakeFiles/install.dir
-/home/ncpa/tr1200_ws/build/tr1200_teleop/CMakeFiles/install/local.dir
-/home/ncpa/tr1200_ws/build/tr1200_teleop/CMakeFiles/install/strip.dir

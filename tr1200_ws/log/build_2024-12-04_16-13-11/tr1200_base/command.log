@@ -1,4 +1,0 @@
-Invoking command in '/home/ncpa/tr1200_ws/build/tr1200_base': /usr/bin/cmake --build /home/ncpa/tr1200_ws/build/tr1200_base -- -j4 -l4
-Invoked command in '/home/ncpa/tr1200_ws/build/tr1200_base' returned '0': /usr/bin/cmake --build /home/ncpa/tr1200_ws/build/tr1200_base -- -j4 -l4
-Invoking command in '/home/ncpa/tr1200_ws/build/tr1200_base': /usr/bin/cmake --install /home/ncpa/tr1200_ws/build/tr1200_base
-Invoked command in '/home/ncpa/tr1200_ws/build/tr1200_base' returned '0': /usr/bin/cmake --install /home/ncpa/tr1200_ws/build/tr1200_base

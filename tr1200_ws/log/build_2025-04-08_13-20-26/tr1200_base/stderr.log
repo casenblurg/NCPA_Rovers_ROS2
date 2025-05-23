@@ -1,6 +1,0 @@
-In file included from [01m[K/home/ncpa/tr1200_ws/tr1200_ros/tr1200_base/include/tr1200_base/driver.hpp:49[m[K,
-                 from [01m[K/home/ncpa/tr1200_ws/tr1200_ros/tr1200_base/include/tr1200_base/hardware.hpp:44[m[K,
-                 from [01m[K/home/ncpa/tr1200_ws/tr1200_ros/tr1200_base/src/hardware.cpp:29[m[K:
-[01m[K/home/ncpa/tr1200_ws/tr1200_ros/tr1200_base/include/tr1200_base/logging.hpp:69:14:[m[K [01;35m[Kwarning: [m[K‘[01m[Ktr1200_driver::logging::_level[m[K’ defined but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
-   69 | static Level [01;35m[K_level[m[K = Level::INFO;
-      |              [01;35m[K^~~~~~[m[K
