@@ -1,5 +1,5 @@
 # TR1200 Setup/Guide
-## **Ensure the TR1200 uis turned on before beginning!**
+## **Ensure the TR1200 is turned on before beginning!**
 >This section will explain step by step how to acces the TR1200 rover and begin remote control.
 
 The purpose of this documentation is to act as a guide to accessing the onboard computer on the **TR1200** as well as a guide to access the controls. The first step is to open a **terminal** and follow these steps to find and **SSH** into the blue rover’s computer:
