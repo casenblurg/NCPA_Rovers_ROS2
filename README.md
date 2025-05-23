@@ -22,6 +22,6 @@ The onboard computer communicates to a **Pixhawk CUAV x7** over **USB** interfac
 
 **TR1200**
 
-This documentation is under the assumption that Ros2 is already installed on the system*
+*This documentation is under the assumption that Ros2 is already installed on the system*
 
-This rover's onboard computer is an [Up Sqaured Pro](https://up-board.org/up-squared-pro/) running **Ubuntu 22.04 LTS  (Jammy Jellyfish)**. The communication between the rover and onboard computer is over **CAN bus** utilizing a ROS2 package provided by [Trossen Robotics](https://www.trossenrobotics.com/) [(Interbotix)](https://github.com/Interbotix/tr1200_ros).
+This rover's onboard computer is an [Up Sqaured Pro](https://up-board.org/up-squared-pro/) running **Ubuntu 22.04 LTS  (Jammy Jellyfish)**, and **ROS 2 Humble**. The communication between the rover and onboard computer is over **CAN bus** utilizing a **ROS** package provided by [Trossen Robotics](https://www.trossenrobotics.com/) [(Interbotix)](https://github.com/Interbotix/tr1200_ros). 
