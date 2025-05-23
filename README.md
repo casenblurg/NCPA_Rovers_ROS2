@@ -7,7 +7,9 @@ The point of this documentation is to aid in **setup**, **debbuginng**, and **cr
 2. TR1200 (Larger Blue Rover)
 
 There is only one **TR1200**, while there are multiple **LT2** rovers. Everyhing in this documentation about the **LT2** is specifically reffering to work that has been done on the **LT2-3**.
+
 ---
+
 **LT2-3**
 
 
