@@ -2,7 +2,7 @@
 
 **Introudction**
 
-The point of this documentation is to aid in **setup**, **debugging**, and **creating** software for the Rovers at the National Center for Physical Acoustics (**NCPA**) in the **Battlefield Acoustics Group**. This documentation covers the software for the two types of rovers at the **NCPA**. 
+The point of this documentation is to aid in **setup**, **debugging**, and **creating** software for the Rovers at the National Center for Physical Acoustics ([NCPA](https://olemiss.edu/ncpa/) in the **Battlefield Acoustics Group**. This documentation covers the software for the two types of rovers at the **NCPA**. 
 1. LT2 (Smaller Black Rover)
 2. TR1200 (Larger Blue Rover)
 
