@@ -2,7 +2,7 @@
 
 **Introudction**
 
-The point of this documentation is to aid in **setup**, **debugging**, and **creating** software for the Rovers at the National Center for Physical Acoustics (**NCPA**) in the **Battlefield Acoustics Group**. This documentation covers the two types of rovers at the **NCPA**. 
+The point of this documentation is to aid in **setup**, **debugging**, and **creating** software for the Rovers at the National Center for Physical Acoustics (**NCPA**) in the **Battlefield Acoustics Group**. This documentation covers the software for the two types of rovers at the **NCPA**. 
 1. LT2 (Smaller Black Rover)
 2. TR1200 (Larger Blue Rover)
 
@@ -12,8 +12,4 @@ There is only one **TR1200**, while there are multiple **LT2** rovers. Any docum
 
 **LT2-3**
 
-
-```
-#!/bin/bash
-```
-`hi`
+This rover's onboard computer is an [Up Sqaured Pro](https://up-board.org/up-squared-pro/)
