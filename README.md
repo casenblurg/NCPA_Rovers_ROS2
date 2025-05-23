@@ -14,7 +14,7 @@ There is only one **TR1200**, while there are multiple **LT2** rovers. Any of th
 
 *This documentation is under the assumption that Ros2 and Mavros are already installed on the system*
 
-This rover's onboard computer is an [Up Sqaured Pro](https://up-board.org/up-squared-pro/) running **Ubuntu 20.04.1 LTS  (Focal Fossa)**. This specific version was retained to preserve compatibility with existing software developed by a collaborating colleagues. Upgrading the OS could risk introducing dependency conflicts or breaking functionality. If you are looking to upgrade the OS, it is recommended to either consult **Nhat Van/Noah Knutson**, or boot from an external hard drive/make a copy of the current OS. 
+This rover's onboard computer is an [Up Sqaured Pro](https://up-board.org/up-squared-pro/) running **Ubuntu 20.04.1 LTS  (Focal Fossa)** and **ROS 2 Foxy**. This specific OS was retained to preserve compatibility with existing software developed by a collaborating colleagues. This specific **ROS** distribution was used due to details explained in the sentence prior. Upgrading the OS could risk introducing dependency conflicts or breaking functionality. If you are looking to upgrade the OS, it is recommended to either consult **Nhat Van/Noah Knutson**, or boot from an external hard drive/make a copy of the current OS. 
 
 The onboard computer communicates to a **Pixhawk CUAV x7** over **USB** interfaced by [Mavros](https://github.com/mavlink/mavros) which will be explained in further detail in the **LT2** section. **Mavros** is a **ROS** package that utilizes the [MavLink](https://github.com/mavlink/mavlink) protocol, this is the standard messaging protocol used by **PX4**.
 
