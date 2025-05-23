@@ -9,6 +9,10 @@ $ sudo apt update
 $ sudo apt install arp-scan
 ```
 
+
+blah bllah put words here 
+
+
 ```bash
 #!/bin/bash
 echo -e "Fetching NCPA Rovers IP Address..\n"
