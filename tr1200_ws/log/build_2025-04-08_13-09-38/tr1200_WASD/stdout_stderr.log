@@ -1,0 +1,35 @@
+running egg_info
+creating ../../build/tr1200_WASD/tr1200_WASD.egg-info
+writing ../../build/tr1200_WASD/tr1200_WASD.egg-info/PKG-INFO
+writing dependency_links to ../../build/tr1200_WASD/tr1200_WASD.egg-info/dependency_links.txt
+writing entry points to ../../build/tr1200_WASD/tr1200_WASD.egg-info/entry_points.txt
+writing requirements to ../../build/tr1200_WASD/tr1200_WASD.egg-info/requires.txt
+writing top-level names to ../../build/tr1200_WASD/tr1200_WASD.egg-info/top_level.txt
+writing manifest file '../../build/tr1200_WASD/tr1200_WASD.egg-info/SOURCES.txt'
+reading manifest file '../../build/tr1200_WASD/tr1200_WASD.egg-info/SOURCES.txt'
+writing manifest file '../../build/tr1200_WASD/tr1200_WASD.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/ncpa/tr1200_ws/build/tr1200_WASD/build
+creating /home/ncpa/tr1200_ws/build/tr1200_WASD/build/lib
+creating /home/ncpa/tr1200_ws/build/tr1200_WASD/build/lib/tr1200_WASD
+copying tr1200_WASD/teleop_node.py -> /home/ncpa/tr1200_ws/build/tr1200_WASD/build/lib/tr1200_WASD
+copying tr1200_WASD/__init__.py -> /home/ncpa/tr1200_ws/build/tr1200_WASD/build/lib/tr1200_WASD
+running install
+running install_lib
+creating /home/ncpa/tr1200_ws/install/tr1200_WASD/lib/python3.10/site-packages/tr1200_WASD
+copying /home/ncpa/tr1200_ws/build/tr1200_WASD/build/lib/tr1200_WASD/teleop_node.py -> /home/ncpa/tr1200_ws/install/tr1200_WASD/lib/python3.10/site-packages/tr1200_WASD
+copying /home/ncpa/tr1200_ws/build/tr1200_WASD/build/lib/tr1200_WASD/__init__.py -> /home/ncpa/tr1200_ws/install/tr1200_WASD/lib/python3.10/site-packages/tr1200_WASD
+byte-compiling /home/ncpa/tr1200_ws/install/tr1200_WASD/lib/python3.10/site-packages/tr1200_WASD/teleop_node.py to teleop_node.cpython-310.pyc
+byte-compiling /home/ncpa/tr1200_ws/install/tr1200_WASD/lib/python3.10/site-packages/tr1200_WASD/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /home/ncpa/tr1200_ws/install/tr1200_WASD/share/ament_index
+creating /home/ncpa/tr1200_ws/install/tr1200_WASD/share/ament_index/resource_index
+creating /home/ncpa/tr1200_ws/install/tr1200_WASD/share/ament_index/resource_index/packages
+copying resource/tr1200_WASD -> /home/ncpa/tr1200_ws/install/tr1200_WASD/share/ament_index/resource_index/packages
+copying package.xml -> /home/ncpa/tr1200_ws/install/tr1200_WASD/share/tr1200_WASD
+running install_egg_info
+Copying ../../build/tr1200_WASD/tr1200_WASD.egg-info to /home/ncpa/tr1200_ws/install/tr1200_WASD/lib/python3.10/site-packages/tr1200_WASD-0.0.0-py3.10.egg-info
+running install_scripts
+Installing teleop_node script to /home/ncpa/tr1200_ws/install/tr1200_WASD/lib/tr1200_WASD
+writing list of installed files to '/home/ncpa/tr1200_ws/build/tr1200_WASD/install.log'

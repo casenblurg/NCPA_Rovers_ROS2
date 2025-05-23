@@ -1,0 +1,33 @@
+[0.832s] Invoking command in '/home/ncpa/tr1200_ws/build/tr1200_base': /usr/bin/cmake /home/ncpa/tr1200_ws/tr1200_ros/tr1200_base -DCMAKE_INSTALL_PREFIX=/home/ncpa/tr1200_ws/install/tr1200_base
+[1.274s] -- The C compiler identification is GNU 11.4.0
+[1.602s] -- The CXX compiler identification is GNU 11.4.0
+[1.653s] -- Detecting C compiler ABI info
+[1.875s] -- Detecting C compiler ABI info - done
+[1.900s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.901s] -- Detecting C compile features
+[1.904s] -- Detecting C compile features - done
+[1.916s] -- Detecting CXX compiler ABI info
+[2.159s] -- Detecting CXX compiler ABI info - done
+[2.191s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.192s] -- Detecting CXX compile features
+[2.193s] -- Detecting CXX compile features - done
+[2.221s] [31mCMake Error at CMakeLists.txt:8 (find_package):
+[2.221s]   By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project
+[2.222s]   has asked CMake to find a package configuration file provided by
+[2.223s]   "ament_cmake", but CMake did not find one.
+[2.223s] 
+[2.224s]   Could not find a package configuration file provided by "ament_cmake" with
+[2.224s]   any of the following names:
+[2.224s] 
+[2.224s]     ament_cmakeConfig.cmake
+[2.225s]     ament_cmake-config.cmake
+[2.225s] 
+[2.225s]   Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set
+[2.225s]   "ament_cmake_DIR" to a directory containing one of the above files.  If
+[2.225s]   "ament_cmake" provides a separate development package or SDK, be sure it
+[2.226s]   has been installed.
+[2.226s] 
+[2.227s] [0m
+[2.228s] -- Configuring incomplete, errors occurred!
+[2.228s] See also "/home/ncpa/tr1200_ws/build/tr1200_base/CMakeFiles/CMakeOutput.log".
+[2.255s] Invoked command in '/home/ncpa/tr1200_ws/build/tr1200_base' returned '1': /usr/bin/cmake /home/ncpa/tr1200_ws/tr1200_ros/tr1200_base -DCMAKE_INSTALL_PREFIX=/home/ncpa/tr1200_ws/install/tr1200_base

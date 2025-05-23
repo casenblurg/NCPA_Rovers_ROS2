@@ -1,0 +1,4 @@
+Invoking command in '/home/ncpa/tr1200_ws/build/tr1200_teleop': /usr/bin/cmake --build /home/ncpa/tr1200_ws/build/tr1200_teleop -- -j4 -l4
+Invoked command in '/home/ncpa/tr1200_ws/build/tr1200_teleop' returned '0': /usr/bin/cmake --build /home/ncpa/tr1200_ws/build/tr1200_teleop -- -j4 -l4
+Invoking command in '/home/ncpa/tr1200_ws/build/tr1200_teleop': /usr/bin/cmake --install /home/ncpa/tr1200_ws/build/tr1200_teleop
+Invoked command in '/home/ncpa/tr1200_ws/build/tr1200_teleop' returned '0': /usr/bin/cmake --install /home/ncpa/tr1200_ws/build/tr1200_teleop

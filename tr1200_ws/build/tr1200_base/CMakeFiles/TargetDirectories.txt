@@ -1,0 +1,10 @@
+/home/ncpa/tr1200_ws/build/tr1200_base/CMakeFiles/uninstall.dir
+/home/ncpa/tr1200_ws/build/tr1200_base/CMakeFiles/tr1200_base_uninstall.dir
+/home/ncpa/tr1200_ws/build/tr1200_base/CMakeFiles/tr1200_base.dir
+/home/ncpa/tr1200_ws/build/tr1200_base/CMakeFiles/test.dir
+/home/ncpa/tr1200_ws/build/tr1200_base/CMakeFiles/edit_cache.dir
+/home/ncpa/tr1200_ws/build/tr1200_base/CMakeFiles/rebuild_cache.dir
+/home/ncpa/tr1200_ws/build/tr1200_base/CMakeFiles/list_install_components.dir
+/home/ncpa/tr1200_ws/build/tr1200_base/CMakeFiles/install.dir
+/home/ncpa/tr1200_ws/build/tr1200_base/CMakeFiles/install/local.dir
+/home/ncpa/tr1200_ws/build/tr1200_base/CMakeFiles/install/strip.dir

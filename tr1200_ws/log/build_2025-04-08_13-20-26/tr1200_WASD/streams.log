@@ -1,0 +1,24 @@
+[4.962s] Invoking command in '/home/ncpa/tr1200_ws/tr1200_ros/tr1200_WASD': PYTHONPATH=/home/ncpa/tr1200_ws/build/tr1200_WASD/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ncpa/tr1200_ws/install/tr1200_WASD/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/tr1200_WASD build --build-base /home/ncpa/tr1200_ws/build/tr1200_WASD/build install --record /home/ncpa/tr1200_ws/build/tr1200_WASD/install.log --single-version-externally-managed install_data
+[6.114s] running egg_info
+[6.116s] writing ../../build/tr1200_WASD/tr1200_WASD.egg-info/PKG-INFO
+[6.119s] writing dependency_links to ../../build/tr1200_WASD/tr1200_WASD.egg-info/dependency_links.txt
+[6.120s] writing entry points to ../../build/tr1200_WASD/tr1200_WASD.egg-info/entry_points.txt
+[6.120s] writing requirements to ../../build/tr1200_WASD/tr1200_WASD.egg-info/requires.txt
+[6.121s] writing top-level names to ../../build/tr1200_WASD/tr1200_WASD.egg-info/top_level.txt
+[6.128s] reading manifest file '../../build/tr1200_WASD/tr1200_WASD.egg-info/SOURCES.txt'
+[6.131s] writing manifest file '../../build/tr1200_WASD/tr1200_WASD.egg-info/SOURCES.txt'
+[6.133s] running build
+[6.134s] running build_py
+[6.134s] copying tr1200_WASD/teleop_node.py -> /home/ncpa/tr1200_ws/build/tr1200_WASD/build/lib/tr1200_WASD
+[6.136s] running install
+[6.137s] running install_lib
+[6.140s] copying /home/ncpa/tr1200_ws/build/tr1200_WASD/build/lib/tr1200_WASD/teleop_node.py -> /home/ncpa/tr1200_ws/install/tr1200_WASD/lib/python3.10/site-packages/tr1200_WASD
+[6.142s] byte-compiling /home/ncpa/tr1200_ws/install/tr1200_WASD/lib/python3.10/site-packages/tr1200_WASD/teleop_node.py to teleop_node.cpython-310.pyc
+[6.145s] running install_data
+[6.145s] running install_egg_info
+[6.154s] removing '/home/ncpa/tr1200_ws/install/tr1200_WASD/lib/python3.10/site-packages/tr1200_WASD-0.0.0-py3.10.egg-info' (and everything under it)
+[6.155s] Copying ../../build/tr1200_WASD/tr1200_WASD.egg-info to /home/ncpa/tr1200_ws/install/tr1200_WASD/lib/python3.10/site-packages/tr1200_WASD-0.0.0-py3.10.egg-info
+[6.158s] running install_scripts
+[6.237s] Installing teleop_node script to /home/ncpa/tr1200_ws/install/tr1200_WASD/lib/tr1200_WASD
+[6.238s] writing list of installed files to '/home/ncpa/tr1200_ws/build/tr1200_WASD/install.log'
+[6.345s] Invoked command in '/home/ncpa/tr1200_ws/tr1200_ros/tr1200_WASD' returned '0': PYTHONPATH=/home/ncpa/tr1200_ws/build/tr1200_WASD/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ncpa/tr1200_ws/install/tr1200_WASD/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/tr1200_WASD build --build-base /home/ncpa/tr1200_ws/build/tr1200_WASD/build install --record /home/ncpa/tr1200_ws/build/tr1200_WASD/install.log --single-version-externally-managed install_data

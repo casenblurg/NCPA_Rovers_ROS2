@@ -1,0 +1,20 @@
+[4.027s] Invoking command in '/home/ncpa/tr1200_ws/tr1200_ros/tr1200_modules': PYTHONPATH=/home/ncpa/tr1200_ws/build/tr1200_modules/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ncpa/tr1200_ws/install/tr1200_modules/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/tr1200_modules build --build-base /home/ncpa/tr1200_ws/build/tr1200_modules/build install --record /home/ncpa/tr1200_ws/build/tr1200_modules/install.log --single-version-externally-managed install_data
+[5.461s] running egg_info
+[5.463s] writing ../../build/tr1200_modules/tr1200_modules.egg-info/PKG-INFO
+[5.464s] writing dependency_links to ../../build/tr1200_modules/tr1200_modules.egg-info/dependency_links.txt
+[5.465s] writing entry points to ../../build/tr1200_modules/tr1200_modules.egg-info/entry_points.txt
+[5.465s] writing requirements to ../../build/tr1200_modules/tr1200_modules.egg-info/requires.txt
+[5.467s] writing top-level names to ../../build/tr1200_modules/tr1200_modules.egg-info/top_level.txt
+[5.473s] reading manifest file '../../build/tr1200_modules/tr1200_modules.egg-info/SOURCES.txt'
+[5.476s] writing manifest file '../../build/tr1200_modules/tr1200_modules.egg-info/SOURCES.txt'
+[5.476s] running build
+[5.477s] running build_py
+[5.478s] running install
+[5.479s] running install_lib
+[5.483s] running install_data
+[5.484s] running install_egg_info
+[5.490s] removing '/home/ncpa/tr1200_ws/install/tr1200_modules/lib/python3.10/site-packages/tr1200_modules-0.0.0-py3.10.egg-info' (and everything under it)
+[5.491s] Copying ../../build/tr1200_modules/tr1200_modules.egg-info to /home/ncpa/tr1200_ws/install/tr1200_modules/lib/python3.10/site-packages/tr1200_modules-0.0.0-py3.10.egg-info
+[5.494s] running install_scripts
+[5.564s] writing list of installed files to '/home/ncpa/tr1200_ws/build/tr1200_modules/install.log'
+[5.679s] Invoked command in '/home/ncpa/tr1200_ws/tr1200_ros/tr1200_modules' returned '0': PYTHONPATH=/home/ncpa/tr1200_ws/build/tr1200_modules/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ncpa/tr1200_ws/install/tr1200_modules/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/tr1200_modules build --build-base /home/ncpa/tr1200_ws/build/tr1200_modules/build install --record /home/ncpa/tr1200_ws/build/tr1200_modules/install.log --single-version-externally-managed install_data

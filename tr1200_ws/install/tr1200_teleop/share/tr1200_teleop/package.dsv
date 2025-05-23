@@ -1,0 +1,8 @@
+source;share/tr1200_teleop/hook/cmake_prefix_path.ps1
+source;share/tr1200_teleop/hook/cmake_prefix_path.dsv
+source;share/tr1200_teleop/hook/cmake_prefix_path.sh
+source;share/tr1200_teleop/local_setup.bash
+source;share/tr1200_teleop/local_setup.dsv
+source;share/tr1200_teleop/local_setup.ps1
+source;share/tr1200_teleop/local_setup.sh
+source;share/tr1200_teleop/local_setup.zsh
