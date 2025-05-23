@@ -12,4 +12,4 @@ There is only one **TR1200**, while there are multiple **LT2** rovers. Any docum
 
 **LT2-3**
 
-This rover's onboard computer is an [Up Sqaured Pro](https://up-board.org/up-squared-pro/)
+This rover's onboard computer is an [Up Sqaured Pro](https://up-board.org/up-squared-pro/) running **Ubuntu 20.04.1**. This specific version was retained to preserve compatibility with existing software developed by a collaborating colleague. Upgrading the OS could risk introducing dependency conflicts or breaking functionality. If you are looking to upgarde the version, it is recommended to either consult **Nhat Van/Noah Knutson**, or booting from an external had drive/ make a copy of the current OS.
