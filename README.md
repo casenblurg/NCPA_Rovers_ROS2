@@ -16,6 +16,6 @@ There is only one **TR1200**, while there are multiple **LT2** rovers. Any docum
 
 This rover's onboard computer is an [Up Sqaured Pro](https://up-board.org/up-squared-pro/) running **Ubuntu 20.04.1 LTS  (Focal Fossa)**. This specific version was retained to preserve compatibility with existing software developed by a collaborating colleagues. Upgrading the OS could risk introducing dependency conflicts or breaking functionality. If you are looking to upgrade the OS, it is recommended to either consult **Nhat Van/Noah Knutson**, or boot from an external hard drive/make a copy of the current OS. 
 
-The onboard computer communicates to a **Pixhawk CUAV x7** through **usb** which will be explained in further detail in the **LT2** section.
+The onboard computer communicates to a **Pixhawk CUAV x7** through **usb** using **Mavros** which will be explained in further detail in the **LT2** section.
 
 
