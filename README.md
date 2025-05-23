@@ -2,7 +2,7 @@
 
 **Introudction**
 
-This documentation covers the two typed of rovers at the NCPA.
+The point of this documentation is to aid in **setup**, **debbuginng**, and **creating** software+. This documentation covers the two types of rovers at the NCPA. 
 1. LT2
 2. TR1200
 
