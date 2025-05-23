@@ -9,7 +9,5 @@ This documentation covers the two typed of rovers at the NCPA.
 
 
 ```
-{
-hello
-}
+#!/bin/bash
 ```
