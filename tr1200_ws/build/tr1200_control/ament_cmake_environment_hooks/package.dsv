@@ -1,0 +1,4 @@
+source;share/tr1200_control/local_setup.bash
+source;share/tr1200_control/local_setup.dsv
+source;share/tr1200_control/local_setup.sh
+source;share/tr1200_control/local_setup.zsh

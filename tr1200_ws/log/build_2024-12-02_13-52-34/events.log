@@ -1,0 +1,111 @@
+[0.000000] (-) TimerEvent: {}
+[0.000494] (tr1200_base) JobQueued: {'identifier': 'tr1200_base', 'dependencies': OrderedDict()}
+[0.001135] (tr1200_modules) JobQueued: {'identifier': 'tr1200_modules', 'dependencies': OrderedDict()}
+[0.001251] (tr1200_teleop) JobQueued: {'identifier': 'tr1200_teleop', 'dependencies': OrderedDict()}
+[0.001310] (tr1200_description) JobQueued: {'identifier': 'tr1200_description', 'dependencies': OrderedDict([('tr1200_modules', '/home/ncpa/tr1200_ws/install/tr1200_modules')])}
+[0.001379] (tr1200_control) JobQueued: {'identifier': 'tr1200_control', 'dependencies': OrderedDict([('tr1200_base', '/home/ncpa/tr1200_ws/install/tr1200_base'), ('tr1200_modules', '/home/ncpa/tr1200_ws/install/tr1200_modules'), ('tr1200_description', '/home/ncpa/tr1200_ws/install/tr1200_description')])}
+[0.001496] (tr1200_ros) JobQueued: {'identifier': 'tr1200_ros', 'dependencies': OrderedDict([('tr1200_base', '/home/ncpa/tr1200_ws/install/tr1200_base'), ('tr1200_modules', '/home/ncpa/tr1200_ws/install/tr1200_modules'), ('tr1200_teleop', '/home/ncpa/tr1200_ws/install/tr1200_teleop'), ('tr1200_description', '/home/ncpa/tr1200_ws/install/tr1200_description'), ('tr1200_control', '/home/ncpa/tr1200_ws/install/tr1200_control')])}
+[0.001628] (tr1200_modules) JobStarted: {'identifier': 'tr1200_modules'}
+[0.044060] (tr1200_base) JobStarted: {'identifier': 'tr1200_base'}
+[0.048344] (tr1200_teleop) JobStarted: {'identifier': 'tr1200_teleop'}
+[0.096635] (-) TimerEvent: {}
+[0.197374] (-) TimerEvent: {}
+[0.298202] (-) TimerEvent: {}
+[0.399041] (-) TimerEvent: {}
+[0.499848] (-) TimerEvent: {}
+[0.600643] (-) TimerEvent: {}
+[0.701491] (-) TimerEvent: {}
+[0.802271] (-) TimerEvent: {}
+[0.873397] (tr1200_base) JobProgress: {'identifier': 'tr1200_base', 'progress': 'cmake'}
+[0.874510] (tr1200_base) Command: {'cmd': ['/usr/bin/cmake', '/home/ncpa/tr1200_ws/tr1200_ros/tr1200_base', '-DCMAKE_INSTALL_PREFIX=/home/ncpa/tr1200_ws/install/tr1200_base'], 'cwd': '/home/ncpa/tr1200_ws/build/tr1200_base', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ncpa'), ('SSH_CLIENT', '172.25.88.177 35188 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/ncpa'), ('OLDPWD', '/home/ncpa/tr1200_ws'), ('SSH_TTY', '/dev/pts/0'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('LOGNAME', 'ncpa'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '6'), ('PATH', '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/opt/ros/humble/lib/controller_manager'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/ncpa/tr1200_ws/build/tr1200_base'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '172.25.88.177 35188 172.25.89.80 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('COLCON', '1')]), 'shell': False}
+[0.890027] (tr1200_teleop) JobProgress: {'identifier': 'tr1200_teleop', 'progress': 'cmake'}
+[0.891165] (tr1200_teleop) Command: {'cmd': ['/usr/bin/cmake', '/home/ncpa/tr1200_ws/tr1200_ros/tr1200_teleop', '-DCMAKE_INSTALL_PREFIX=/home/ncpa/tr1200_ws/install/tr1200_teleop'], 'cwd': '/home/ncpa/tr1200_ws/build/tr1200_teleop', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ncpa'), ('SSH_CLIENT', '172.25.88.177 35188 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/ncpa'), ('OLDPWD', '/home/ncpa/tr1200_ws'), ('SSH_TTY', '/dev/pts/0'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('LOGNAME', 'ncpa'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '6'), ('PATH', '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/opt/ros/humble/lib/controller_manager'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/ncpa/tr1200_ws/build/tr1200_teleop'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '172.25.88.177 35188 172.25.89.80 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('COLCON', '1')]), 'shell': False}
+[0.902455] (-) TimerEvent: {}
+[1.003344] (-) TimerEvent: {}
+[1.104064] (-) TimerEvent: {}
+[1.204794] (-) TimerEvent: {}
+[1.307800] (-) TimerEvent: {}
+[1.318758] (tr1200_base) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[1.319374] (tr1200_teleop) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[1.407974] (-) TimerEvent: {}
+[1.508627] (-) TimerEvent: {}
+[1.609339] (-) TimerEvent: {}
+[1.639877] (tr1200_teleop) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[1.647042] (tr1200_base) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[1.697303] (tr1200_base) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.698086] (tr1200_teleop) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.709556] (-) TimerEvent: {}
+[1.810747] (-) TimerEvent: {}
+[1.911732] (-) TimerEvent: {}
+[1.919738] (tr1200_base) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.920420] (tr1200_teleop) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.944111] (tr1200_base) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.945351] (tr1200_base) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.946873] (tr1200_teleop) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.947590] (tr1200_teleop) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.948287] (tr1200_base) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.948924] (tr1200_teleop) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.960001] (tr1200_teleop) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.960720] (tr1200_base) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[2.011958] (-) TimerEvent: {}
+[2.113305] (-) TimerEvent: {}
+[2.203600] (tr1200_base) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[2.213661] (-) TimerEvent: {}
+[2.214903] (tr1200_teleop) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[2.235707] (tr1200_base) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[2.236808] (tr1200_base) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[2.237576] (tr1200_base) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[2.243645] (tr1200_teleop) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[2.244269] (tr1200_teleop) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[2.246008] (tr1200_teleop) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[2.265298] (tr1200_base) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:8 (find_package):\n'}
+[2.265882] (tr1200_base) StderrLine: {'line': b'  By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project\n'}
+[2.266244] (tr1200_base) StderrLine: {'line': b'  has asked CMake to find a package configuration file provided by\n'}
+[2.266604] (tr1200_base) StderrLine: {'line': b'  "ament_cmake", but CMake did not find one.\n'}
+[2.267920] (tr1200_base) StderrLine: {'line': b'\n'}
+[2.268366] (tr1200_base) StderrLine: {'line': b'  Could not find a package configuration file provided by "ament_cmake" with\n'}
+[2.268641] (tr1200_base) StderrLine: {'line': b'  any of the following names:\n'}
+[2.268872] (tr1200_base) StderrLine: {'line': b'\n'}
+[2.269080] (tr1200_base) StderrLine: {'line': b'    ament_cmakeConfig.cmake\n'}
+[2.269287] (tr1200_base) StderrLine: {'line': b'    ament_cmake-config.cmake\n'}
+[2.269493] (tr1200_base) StderrLine: {'line': b'\n'}
+[2.269736] (tr1200_base) StderrLine: {'line': b'  Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set\n'}
+[2.269952] (tr1200_base) StderrLine: {'line': b'  "ament_cmake_DIR" to a directory containing one of the above files.  If\n'}
+[2.270159] (tr1200_base) StderrLine: {'line': b'  "ament_cmake" provides a separate development package or SDK, be sure it\n'}
+[2.270366] (tr1200_base) StderrLine: {'line': b'  has been installed.\n'}
+[2.271070] (tr1200_base) StderrLine: {'line': b'\n'}
+[2.271470] (tr1200_base) StderrLine: {'line': b'\x1b[0m\n'}
+[2.271890] (tr1200_base) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[2.273099] (tr1200_base) StdoutLine: {'line': b'See also "/home/ncpa/tr1200_ws/build/tr1200_base/CMakeFiles/CMakeOutput.log".\n'}
+[2.273518] (tr1200_teleop) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:8 (find_package):\n'}
+[2.274002] (tr1200_teleop) StderrLine: {'line': b'  By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project\n'}
+[2.274348] (tr1200_teleop) StderrLine: {'line': b'  has asked CMake to find a package configuration file provided by\n'}
+[2.274751] (tr1200_teleop) StderrLine: {'line': b'  "ament_cmake", but CMake did not find one.\n'}
+[2.276819] (tr1200_teleop) StderrLine: {'line': b'\n'}
+[2.278098] (tr1200_teleop) StderrLine: {'line': b'  Could not find a package configuration file provided by "ament_cmake" with\n'}
+[2.278584] (tr1200_teleop) StderrLine: {'line': b'  any of the following names:\n'}
+[2.280733] (tr1200_teleop) StderrLine: {'line': b'\n'}
+[2.286036] (tr1200_teleop) StderrLine: {'line': b'    ament_cmakeConfig.cmake\n'}
+[2.287361] (tr1200_teleop) StderrLine: {'line': b'    ament_cmake-config.cmake\n'}
+[2.290826] (tr1200_teleop) StderrLine: {'line': b'\n'}
+[2.293704] (tr1200_teleop) StderrLine: {'line': b'  Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set\n'}
+[2.294112] (tr1200_teleop) StderrLine: {'line': b'  "ament_cmake_DIR" to a directory containing one of the above files.  If\n'}
+[2.294439] (tr1200_teleop) StderrLine: {'line': b'  "ament_cmake" provides a separate development package or SDK, be sure it\n'}
+[2.294885] (tr1200_teleop) StderrLine: {'line': b'  has been installed.\n'}
+[2.295246] (tr1200_teleop) StderrLine: {'line': b'\n'}
+[2.296124] (tr1200_teleop) StderrLine: {'line': b'\x1b[0m\n'}
+[2.298342] (tr1200_teleop) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[2.298828] (tr1200_teleop) StdoutLine: {'line': b'See also "/home/ncpa/tr1200_ws/build/tr1200_teleop/CMakeFiles/CMakeOutput.log".\n'}
+[2.299193] (tr1200_base) CommandEnded: {'returncode': 1}
+[2.300096] (tr1200_teleop) CommandEnded: {'returncode': 1}
+[2.313853] (-) TimerEvent: {}
+[2.358325] (tr1200_base) JobEnded: {'identifier': 'tr1200_base', 'rc': 1}
+[2.361696] (tr1200_teleop) JobEnded: {'identifier': 'tr1200_teleop', 'rc': 'SIGINT'}
+[2.414067] (-) TimerEvent: {}
+[2.514665] (-) TimerEvent: {}
+[2.616110] (-) TimerEvent: {}
+[2.658300] (tr1200_modules) JobEnded: {'identifier': 'tr1200_modules', 'rc': 'SIGINT'}
+[2.670349] (tr1200_description) JobSkipped: {'identifier': 'tr1200_description'}
+[2.670675] (tr1200_control) JobSkipped: {'identifier': 'tr1200_control'}
+[2.670771] (tr1200_ros) JobSkipped: {'identifier': 'tr1200_ros'}
+[2.670836] (-) EventReactorShutdown: {}

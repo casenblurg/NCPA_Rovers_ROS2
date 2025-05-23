@@ -1,0 +1,462 @@
+[1.447s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[1.448s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x72cceab26350>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x72cceacbf7f0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x72cceacbf7f0>>, mixin_verb=('build',))
+[2.827s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[2.827s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[2.828s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[2.828s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[2.828s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[2.828s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[2.828s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/ncpa/tr1200_ws'
+[2.829s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[2.829s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[2.830s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[2.830s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[2.830s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[2.830s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[2.830s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[2.831s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[2.831s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[2.891s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[2.891s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[2.891s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[2.892s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[2.892s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[2.892s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[2.893s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[2.893s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[2.893s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[2.894s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[2.894s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[2.894s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[2.895s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[2.895s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[2.897s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[2.898s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[2.898s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[2.898s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[2.898s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[2.898s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[2.898s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[2.899s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[2.899s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[2.899s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[2.899s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[2.899s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[2.900s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[2.900s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[2.901s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros) by extensions ['ignore', 'ignore_ament_install']
+[2.901s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros) by extension 'ignore'
+[2.902s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros) by extension 'ignore_ament_install'
+[2.902s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros) by extensions ['colcon_pkg']
+[2.902s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros) by extension 'colcon_pkg'
+[2.902s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros) by extensions ['colcon_meta']
+[2.902s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros) by extension 'colcon_meta'
+[2.902s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros) by extensions ['ros']
+[2.903s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros) by extension 'ros'
+[2.903s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros) by extensions ['cmake', 'python']
+[2.903s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros) by extension 'cmake'
+[2.903s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros) by extension 'python'
+[2.903s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros) by extensions ['python_setup_py']
+[2.904s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros) by extension 'python_setup_py'
+[2.905s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros/tr1200_base) by extensions ['ignore', 'ignore_ament_install']
+[2.905s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros/tr1200_base) by extension 'ignore'
+[2.906s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros/tr1200_base) by extension 'ignore_ament_install'
+[2.906s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros/tr1200_base) by extensions ['colcon_pkg']
+[2.906s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros/tr1200_base) by extension 'colcon_pkg'
+[2.906s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros/tr1200_base) by extensions ['colcon_meta']
+[2.906s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros/tr1200_base) by extension 'colcon_meta'
+[2.907s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros/tr1200_base) by extensions ['ros']
+[2.907s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros/tr1200_base) by extension 'ros'
+[2.921s] DEBUG:colcon.colcon_core.package_identification:Package 'tr1200_ros/tr1200_base' with type 'ros.ament_cmake' and name 'tr1200_base'
+[2.923s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros/tr1200_control) by extensions ['ignore', 'ignore_ament_install']
+[2.923s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros/tr1200_control) by extension 'ignore'
+[2.923s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros/tr1200_control) by extension 'ignore_ament_install'
+[2.924s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros/tr1200_control) by extensions ['colcon_pkg']
+[2.924s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros/tr1200_control) by extension 'colcon_pkg'
+[2.924s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros/tr1200_control) by extensions ['colcon_meta']
+[2.924s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros/tr1200_control) by extension 'colcon_meta'
+[2.924s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros/tr1200_control) by extensions ['ros']
+[2.924s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros/tr1200_control) by extension 'ros'
+[2.929s] DEBUG:colcon.colcon_core.package_identification:Package 'tr1200_ros/tr1200_control' with type 'ros.ament_cmake' and name 'tr1200_control'
+[2.931s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros/tr1200_description) by extensions ['ignore', 'ignore_ament_install']
+[2.931s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros/tr1200_description) by extension 'ignore'
+[2.932s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros/tr1200_description) by extension 'ignore_ament_install'
+[2.932s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros/tr1200_description) by extensions ['colcon_pkg']
+[2.932s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros/tr1200_description) by extension 'colcon_pkg'
+[2.932s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros/tr1200_description) by extensions ['colcon_meta']
+[2.932s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros/tr1200_description) by extension 'colcon_meta'
+[2.932s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros/tr1200_description) by extensions ['ros']
+[2.933s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros/tr1200_description) by extension 'ros'
+[2.936s] DEBUG:colcon.colcon_core.package_identification:Package 'tr1200_ros/tr1200_description' with type 'ros.ament_cmake' and name 'tr1200_description'
+[2.938s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros/tr1200_modules) by extensions ['ignore', 'ignore_ament_install']
+[2.938s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros/tr1200_modules) by extension 'ignore'
+[2.939s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros/tr1200_modules) by extension 'ignore_ament_install'
+[2.939s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros/tr1200_modules) by extensions ['colcon_pkg']
+[2.939s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros/tr1200_modules) by extension 'colcon_pkg'
+[2.939s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros/tr1200_modules) by extensions ['colcon_meta']
+[2.939s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros/tr1200_modules) by extension 'colcon_meta'
+[2.940s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros/tr1200_modules) by extensions ['ros']
+[2.940s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros/tr1200_modules) by extension 'ros'
+[2.942s] DEBUG:colcon.colcon_core.package_identification:Package 'tr1200_ros/tr1200_modules' with type 'ros.ament_python' and name 'tr1200_modules'
+[2.944s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros/tr1200_ros) by extensions ['ignore', 'ignore_ament_install']
+[2.944s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros/tr1200_ros) by extension 'ignore'
+[2.944s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros/tr1200_ros) by extension 'ignore_ament_install'
+[2.945s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros/tr1200_ros) by extensions ['colcon_pkg']
+[2.945s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros/tr1200_ros) by extension 'colcon_pkg'
+[2.945s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros/tr1200_ros) by extensions ['colcon_meta']
+[2.945s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros/tr1200_ros) by extension 'colcon_meta'
+[2.945s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros/tr1200_ros) by extensions ['ros']
+[2.945s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros/tr1200_ros) by extension 'ros'
+[2.949s] DEBUG:colcon.colcon_core.package_identification:Package 'tr1200_ros/tr1200_ros' with type 'ros.ament_cmake' and name 'tr1200_ros'
+[2.951s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros/tr1200_teleop) by extensions ['ignore', 'ignore_ament_install']
+[2.951s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros/tr1200_teleop) by extension 'ignore'
+[2.951s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros/tr1200_teleop) by extension 'ignore_ament_install'
+[2.951s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros/tr1200_teleop) by extensions ['colcon_pkg']
+[2.951s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros/tr1200_teleop) by extension 'colcon_pkg'
+[2.952s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros/tr1200_teleop) by extensions ['colcon_meta']
+[2.952s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros/tr1200_teleop) by extension 'colcon_meta'
+[2.952s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros/tr1200_teleop) by extensions ['ros']
+[2.952s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros/tr1200_teleop) by extension 'ros'
+[2.955s] DEBUG:colcon.colcon_core.package_identification:Package 'tr1200_ros/tr1200_teleop' with type 'ros.ament_cmake' and name 'tr1200_teleop'
+[2.955s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[2.955s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[2.955s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[2.955s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[2.955s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[3.101s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[3.101s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[3.117s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 6 installed packages in /home/ncpa/tr1200_ws/install
+[3.123s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 291 installed packages in /opt/ros/humble
+[3.130s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[3.313s] Level 5:colcon.colcon_core.verb:set package 'tr1200_base' build argument 'cmake_args' from command line to 'None'
+[3.313s] Level 5:colcon.colcon_core.verb:set package 'tr1200_base' build argument 'cmake_target' from command line to 'None'
+[3.313s] Level 5:colcon.colcon_core.verb:set package 'tr1200_base' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[3.314s] Level 5:colcon.colcon_core.verb:set package 'tr1200_base' build argument 'cmake_clean_cache' from command line to 'False'
+[3.314s] Level 5:colcon.colcon_core.verb:set package 'tr1200_base' build argument 'cmake_clean_first' from command line to 'False'
+[3.314s] Level 5:colcon.colcon_core.verb:set package 'tr1200_base' build argument 'cmake_force_configure' from command line to 'False'
+[3.314s] Level 5:colcon.colcon_core.verb:set package 'tr1200_base' build argument 'ament_cmake_args' from command line to 'None'
+[3.314s] Level 5:colcon.colcon_core.verb:set package 'tr1200_base' build argument 'catkin_cmake_args' from command line to 'None'
+[3.314s] Level 5:colcon.colcon_core.verb:set package 'tr1200_base' build argument 'catkin_skip_building_tests' from command line to 'False'
+[3.314s] DEBUG:colcon.colcon_core.verb:Building package 'tr1200_base' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ncpa/tr1200_ws/build/tr1200_base', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ncpa/tr1200_ws/install/tr1200_base', 'merge_install': False, 'path': '/home/ncpa/tr1200_ws/tr1200_ros/tr1200_base', 'symlink_install': False, 'test_result_base': None}
+[3.316s] Level 5:colcon.colcon_core.verb:set package 'tr1200_modules' build argument 'cmake_args' from command line to 'None'
+[3.316s] Level 5:colcon.colcon_core.verb:set package 'tr1200_modules' build argument 'cmake_target' from command line to 'None'
+[3.316s] Level 5:colcon.colcon_core.verb:set package 'tr1200_modules' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[3.316s] Level 5:colcon.colcon_core.verb:set package 'tr1200_modules' build argument 'cmake_clean_cache' from command line to 'False'
+[3.316s] Level 5:colcon.colcon_core.verb:set package 'tr1200_modules' build argument 'cmake_clean_first' from command line to 'False'
+[3.316s] Level 5:colcon.colcon_core.verb:set package 'tr1200_modules' build argument 'cmake_force_configure' from command line to 'False'
+[3.316s] Level 5:colcon.colcon_core.verb:set package 'tr1200_modules' build argument 'ament_cmake_args' from command line to 'None'
+[3.316s] Level 5:colcon.colcon_core.verb:set package 'tr1200_modules' build argument 'catkin_cmake_args' from command line to 'None'
+[3.316s] Level 5:colcon.colcon_core.verb:set package 'tr1200_modules' build argument 'catkin_skip_building_tests' from command line to 'False'
+[3.317s] DEBUG:colcon.colcon_core.verb:Building package 'tr1200_modules' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ncpa/tr1200_ws/build/tr1200_modules', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ncpa/tr1200_ws/install/tr1200_modules', 'merge_install': False, 'path': '/home/ncpa/tr1200_ws/tr1200_ros/tr1200_modules', 'symlink_install': False, 'test_result_base': None}
+[3.318s] Level 5:colcon.colcon_core.verb:set package 'tr1200_teleop' build argument 'cmake_args' from command line to 'None'
+[3.318s] Level 5:colcon.colcon_core.verb:set package 'tr1200_teleop' build argument 'cmake_target' from command line to 'None'
+[3.318s] Level 5:colcon.colcon_core.verb:set package 'tr1200_teleop' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[3.318s] Level 5:colcon.colcon_core.verb:set package 'tr1200_teleop' build argument 'cmake_clean_cache' from command line to 'False'
+[3.318s] Level 5:colcon.colcon_core.verb:set package 'tr1200_teleop' build argument 'cmake_clean_first' from command line to 'False'
+[3.319s] Level 5:colcon.colcon_core.verb:set package 'tr1200_teleop' build argument 'cmake_force_configure' from command line to 'False'
+[3.319s] Level 5:colcon.colcon_core.verb:set package 'tr1200_teleop' build argument 'ament_cmake_args' from command line to 'None'
+[3.319s] Level 5:colcon.colcon_core.verb:set package 'tr1200_teleop' build argument 'catkin_cmake_args' from command line to 'None'
+[3.319s] Level 5:colcon.colcon_core.verb:set package 'tr1200_teleop' build argument 'catkin_skip_building_tests' from command line to 'False'
+[3.319s] DEBUG:colcon.colcon_core.verb:Building package 'tr1200_teleop' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ncpa/tr1200_ws/build/tr1200_teleop', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ncpa/tr1200_ws/install/tr1200_teleop', 'merge_install': False, 'path': '/home/ncpa/tr1200_ws/tr1200_ros/tr1200_teleop', 'symlink_install': False, 'test_result_base': None}
+[3.320s] Level 5:colcon.colcon_core.verb:set package 'tr1200_description' build argument 'cmake_args' from command line to 'None'
+[3.321s] Level 5:colcon.colcon_core.verb:set package 'tr1200_description' build argument 'cmake_target' from command line to 'None'
+[3.321s] Level 5:colcon.colcon_core.verb:set package 'tr1200_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[3.321s] Level 5:colcon.colcon_core.verb:set package 'tr1200_description' build argument 'cmake_clean_cache' from command line to 'False'
+[3.321s] Level 5:colcon.colcon_core.verb:set package 'tr1200_description' build argument 'cmake_clean_first' from command line to 'False'
+[3.321s] Level 5:colcon.colcon_core.verb:set package 'tr1200_description' build argument 'cmake_force_configure' from command line to 'False'
+[3.321s] Level 5:colcon.colcon_core.verb:set package 'tr1200_description' build argument 'ament_cmake_args' from command line to 'None'
+[3.321s] Level 5:colcon.colcon_core.verb:set package 'tr1200_description' build argument 'catkin_cmake_args' from command line to 'None'
+[3.321s] Level 5:colcon.colcon_core.verb:set package 'tr1200_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[3.321s] DEBUG:colcon.colcon_core.verb:Building package 'tr1200_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ncpa/tr1200_ws/build/tr1200_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ncpa/tr1200_ws/install/tr1200_description', 'merge_install': False, 'path': '/home/ncpa/tr1200_ws/tr1200_ros/tr1200_description', 'symlink_install': False, 'test_result_base': None}
+[3.323s] Level 5:colcon.colcon_core.verb:set package 'tr1200_control' build argument 'cmake_args' from command line to 'None'
+[3.323s] Level 5:colcon.colcon_core.verb:set package 'tr1200_control' build argument 'cmake_target' from command line to 'None'
+[3.323s] Level 5:colcon.colcon_core.verb:set package 'tr1200_control' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[3.323s] Level 5:colcon.colcon_core.verb:set package 'tr1200_control' build argument 'cmake_clean_cache' from command line to 'False'
+[3.323s] Level 5:colcon.colcon_core.verb:set package 'tr1200_control' build argument 'cmake_clean_first' from command line to 'False'
+[3.323s] Level 5:colcon.colcon_core.verb:set package 'tr1200_control' build argument 'cmake_force_configure' from command line to 'False'
+[3.323s] Level 5:colcon.colcon_core.verb:set package 'tr1200_control' build argument 'ament_cmake_args' from command line to 'None'
+[3.324s] Level 5:colcon.colcon_core.verb:set package 'tr1200_control' build argument 'catkin_cmake_args' from command line to 'None'
+[3.324s] Level 5:colcon.colcon_core.verb:set package 'tr1200_control' build argument 'catkin_skip_building_tests' from command line to 'False'
+[3.324s] DEBUG:colcon.colcon_core.verb:Building package 'tr1200_control' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ncpa/tr1200_ws/build/tr1200_control', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ncpa/tr1200_ws/install/tr1200_control', 'merge_install': False, 'path': '/home/ncpa/tr1200_ws/tr1200_ros/tr1200_control', 'symlink_install': False, 'test_result_base': None}
+[3.325s] Level 5:colcon.colcon_core.verb:set package 'tr1200_ros' build argument 'cmake_args' from command line to 'None'
+[3.325s] Level 5:colcon.colcon_core.verb:set package 'tr1200_ros' build argument 'cmake_target' from command line to 'None'
+[3.326s] Level 5:colcon.colcon_core.verb:set package 'tr1200_ros' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[3.326s] Level 5:colcon.colcon_core.verb:set package 'tr1200_ros' build argument 'cmake_clean_cache' from command line to 'False'
+[3.326s] Level 5:colcon.colcon_core.verb:set package 'tr1200_ros' build argument 'cmake_clean_first' from command line to 'False'
+[3.326s] Level 5:colcon.colcon_core.verb:set package 'tr1200_ros' build argument 'cmake_force_configure' from command line to 'False'
+[3.326s] Level 5:colcon.colcon_core.verb:set package 'tr1200_ros' build argument 'ament_cmake_args' from command line to 'None'
+[3.326s] Level 5:colcon.colcon_core.verb:set package 'tr1200_ros' build argument 'catkin_cmake_args' from command line to 'None'
+[3.326s] Level 5:colcon.colcon_core.verb:set package 'tr1200_ros' build argument 'catkin_skip_building_tests' from command line to 'False'
+[3.326s] DEBUG:colcon.colcon_core.verb:Building package 'tr1200_ros' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ncpa/tr1200_ws/build/tr1200_ros', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ncpa/tr1200_ws/install/tr1200_ros', 'merge_install': False, 'path': '/home/ncpa/tr1200_ws/tr1200_ros/tr1200_ros', 'symlink_install': False, 'test_result_base': None}
+[3.327s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[3.330s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[3.331s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/ncpa/tr1200_ws/tr1200_ros/tr1200_modules' with build type 'ament_python'
+[3.332s] Level 1:colcon.colcon_core.shell:create_environment_hook('tr1200_modules', 'ament_prefix_path')
+[3.378s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[3.379s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ncpa/tr1200_ws/install/tr1200_modules/share/tr1200_modules/hook/ament_prefix_path.ps1'
+[3.383s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ncpa/tr1200_ws/install/tr1200_modules/share/tr1200_modules/hook/ament_prefix_path.dsv'
+[3.386s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ncpa/tr1200_ws/install/tr1200_modules/share/tr1200_modules/hook/ament_prefix_path.sh'
+[3.391s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.391s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.407s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ncpa/tr1200_ws/tr1200_ros/tr1200_base' with build type 'ament_cmake'
+[3.408s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ncpa/tr1200_ws/tr1200_ros/tr1200_base'
+[3.409s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.409s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.423s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ncpa/tr1200_ws/tr1200_ros/tr1200_teleop' with build type 'ament_cmake'
+[3.423s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ncpa/tr1200_ws/tr1200_ros/tr1200_teleop'
+[3.424s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.424s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.440s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/ncpa/tr1200_ws/tr1200_ros/tr1200_modules'
+[4.441s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.441s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.493s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ncpa/tr1200_ws/build/tr1200_base': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ncpa/tr1200_ws/install/tr1200_modules:/opt/ros/humble /usr/bin/cmake --build /home/ncpa/tr1200_ws/build/tr1200_base -- -j4 -l4
+[4.519s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ncpa/tr1200_ws/build/tr1200_teleop': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ncpa/tr1200_ws/install/tr1200_modules:/opt/ros/humble /usr/bin/cmake --build /home/ncpa/tr1200_ws/build/tr1200_teleop -- -j4 -l4
+[4.712s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ncpa/tr1200_ws/build/tr1200_teleop' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ncpa/tr1200_ws/install/tr1200_modules:/opt/ros/humble /usr/bin/cmake --build /home/ncpa/tr1200_ws/build/tr1200_teleop -- -j4 -l4
+[4.797s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ncpa/tr1200_ws/build/tr1200_teleop': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ncpa/tr1200_ws/install/tr1200_modules:/opt/ros/humble /usr/bin/cmake --install /home/ncpa/tr1200_ws/build/tr1200_teleop
+[4.833s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tr1200_teleop)
+[4.835s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ncpa/tr1200_ws/build/tr1200_teleop' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ncpa/tr1200_ws/install/tr1200_modules:/opt/ros/humble /usr/bin/cmake --install /home/ncpa/tr1200_ws/build/tr1200_teleop
+[4.859s] Level 1:colcon.colcon_core.environment:checking '/home/ncpa/tr1200_ws/install/tr1200_teleop' for CMake module files
+[4.862s] Level 1:colcon.colcon_core.environment:checking '/home/ncpa/tr1200_ws/install/tr1200_teleop' for CMake config files
+[4.863s] Level 1:colcon.colcon_core.shell:create_environment_hook('tr1200_teleop', 'cmake_prefix_path')
+[4.864s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ncpa/tr1200_ws/install/tr1200_teleop/share/tr1200_teleop/hook/cmake_prefix_path.ps1'
+[4.866s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ncpa/tr1200_ws/install/tr1200_teleop/share/tr1200_teleop/hook/cmake_prefix_path.dsv'
+[4.869s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ncpa/tr1200_ws/install/tr1200_teleop/share/tr1200_teleop/hook/cmake_prefix_path.sh'
+[4.872s] Level 1:colcon.colcon_core.environment:checking '/home/ncpa/tr1200_ws/install/tr1200_teleop/bin'
+[4.873s] Level 1:colcon.colcon_core.environment:checking '/home/ncpa/tr1200_ws/install/tr1200_teleop/lib/pkgconfig/tr1200_teleop.pc'
+[4.874s] Level 1:colcon.colcon_core.environment:checking '/home/ncpa/tr1200_ws/install/tr1200_teleop/lib/python3.10/site-packages'
+[4.875s] Level 1:colcon.colcon_core.environment:checking '/home/ncpa/tr1200_ws/install/tr1200_teleop/bin'
+[4.877s] INFO:colcon.colcon_core.shell:Creating package script '/home/ncpa/tr1200_ws/install/tr1200_teleop/share/tr1200_teleop/package.ps1'
+[4.882s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ncpa/tr1200_ws/install/tr1200_teleop/share/tr1200_teleop/package.dsv'
+[4.885s] INFO:colcon.colcon_core.shell:Creating package script '/home/ncpa/tr1200_ws/install/tr1200_teleop/share/tr1200_teleop/package.sh'
+[4.889s] INFO:colcon.colcon_core.shell:Creating package script '/home/ncpa/tr1200_ws/install/tr1200_teleop/share/tr1200_teleop/package.bash'
+[4.894s] INFO:colcon.colcon_core.shell:Creating package script '/home/ncpa/tr1200_ws/install/tr1200_teleop/share/tr1200_teleop/package.zsh'
+[4.899s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ncpa/tr1200_ws/install/tr1200_teleop/share/colcon-core/packages/tr1200_teleop)
+[4.939s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ncpa/tr1200_ws/build/tr1200_base' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ncpa/tr1200_ws/install/tr1200_modules:/opt/ros/humble /usr/bin/cmake --build /home/ncpa/tr1200_ws/build/tr1200_base -- -j4 -l4
+[4.960s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tr1200_teleop)
+[4.961s] Level 1:colcon.colcon_core.environment:checking '/home/ncpa/tr1200_ws/install/tr1200_teleop' for CMake module files
+[4.963s] Level 1:colcon.colcon_core.environment:checking '/home/ncpa/tr1200_ws/install/tr1200_teleop' for CMake config files
+[4.964s] Level 1:colcon.colcon_core.shell:create_environment_hook('tr1200_teleop', 'cmake_prefix_path')
+[4.965s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ncpa/tr1200_ws/install/tr1200_teleop/share/tr1200_teleop/hook/cmake_prefix_path.ps1'
+[5.008s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ncpa/tr1200_ws/install/tr1200_teleop/share/tr1200_teleop/hook/cmake_prefix_path.dsv'
+[5.010s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ncpa/tr1200_ws/install/tr1200_teleop/share/tr1200_teleop/hook/cmake_prefix_path.sh'
+[5.013s] Level 1:colcon.colcon_core.environment:checking '/home/ncpa/tr1200_ws/install/tr1200_teleop/bin'
+[5.013s] Level 1:colcon.colcon_core.environment:checking '/home/ncpa/tr1200_ws/install/tr1200_teleop/lib/pkgconfig/tr1200_teleop.pc'
+[5.014s] Level 1:colcon.colcon_core.environment:checking '/home/ncpa/tr1200_ws/install/tr1200_teleop/lib/python3.10/site-packages'
+[5.015s] Level 1:colcon.colcon_core.environment:checking '/home/ncpa/tr1200_ws/install/tr1200_teleop/bin'
+[5.016s] INFO:colcon.colcon_core.shell:Creating package script '/home/ncpa/tr1200_ws/install/tr1200_teleop/share/tr1200_teleop/package.ps1'
+[5.019s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ncpa/tr1200_ws/install/tr1200_teleop/share/tr1200_teleop/package.dsv'
+[5.021s] INFO:colcon.colcon_core.shell:Creating package script '/home/ncpa/tr1200_ws/install/tr1200_teleop/share/tr1200_teleop/package.sh'
+[5.023s] INFO:colcon.colcon_core.shell:Creating package script '/home/ncpa/tr1200_ws/install/tr1200_teleop/share/tr1200_teleop/package.bash'
+[5.025s] INFO:colcon.colcon_core.shell:Creating package script '/home/ncpa/tr1200_ws/install/tr1200_teleop/share/tr1200_teleop/package.zsh'
+[5.027s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ncpa/tr1200_ws/install/tr1200_teleop/share/colcon-core/packages/tr1200_teleop)
+[5.036s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ncpa/tr1200_ws/build/tr1200_base': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ncpa/tr1200_ws/install/tr1200_modules:/opt/ros/humble /usr/bin/cmake --install /home/ncpa/tr1200_ws/build/tr1200_base
+[5.068s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tr1200_base)
+[5.069s] Level 1:colcon.colcon_core.environment:checking '/home/ncpa/tr1200_ws/install/tr1200_base' for CMake module files
+[5.072s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ncpa/tr1200_ws/build/tr1200_base' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ncpa/tr1200_ws/install/tr1200_modules:/opt/ros/humble /usr/bin/cmake --install /home/ncpa/tr1200_ws/build/tr1200_base
+[5.073s] Level 1:colcon.colcon_core.environment:checking '/home/ncpa/tr1200_ws/install/tr1200_base' for CMake config files
+[5.075s] Level 1:colcon.colcon_core.shell:create_environment_hook('tr1200_base', 'cmake_prefix_path')
+[5.076s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ncpa/tr1200_ws/install/tr1200_base/share/tr1200_base/hook/cmake_prefix_path.ps1'
+[5.078s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ncpa/tr1200_ws/install/tr1200_base/share/tr1200_base/hook/cmake_prefix_path.dsv'
+[5.079s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ncpa/tr1200_ws/install/tr1200_base/share/tr1200_base/hook/cmake_prefix_path.sh'
+[5.082s] Level 1:colcon.colcon_core.environment:checking '/home/ncpa/tr1200_ws/install/tr1200_base/lib'
+[5.083s] Level 1:colcon.colcon_core.shell:create_environment_hook('tr1200_base', 'ld_library_path_lib')
+[5.084s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ncpa/tr1200_ws/install/tr1200_base/share/tr1200_base/hook/ld_library_path_lib.ps1'
+[5.086s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ncpa/tr1200_ws/install/tr1200_base/share/tr1200_base/hook/ld_library_path_lib.dsv'
+[5.087s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ncpa/tr1200_ws/install/tr1200_base/share/tr1200_base/hook/ld_library_path_lib.sh'
+[5.089s] Level 1:colcon.colcon_core.environment:checking '/home/ncpa/tr1200_ws/install/tr1200_base/bin'
+[5.090s] Level 1:colcon.colcon_core.environment:checking '/home/ncpa/tr1200_ws/install/tr1200_base/lib/pkgconfig/tr1200_base.pc'
+[5.090s] Level 1:colcon.colcon_core.environment:checking '/home/ncpa/tr1200_ws/install/tr1200_base/lib/python3.10/site-packages'
+[5.091s] Level 1:colcon.colcon_core.environment:checking '/home/ncpa/tr1200_ws/install/tr1200_base/bin'
+[5.093s] INFO:colcon.colcon_core.shell:Creating package script '/home/ncpa/tr1200_ws/install/tr1200_base/share/tr1200_base/package.ps1'
+[5.095s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ncpa/tr1200_ws/install/tr1200_base/share/tr1200_base/package.dsv'
+[5.097s] INFO:colcon.colcon_core.shell:Creating package script '/home/ncpa/tr1200_ws/install/tr1200_base/share/tr1200_base/package.sh'
+[5.099s] INFO:colcon.colcon_core.shell:Creating package script '/home/ncpa/tr1200_ws/install/tr1200_base/share/tr1200_base/package.bash'
+[5.101s] INFO:colcon.colcon_core.shell:Creating package script '/home/ncpa/tr1200_ws/install/tr1200_base/share/tr1200_base/package.zsh'
+[5.103s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ncpa/tr1200_ws/install/tr1200_base/share/colcon-core/packages/tr1200_base)
+[5.169s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tr1200_base)
+[5.170s] Level 1:colcon.colcon_core.environment:checking '/home/ncpa/tr1200_ws/install/tr1200_base' for CMake module files
+[5.172s] Level 1:colcon.colcon_core.environment:checking '/home/ncpa/tr1200_ws/install/tr1200_base' for CMake config files
+[5.173s] Level 1:colcon.colcon_core.shell:create_environment_hook('tr1200_base', 'cmake_prefix_path')
+[5.174s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ncpa/tr1200_ws/install/tr1200_base/share/tr1200_base/hook/cmake_prefix_path.ps1'
+[5.210s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ncpa/tr1200_ws/install/tr1200_base/share/tr1200_base/hook/cmake_prefix_path.dsv'
+[5.212s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ncpa/tr1200_ws/install/tr1200_base/share/tr1200_base/hook/cmake_prefix_path.sh'
+[5.215s] Level 1:colcon.colcon_core.environment:checking '/home/ncpa/tr1200_ws/install/tr1200_base/lib'
+[5.215s] Level 1:colcon.colcon_core.shell:create_environment_hook('tr1200_base', 'ld_library_path_lib')
+[5.216s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ncpa/tr1200_ws/install/tr1200_base/share/tr1200_base/hook/ld_library_path_lib.ps1'
+[5.218s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ncpa/tr1200_ws/install/tr1200_base/share/tr1200_base/hook/ld_library_path_lib.dsv'
+[5.219s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ncpa/tr1200_ws/install/tr1200_base/share/tr1200_base/hook/ld_library_path_lib.sh'
+[5.221s] Level 1:colcon.colcon_core.environment:checking '/home/ncpa/tr1200_ws/install/tr1200_base/bin'
+[5.222s] Level 1:colcon.colcon_core.environment:checking '/home/ncpa/tr1200_ws/install/tr1200_base/lib/pkgconfig/tr1200_base.pc'
+[5.222s] Level 1:colcon.colcon_core.environment:checking '/home/ncpa/tr1200_ws/install/tr1200_base/lib/python3.10/site-packages'
+[5.223s] Level 1:colcon.colcon_core.environment:checking '/home/ncpa/tr1200_ws/install/tr1200_base/bin'
+[5.224s] INFO:colcon.colcon_core.shell:Creating package script '/home/ncpa/tr1200_ws/install/tr1200_base/share/tr1200_base/package.ps1'
+[5.227s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ncpa/tr1200_ws/install/tr1200_base/share/tr1200_base/package.dsv'
+[5.229s] INFO:colcon.colcon_core.shell:Creating package script '/home/ncpa/tr1200_ws/install/tr1200_base/share/tr1200_base/package.sh'
+[5.231s] INFO:colcon.colcon_core.shell:Creating package script '/home/ncpa/tr1200_ws/install/tr1200_base/share/tr1200_base/package.bash'
+[5.233s] INFO:colcon.colcon_core.shell:Creating package script '/home/ncpa/tr1200_ws/install/tr1200_base/share/tr1200_base/package.zsh'
+[5.235s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ncpa/tr1200_ws/install/tr1200_base/share/colcon-core/packages/tr1200_base)
+[6.503s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ncpa/tr1200_ws/tr1200_ros/tr1200_modules': PYTHONPATH=/home/ncpa/tr1200_ws/build/tr1200_modules/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ncpa/tr1200_ws/install/tr1200_modules/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/tr1200_modules build --build-base /home/ncpa/tr1200_ws/build/tr1200_modules/build install --record /home/ncpa/tr1200_ws/build/tr1200_modules/install.log --single-version-externally-managed install_data
+[7.668s] Level 1:colcon.colcon_core.environment:checking '/home/ncpa/tr1200_ws/install/tr1200_modules' for CMake module files
+[7.669s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ncpa/tr1200_ws/tr1200_ros/tr1200_modules' returned '0': PYTHONPATH=/home/ncpa/tr1200_ws/build/tr1200_modules/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ncpa/tr1200_ws/install/tr1200_modules/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/tr1200_modules build --build-base /home/ncpa/tr1200_ws/build/tr1200_modules/build install --record /home/ncpa/tr1200_ws/build/tr1200_modules/install.log --single-version-externally-managed install_data
+[7.671s] Level 1:colcon.colcon_core.environment:checking '/home/ncpa/tr1200_ws/install/tr1200_modules' for CMake config files
+[7.673s] Level 1:colcon.colcon_core.environment:checking '/home/ncpa/tr1200_ws/install/tr1200_modules/lib'
+[7.673s] Level 1:colcon.colcon_core.environment:checking '/home/ncpa/tr1200_ws/install/tr1200_modules/bin'
+[7.674s] Level 1:colcon.colcon_core.environment:checking '/home/ncpa/tr1200_ws/install/tr1200_modules/lib/pkgconfig/tr1200_modules.pc'
+[7.674s] Level 1:colcon.colcon_core.environment:checking '/home/ncpa/tr1200_ws/install/tr1200_modules/lib/python3.10/site-packages'
+[7.675s] Level 1:colcon.colcon_core.shell:create_environment_hook('tr1200_modules', 'pythonpath')
+[7.675s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ncpa/tr1200_ws/install/tr1200_modules/share/tr1200_modules/hook/pythonpath.ps1'
+[7.704s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ncpa/tr1200_ws/install/tr1200_modules/share/tr1200_modules/hook/pythonpath.dsv'
+[7.706s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ncpa/tr1200_ws/install/tr1200_modules/share/tr1200_modules/hook/pythonpath.sh'
+[7.708s] Level 1:colcon.colcon_core.environment:checking '/home/ncpa/tr1200_ws/install/tr1200_modules/bin'
+[7.709s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tr1200_modules)
+[7.710s] INFO:colcon.colcon_core.shell:Creating package script '/home/ncpa/tr1200_ws/install/tr1200_modules/share/tr1200_modules/package.ps1'
+[7.712s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ncpa/tr1200_ws/install/tr1200_modules/share/tr1200_modules/package.dsv'
+[7.714s] INFO:colcon.colcon_core.shell:Creating package script '/home/ncpa/tr1200_ws/install/tr1200_modules/share/tr1200_modules/package.sh'
+[7.716s] INFO:colcon.colcon_core.shell:Creating package script '/home/ncpa/tr1200_ws/install/tr1200_modules/share/tr1200_modules/package.bash'
+[7.718s] INFO:colcon.colcon_core.shell:Creating package script '/home/ncpa/tr1200_ws/install/tr1200_modules/share/tr1200_modules/package.zsh'
+[7.720s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ncpa/tr1200_ws/install/tr1200_modules/share/colcon-core/packages/tr1200_modules)
+[7.721s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ncpa/tr1200_ws/tr1200_ros/tr1200_description' with build type 'ament_cmake'
+[7.722s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ncpa/tr1200_ws/tr1200_ros/tr1200_description'
+[7.723s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[7.724s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[7.758s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ncpa/tr1200_ws/build/tr1200_description': AMENT_PREFIX_PATH=/home/ncpa/tr1200_ws/install/tr1200_modules:/home/ncpa/tr1200_ws/install/tr1200_ros:/home/ncpa/tr1200_ws/install/tr1200_teleop:/home/ncpa/tr1200_ws/install/tr1200_control:/home/ncpa/tr1200_ws/install/tr1200_description:/home/ncpa/tr1200_ws/install/tr1200_base:/opt/ros/humble CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ncpa/tr1200_ws/install/tr1200_modules:/opt/ros/humble /usr/bin/cmake --build /home/ncpa/tr1200_ws/build/tr1200_description -- -j4 -l4
+[7.860s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ncpa/tr1200_ws/build/tr1200_description' returned '0': AMENT_PREFIX_PATH=/home/ncpa/tr1200_ws/install/tr1200_modules:/home/ncpa/tr1200_ws/install/tr1200_ros:/home/ncpa/tr1200_ws/install/tr1200_teleop:/home/ncpa/tr1200_ws/install/tr1200_control:/home/ncpa/tr1200_ws/install/tr1200_description:/home/ncpa/tr1200_ws/install/tr1200_base:/opt/ros/humble CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ncpa/tr1200_ws/install/tr1200_modules:/opt/ros/humble /usr/bin/cmake --build /home/ncpa/tr1200_ws/build/tr1200_description -- -j4 -l4
+[7.921s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ncpa/tr1200_ws/build/tr1200_description': AMENT_PREFIX_PATH=/home/ncpa/tr1200_ws/install/tr1200_modules:/home/ncpa/tr1200_ws/install/tr1200_ros:/home/ncpa/tr1200_ws/install/tr1200_teleop:/home/ncpa/tr1200_ws/install/tr1200_control:/home/ncpa/tr1200_ws/install/tr1200_description:/home/ncpa/tr1200_ws/install/tr1200_base:/opt/ros/humble CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ncpa/tr1200_ws/install/tr1200_modules:/opt/ros/humble /usr/bin/cmake --install /home/ncpa/tr1200_ws/build/tr1200_description
+[7.983s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tr1200_description)
+[7.984s] Level 1:colcon.colcon_core.environment:checking '/home/ncpa/tr1200_ws/install/tr1200_description' for CMake module files
+[7.986s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ncpa/tr1200_ws/build/tr1200_description' returned '0': AMENT_PREFIX_PATH=/home/ncpa/tr1200_ws/install/tr1200_modules:/home/ncpa/tr1200_ws/install/tr1200_ros:/home/ncpa/tr1200_ws/install/tr1200_teleop:/home/ncpa/tr1200_ws/install/tr1200_control:/home/ncpa/tr1200_ws/install/tr1200_description:/home/ncpa/tr1200_ws/install/tr1200_base:/opt/ros/humble CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ncpa/tr1200_ws/install/tr1200_modules:/opt/ros/humble /usr/bin/cmake --install /home/ncpa/tr1200_ws/build/tr1200_description
+[7.989s] Level 1:colcon.colcon_core.environment:checking '/home/ncpa/tr1200_ws/install/tr1200_description' for CMake config files
+[7.991s] Level 1:colcon.colcon_core.shell:create_environment_hook('tr1200_description', 'cmake_prefix_path')
+[7.993s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ncpa/tr1200_ws/install/tr1200_description/share/tr1200_description/hook/cmake_prefix_path.ps1'
+[7.995s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ncpa/tr1200_ws/install/tr1200_description/share/tr1200_description/hook/cmake_prefix_path.dsv'
+[7.997s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ncpa/tr1200_ws/install/tr1200_description/share/tr1200_description/hook/cmake_prefix_path.sh'
+[8.002s] Level 1:colcon.colcon_core.environment:checking '/home/ncpa/tr1200_ws/install/tr1200_description/bin'
+[8.002s] Level 1:colcon.colcon_core.environment:checking '/home/ncpa/tr1200_ws/install/tr1200_description/lib/pkgconfig/tr1200_description.pc'
+[8.004s] Level 1:colcon.colcon_core.environment:checking '/home/ncpa/tr1200_ws/install/tr1200_description/lib/python3.10/site-packages'
+[8.006s] Level 1:colcon.colcon_core.environment:checking '/home/ncpa/tr1200_ws/install/tr1200_description/bin'
+[8.008s] INFO:colcon.colcon_core.shell:Creating package script '/home/ncpa/tr1200_ws/install/tr1200_description/share/tr1200_description/package.ps1'
+[8.011s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ncpa/tr1200_ws/install/tr1200_description/share/tr1200_description/package.dsv'
+[8.015s] INFO:colcon.colcon_core.shell:Creating package script '/home/ncpa/tr1200_ws/install/tr1200_description/share/tr1200_description/package.sh'
+[8.018s] INFO:colcon.colcon_core.shell:Creating package script '/home/ncpa/tr1200_ws/install/tr1200_description/share/tr1200_description/package.bash'
+[8.021s] INFO:colcon.colcon_core.shell:Creating package script '/home/ncpa/tr1200_ws/install/tr1200_description/share/tr1200_description/package.zsh'
+[8.023s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ncpa/tr1200_ws/install/tr1200_description/share/colcon-core/packages/tr1200_description)
+[8.086s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tr1200_description)
+[8.087s] Level 1:colcon.colcon_core.environment:checking '/home/ncpa/tr1200_ws/install/tr1200_description' for CMake module files
+[8.089s] Level 1:colcon.colcon_core.environment:checking '/home/ncpa/tr1200_ws/install/tr1200_description' for CMake config files
+[8.090s] Level 1:colcon.colcon_core.shell:create_environment_hook('tr1200_description', 'cmake_prefix_path')
+[8.091s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ncpa/tr1200_ws/install/tr1200_description/share/tr1200_description/hook/cmake_prefix_path.ps1'
+[8.136s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ncpa/tr1200_ws/install/tr1200_description/share/tr1200_description/hook/cmake_prefix_path.dsv'
+[8.137s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ncpa/tr1200_ws/install/tr1200_description/share/tr1200_description/hook/cmake_prefix_path.sh'
+[8.140s] Level 1:colcon.colcon_core.environment:checking '/home/ncpa/tr1200_ws/install/tr1200_description/bin'
+[8.140s] Level 1:colcon.colcon_core.environment:checking '/home/ncpa/tr1200_ws/install/tr1200_description/lib/pkgconfig/tr1200_description.pc'
+[8.141s] Level 1:colcon.colcon_core.environment:checking '/home/ncpa/tr1200_ws/install/tr1200_description/lib/python3.10/site-packages'
+[8.142s] Level 1:colcon.colcon_core.environment:checking '/home/ncpa/tr1200_ws/install/tr1200_description/bin'
+[8.143s] INFO:colcon.colcon_core.shell:Creating package script '/home/ncpa/tr1200_ws/install/tr1200_description/share/tr1200_description/package.ps1'
+[8.145s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ncpa/tr1200_ws/install/tr1200_description/share/tr1200_description/package.dsv'
+[8.148s] INFO:colcon.colcon_core.shell:Creating package script '/home/ncpa/tr1200_ws/install/tr1200_description/share/tr1200_description/package.sh'
+[8.150s] INFO:colcon.colcon_core.shell:Creating package script '/home/ncpa/tr1200_ws/install/tr1200_description/share/tr1200_description/package.bash'
+[8.152s] INFO:colcon.colcon_core.shell:Creating package script '/home/ncpa/tr1200_ws/install/tr1200_description/share/tr1200_description/package.zsh'
+[8.154s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ncpa/tr1200_ws/install/tr1200_description/share/colcon-core/packages/tr1200_description)
+[8.155s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ncpa/tr1200_ws/tr1200_ros/tr1200_control' with build type 'ament_cmake'
+[8.156s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ncpa/tr1200_ws/tr1200_ros/tr1200_control'
+[8.156s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[8.157s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[8.200s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ncpa/tr1200_ws/build/tr1200_control': AMENT_PREFIX_PATH=/home/ncpa/tr1200_ws/install/tr1200_modules:/home/ncpa/tr1200_ws/install/tr1200_ros:/home/ncpa/tr1200_ws/install/tr1200_teleop:/home/ncpa/tr1200_ws/install/tr1200_control:/home/ncpa/tr1200_ws/install/tr1200_description:/home/ncpa/tr1200_ws/install/tr1200_base:/opt/ros/humble CMAKE_PREFIX_PATH=/home/ncpa/tr1200_ws/install/tr1200_description:/home/ncpa/tr1200_ws/install/tr1200_base:/home/ncpa/tr1200_ws/install/tr1200_ros:/home/ncpa/tr1200_ws/install/tr1200_teleop:/home/ncpa/tr1200_ws/install/tr1200_control:/home/ncpa/tr1200_ws/install/tr1200_modules:/opt/ros/humble /usr/bin/cmake --build /home/ncpa/tr1200_ws/build/tr1200_control -- -j4 -l4
+[8.301s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ncpa/tr1200_ws/build/tr1200_control' returned '0': AMENT_PREFIX_PATH=/home/ncpa/tr1200_ws/install/tr1200_modules:/home/ncpa/tr1200_ws/install/tr1200_ros:/home/ncpa/tr1200_ws/install/tr1200_teleop:/home/ncpa/tr1200_ws/install/tr1200_control:/home/ncpa/tr1200_ws/install/tr1200_description:/home/ncpa/tr1200_ws/install/tr1200_base:/opt/ros/humble CMAKE_PREFIX_PATH=/home/ncpa/tr1200_ws/install/tr1200_description:/home/ncpa/tr1200_ws/install/tr1200_base:/home/ncpa/tr1200_ws/install/tr1200_ros:/home/ncpa/tr1200_ws/install/tr1200_teleop:/home/ncpa/tr1200_ws/install/tr1200_control:/home/ncpa/tr1200_ws/install/tr1200_modules:/opt/ros/humble /usr/bin/cmake --build /home/ncpa/tr1200_ws/build/tr1200_control -- -j4 -l4
+[8.364s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ncpa/tr1200_ws/build/tr1200_control': AMENT_PREFIX_PATH=/home/ncpa/tr1200_ws/install/tr1200_modules:/home/ncpa/tr1200_ws/install/tr1200_ros:/home/ncpa/tr1200_ws/install/tr1200_teleop:/home/ncpa/tr1200_ws/install/tr1200_control:/home/ncpa/tr1200_ws/install/tr1200_description:/home/ncpa/tr1200_ws/install/tr1200_base:/opt/ros/humble CMAKE_PREFIX_PATH=/home/ncpa/tr1200_ws/install/tr1200_description:/home/ncpa/tr1200_ws/install/tr1200_base:/home/ncpa/tr1200_ws/install/tr1200_ros:/home/ncpa/tr1200_ws/install/tr1200_teleop:/home/ncpa/tr1200_ws/install/tr1200_control:/home/ncpa/tr1200_ws/install/tr1200_modules:/opt/ros/humble /usr/bin/cmake --install /home/ncpa/tr1200_ws/build/tr1200_control
+[8.425s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tr1200_control)
+[8.426s] Level 1:colcon.colcon_core.environment:checking '/home/ncpa/tr1200_ws/install/tr1200_control' for CMake module files
+[8.428s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ncpa/tr1200_ws/build/tr1200_control' returned '0': AMENT_PREFIX_PATH=/home/ncpa/tr1200_ws/install/tr1200_modules:/home/ncpa/tr1200_ws/install/tr1200_ros:/home/ncpa/tr1200_ws/install/tr1200_teleop:/home/ncpa/tr1200_ws/install/tr1200_control:/home/ncpa/tr1200_ws/install/tr1200_description:/home/ncpa/tr1200_ws/install/tr1200_base:/opt/ros/humble CMAKE_PREFIX_PATH=/home/ncpa/tr1200_ws/install/tr1200_description:/home/ncpa/tr1200_ws/install/tr1200_base:/home/ncpa/tr1200_ws/install/tr1200_ros:/home/ncpa/tr1200_ws/install/tr1200_teleop:/home/ncpa/tr1200_ws/install/tr1200_control:/home/ncpa/tr1200_ws/install/tr1200_modules:/opt/ros/humble /usr/bin/cmake --install /home/ncpa/tr1200_ws/build/tr1200_control
+[8.430s] Level 1:colcon.colcon_core.environment:checking '/home/ncpa/tr1200_ws/install/tr1200_control' for CMake config files
+[8.431s] Level 1:colcon.colcon_core.shell:create_environment_hook('tr1200_control', 'cmake_prefix_path')
+[8.432s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ncpa/tr1200_ws/install/tr1200_control/share/tr1200_control/hook/cmake_prefix_path.ps1'
+[8.434s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ncpa/tr1200_ws/install/tr1200_control/share/tr1200_control/hook/cmake_prefix_path.dsv'
+[8.436s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ncpa/tr1200_ws/install/tr1200_control/share/tr1200_control/hook/cmake_prefix_path.sh'
+[8.439s] Level 1:colcon.colcon_core.environment:checking '/home/ncpa/tr1200_ws/install/tr1200_control/bin'
+[8.439s] Level 1:colcon.colcon_core.environment:checking '/home/ncpa/tr1200_ws/install/tr1200_control/lib/pkgconfig/tr1200_control.pc'
+[8.440s] Level 1:colcon.colcon_core.environment:checking '/home/ncpa/tr1200_ws/install/tr1200_control/lib/python3.10/site-packages'
+[8.441s] Level 1:colcon.colcon_core.environment:checking '/home/ncpa/tr1200_ws/install/tr1200_control/bin'
+[8.442s] INFO:colcon.colcon_core.shell:Creating package script '/home/ncpa/tr1200_ws/install/tr1200_control/share/tr1200_control/package.ps1'
+[8.444s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ncpa/tr1200_ws/install/tr1200_control/share/tr1200_control/package.dsv'
+[8.446s] INFO:colcon.colcon_core.shell:Creating package script '/home/ncpa/tr1200_ws/install/tr1200_control/share/tr1200_control/package.sh'
+[8.447s] INFO:colcon.colcon_core.shell:Creating package script '/home/ncpa/tr1200_ws/install/tr1200_control/share/tr1200_control/package.bash'
+[8.450s] INFO:colcon.colcon_core.shell:Creating package script '/home/ncpa/tr1200_ws/install/tr1200_control/share/tr1200_control/package.zsh'
+[8.452s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ncpa/tr1200_ws/install/tr1200_control/share/colcon-core/packages/tr1200_control)
+[8.514s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tr1200_control)
+[8.515s] Level 1:colcon.colcon_core.environment:checking '/home/ncpa/tr1200_ws/install/tr1200_control' for CMake module files
+[8.517s] Level 1:colcon.colcon_core.environment:checking '/home/ncpa/tr1200_ws/install/tr1200_control' for CMake config files
+[8.518s] Level 1:colcon.colcon_core.shell:create_environment_hook('tr1200_control', 'cmake_prefix_path')
+[8.519s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ncpa/tr1200_ws/install/tr1200_control/share/tr1200_control/hook/cmake_prefix_path.ps1'
+[8.564s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ncpa/tr1200_ws/install/tr1200_control/share/tr1200_control/hook/cmake_prefix_path.dsv'
+[8.568s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ncpa/tr1200_ws/install/tr1200_control/share/tr1200_control/hook/cmake_prefix_path.sh'
+[8.571s] Level 1:colcon.colcon_core.environment:checking '/home/ncpa/tr1200_ws/install/tr1200_control/bin'
+[8.571s] Level 1:colcon.colcon_core.environment:checking '/home/ncpa/tr1200_ws/install/tr1200_control/lib/pkgconfig/tr1200_control.pc'
+[8.572s] Level 1:colcon.colcon_core.environment:checking '/home/ncpa/tr1200_ws/install/tr1200_control/lib/python3.10/site-packages'
+[8.573s] Level 1:colcon.colcon_core.environment:checking '/home/ncpa/tr1200_ws/install/tr1200_control/bin'
+[8.574s] INFO:colcon.colcon_core.shell:Creating package script '/home/ncpa/tr1200_ws/install/tr1200_control/share/tr1200_control/package.ps1'
+[8.576s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ncpa/tr1200_ws/install/tr1200_control/share/tr1200_control/package.dsv'
+[8.578s] INFO:colcon.colcon_core.shell:Creating package script '/home/ncpa/tr1200_ws/install/tr1200_control/share/tr1200_control/package.sh'
+[8.580s] INFO:colcon.colcon_core.shell:Creating package script '/home/ncpa/tr1200_ws/install/tr1200_control/share/tr1200_control/package.bash'
+[8.582s] INFO:colcon.colcon_core.shell:Creating package script '/home/ncpa/tr1200_ws/install/tr1200_control/share/tr1200_control/package.zsh'
+[8.584s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ncpa/tr1200_ws/install/tr1200_control/share/colcon-core/packages/tr1200_control)
+[8.586s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ncpa/tr1200_ws/tr1200_ros/tr1200_ros' with build type 'ament_cmake'
+[8.587s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ncpa/tr1200_ws/tr1200_ros/tr1200_ros'
+[8.588s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[8.589s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[8.634s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ncpa/tr1200_ws/build/tr1200_ros': AMENT_PREFIX_PATH=/home/ncpa/tr1200_ws/install/tr1200_modules:/home/ncpa/tr1200_ws/install/tr1200_ros:/home/ncpa/tr1200_ws/install/tr1200_teleop:/home/ncpa/tr1200_ws/install/tr1200_control:/home/ncpa/tr1200_ws/install/tr1200_description:/home/ncpa/tr1200_ws/install/tr1200_base:/opt/ros/humble CMAKE_PREFIX_PATH=/home/ncpa/tr1200_ws/install/tr1200_control:/home/ncpa/tr1200_ws/install/tr1200_description:/home/ncpa/tr1200_ws/install/tr1200_teleop:/home/ncpa/tr1200_ws/install/tr1200_base:/home/ncpa/tr1200_ws/install/tr1200_ros:/home/ncpa/tr1200_ws/install/tr1200_modules:/opt/ros/humble /usr/bin/cmake --build /home/ncpa/tr1200_ws/build/tr1200_ros -- -j4 -l4
+[8.735s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ncpa/tr1200_ws/build/tr1200_ros' returned '0': AMENT_PREFIX_PATH=/home/ncpa/tr1200_ws/install/tr1200_modules:/home/ncpa/tr1200_ws/install/tr1200_ros:/home/ncpa/tr1200_ws/install/tr1200_teleop:/home/ncpa/tr1200_ws/install/tr1200_control:/home/ncpa/tr1200_ws/install/tr1200_description:/home/ncpa/tr1200_ws/install/tr1200_base:/opt/ros/humble CMAKE_PREFIX_PATH=/home/ncpa/tr1200_ws/install/tr1200_control:/home/ncpa/tr1200_ws/install/tr1200_description:/home/ncpa/tr1200_ws/install/tr1200_teleop:/home/ncpa/tr1200_ws/install/tr1200_base:/home/ncpa/tr1200_ws/install/tr1200_ros:/home/ncpa/tr1200_ws/install/tr1200_modules:/opt/ros/humble /usr/bin/cmake --build /home/ncpa/tr1200_ws/build/tr1200_ros -- -j4 -l4
+[8.797s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ncpa/tr1200_ws/build/tr1200_ros': AMENT_PREFIX_PATH=/home/ncpa/tr1200_ws/install/tr1200_modules:/home/ncpa/tr1200_ws/install/tr1200_ros:/home/ncpa/tr1200_ws/install/tr1200_teleop:/home/ncpa/tr1200_ws/install/tr1200_control:/home/ncpa/tr1200_ws/install/tr1200_description:/home/ncpa/tr1200_ws/install/tr1200_base:/opt/ros/humble CMAKE_PREFIX_PATH=/home/ncpa/tr1200_ws/install/tr1200_control:/home/ncpa/tr1200_ws/install/tr1200_description:/home/ncpa/tr1200_ws/install/tr1200_teleop:/home/ncpa/tr1200_ws/install/tr1200_base:/home/ncpa/tr1200_ws/install/tr1200_ros:/home/ncpa/tr1200_ws/install/tr1200_modules:/opt/ros/humble /usr/bin/cmake --install /home/ncpa/tr1200_ws/build/tr1200_ros
+[8.849s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tr1200_ros)
+[8.852s] Level 1:colcon.colcon_core.environment:checking '/home/ncpa/tr1200_ws/install/tr1200_ros' for CMake module files
+[8.853s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ncpa/tr1200_ws/build/tr1200_ros' returned '0': AMENT_PREFIX_PATH=/home/ncpa/tr1200_ws/install/tr1200_modules:/home/ncpa/tr1200_ws/install/tr1200_ros:/home/ncpa/tr1200_ws/install/tr1200_teleop:/home/ncpa/tr1200_ws/install/tr1200_control:/home/ncpa/tr1200_ws/install/tr1200_description:/home/ncpa/tr1200_ws/install/tr1200_base:/opt/ros/humble CMAKE_PREFIX_PATH=/home/ncpa/tr1200_ws/install/tr1200_control:/home/ncpa/tr1200_ws/install/tr1200_description:/home/ncpa/tr1200_ws/install/tr1200_teleop:/home/ncpa/tr1200_ws/install/tr1200_base:/home/ncpa/tr1200_ws/install/tr1200_ros:/home/ncpa/tr1200_ws/install/tr1200_modules:/opt/ros/humble /usr/bin/cmake --install /home/ncpa/tr1200_ws/build/tr1200_ros
+[8.855s] Level 1:colcon.colcon_core.environment:checking '/home/ncpa/tr1200_ws/install/tr1200_ros' for CMake config files
+[8.856s] Level 1:colcon.colcon_core.shell:create_environment_hook('tr1200_ros', 'cmake_prefix_path')
+[8.857s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ncpa/tr1200_ws/install/tr1200_ros/share/tr1200_ros/hook/cmake_prefix_path.ps1'
+[8.860s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ncpa/tr1200_ws/install/tr1200_ros/share/tr1200_ros/hook/cmake_prefix_path.dsv'
+[8.862s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ncpa/tr1200_ws/install/tr1200_ros/share/tr1200_ros/hook/cmake_prefix_path.sh'
+[8.865s] Level 1:colcon.colcon_core.environment:checking '/home/ncpa/tr1200_ws/install/tr1200_ros/bin'
+[8.866s] Level 1:colcon.colcon_core.environment:checking '/home/ncpa/tr1200_ws/install/tr1200_ros/lib/pkgconfig/tr1200_ros.pc'
+[8.867s] Level 1:colcon.colcon_core.environment:checking '/home/ncpa/tr1200_ws/install/tr1200_ros/lib/python3.10/site-packages'
+[8.869s] Level 1:colcon.colcon_core.environment:checking '/home/ncpa/tr1200_ws/install/tr1200_ros/bin'
+[8.870s] INFO:colcon.colcon_core.shell:Creating package script '/home/ncpa/tr1200_ws/install/tr1200_ros/share/tr1200_ros/package.ps1'
+[8.872s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ncpa/tr1200_ws/install/tr1200_ros/share/tr1200_ros/package.dsv'
+[8.874s] INFO:colcon.colcon_core.shell:Creating package script '/home/ncpa/tr1200_ws/install/tr1200_ros/share/tr1200_ros/package.sh'
+[8.876s] INFO:colcon.colcon_core.shell:Creating package script '/home/ncpa/tr1200_ws/install/tr1200_ros/share/tr1200_ros/package.bash'
+[8.878s] INFO:colcon.colcon_core.shell:Creating package script '/home/ncpa/tr1200_ws/install/tr1200_ros/share/tr1200_ros/package.zsh'
+[8.879s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ncpa/tr1200_ws/install/tr1200_ros/share/colcon-core/packages/tr1200_ros)
+[8.938s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tr1200_ros)
+[8.939s] Level 1:colcon.colcon_core.environment:checking '/home/ncpa/tr1200_ws/install/tr1200_ros' for CMake module files
+[8.940s] Level 1:colcon.colcon_core.environment:checking '/home/ncpa/tr1200_ws/install/tr1200_ros' for CMake config files
+[8.941s] Level 1:colcon.colcon_core.shell:create_environment_hook('tr1200_ros', 'cmake_prefix_path')
+[8.942s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ncpa/tr1200_ws/install/tr1200_ros/share/tr1200_ros/hook/cmake_prefix_path.ps1'
+[8.991s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ncpa/tr1200_ws/install/tr1200_ros/share/tr1200_ros/hook/cmake_prefix_path.dsv'
+[8.994s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ncpa/tr1200_ws/install/tr1200_ros/share/tr1200_ros/hook/cmake_prefix_path.sh'
+[8.998s] Level 1:colcon.colcon_core.environment:checking '/home/ncpa/tr1200_ws/install/tr1200_ros/bin'
+[8.999s] Level 1:colcon.colcon_core.environment:checking '/home/ncpa/tr1200_ws/install/tr1200_ros/lib/pkgconfig/tr1200_ros.pc'
+[9.000s] Level 1:colcon.colcon_core.environment:checking '/home/ncpa/tr1200_ws/install/tr1200_ros/lib/python3.10/site-packages'
+[9.002s] Level 1:colcon.colcon_core.environment:checking '/home/ncpa/tr1200_ws/install/tr1200_ros/bin'
+[9.004s] INFO:colcon.colcon_core.shell:Creating package script '/home/ncpa/tr1200_ws/install/tr1200_ros/share/tr1200_ros/package.ps1'
+[9.008s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ncpa/tr1200_ws/install/tr1200_ros/share/tr1200_ros/package.dsv'
+[9.013s] INFO:colcon.colcon_core.shell:Creating package script '/home/ncpa/tr1200_ws/install/tr1200_ros/share/tr1200_ros/package.sh'
+[9.016s] INFO:colcon.colcon_core.shell:Creating package script '/home/ncpa/tr1200_ws/install/tr1200_ros/share/tr1200_ros/package.bash'
+[9.020s] INFO:colcon.colcon_core.shell:Creating package script '/home/ncpa/tr1200_ws/install/tr1200_ros/share/tr1200_ros/package.zsh'
+[9.023s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ncpa/tr1200_ws/install/tr1200_ros/share/colcon-core/packages/tr1200_ros)
+[9.025s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[9.027s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[9.027s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[9.027s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[9.050s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[9.051s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[9.051s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[9.055s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files
+[9.055s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[9.056s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ncpa/tr1200_ws/install/local_setup.ps1'
+[9.062s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ncpa/tr1200_ws/install/_local_setup_util_ps1.py'
+[9.070s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ncpa/tr1200_ws/install/setup.ps1'
+[9.077s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ncpa/tr1200_ws/install/local_setup.sh'
+[9.081s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ncpa/tr1200_ws/install/_local_setup_util_sh.py'
+[9.084s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ncpa/tr1200_ws/install/setup.sh'
+[9.091s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ncpa/tr1200_ws/install/local_setup.bash'
+[9.094s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ncpa/tr1200_ws/install/setup.bash'
+[9.101s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ncpa/tr1200_ws/install/local_setup.zsh'
+[9.104s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ncpa/tr1200_ws/install/setup.zsh'

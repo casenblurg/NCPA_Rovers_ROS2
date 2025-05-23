@@ -1,0 +1,32 @@
+[1.118s] Invoking command in '/home/ncpa/tr1200_ws/build/tr1200_base': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ncpa/tr1200_ws/install/tr1200_modules:/opt/ros/humble /usr/bin/cmake --build /home/ncpa/tr1200_ws/build/tr1200_base -- -j4 -l4
+[1.537s] [100%] Built target tr1200_base
+[1.571s] Invoked command in '/home/ncpa/tr1200_ws/build/tr1200_base' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ncpa/tr1200_ws/install/tr1200_modules:/opt/ros/humble /usr/bin/cmake --build /home/ncpa/tr1200_ws/build/tr1200_base -- -j4 -l4
+[1.662s] Invoking command in '/home/ncpa/tr1200_ws/build/tr1200_base': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ncpa/tr1200_ws/install/tr1200_modules:/opt/ros/humble /usr/bin/cmake --install /home/ncpa/tr1200_ws/build/tr1200_base
+[1.681s] -- Install configuration: ""
+[1.682s] -- Up-to-date: /home/ncpa/tr1200_ws/install/tr1200_base/share/tr1200_base/tr1200_base.xml
+[1.683s] -- Up-to-date: /home/ncpa/tr1200_ws/install/tr1200_base/include
+[1.684s] -- Up-to-date: /home/ncpa/tr1200_ws/install/tr1200_base/include/tr1200_base
+[1.684s] -- Up-to-date: /home/ncpa/tr1200_ws/install/tr1200_base/include/tr1200_base/can.hpp
+[1.684s] -- Up-to-date: /home/ncpa/tr1200_ws/install/tr1200_base/include/tr1200_base/logging.hpp
+[1.685s] -- Up-to-date: /home/ncpa/tr1200_ws/install/tr1200_base/include/tr1200_base/hardware.hpp
+[1.685s] -- Up-to-date: /home/ncpa/tr1200_ws/install/tr1200_base/include/tr1200_base/driver.hpp
+[1.685s] -- Up-to-date: /home/ncpa/tr1200_ws/install/tr1200_base/include/tr1200_base/driver_version.hpp
+[1.686s] -- Up-to-date: /home/ncpa/tr1200_ws/install/tr1200_base/lib/libtr1200_base.so
+[1.687s] -- Up-to-date: /home/ncpa/tr1200_ws/install/tr1200_base/lib/libtr1200_driver.so
+[1.688s] -- Up-to-date: /home/ncpa/tr1200_ws/install/tr1200_base/share/ament_index/resource_index/package_run_dependencies/tr1200_base
+[1.689s] -- Up-to-date: /home/ncpa/tr1200_ws/install/tr1200_base/share/ament_index/resource_index/parent_prefix_path/tr1200_base
+[1.690s] -- Up-to-date: /home/ncpa/tr1200_ws/install/tr1200_base/share/tr1200_base/environment/ament_prefix_path.sh
+[1.690s] -- Up-to-date: /home/ncpa/tr1200_ws/install/tr1200_base/share/tr1200_base/environment/ament_prefix_path.dsv
+[1.690s] -- Up-to-date: /home/ncpa/tr1200_ws/install/tr1200_base/share/tr1200_base/environment/path.sh
+[1.691s] -- Up-to-date: /home/ncpa/tr1200_ws/install/tr1200_base/share/tr1200_base/environment/path.dsv
+[1.691s] -- Up-to-date: /home/ncpa/tr1200_ws/install/tr1200_base/share/tr1200_base/local_setup.bash
+[1.692s] -- Up-to-date: /home/ncpa/tr1200_ws/install/tr1200_base/share/tr1200_base/local_setup.sh
+[1.692s] -- Up-to-date: /home/ncpa/tr1200_ws/install/tr1200_base/share/tr1200_base/local_setup.zsh
+[1.693s] -- Up-to-date: /home/ncpa/tr1200_ws/install/tr1200_base/share/tr1200_base/local_setup.dsv
+[1.693s] -- Installing: /home/ncpa/tr1200_ws/install/tr1200_base/share/tr1200_base/package.dsv
+[1.694s] -- Up-to-date: /home/ncpa/tr1200_ws/install/tr1200_base/share/ament_index/resource_index/packages/tr1200_base
+[1.694s] -- Up-to-date: /home/ncpa/tr1200_ws/install/tr1200_base/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/tr1200_base
+[1.695s] -- Up-to-date: /home/ncpa/tr1200_ws/install/tr1200_base/share/tr1200_base/cmake/tr1200_baseConfig.cmake
+[1.695s] -- Up-to-date: /home/ncpa/tr1200_ws/install/tr1200_base/share/tr1200_base/cmake/tr1200_baseConfig-version.cmake
+[1.696s] -- Up-to-date: /home/ncpa/tr1200_ws/install/tr1200_base/share/tr1200_base/package.xml
+[1.701s] Invoked command in '/home/ncpa/tr1200_ws/build/tr1200_base' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ncpa/tr1200_ws/install/tr1200_modules:/opt/ros/humble /usr/bin/cmake --install /home/ncpa/tr1200_ws/build/tr1200_base

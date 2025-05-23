@@ -1,0 +1,5 @@
+  File "/home/ncpa/tr1200_ws/install/tr1200_WASD/lib/python3.10/site-packages/tr1200_WASD/teleop_node.py", line 1
+    mport rclpy
+          ^^^^^
+SyntaxError: invalid syntax
+

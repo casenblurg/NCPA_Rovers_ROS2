@@ -1,0 +1,6 @@
+Invoking command in '/home/ncpa/tr1200_ws/build/tr1200_teleop': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ncpa/tr1200_ws/tr1200_ros/tr1200_teleop -DCMAKE_INSTALL_PREFIX=/home/ncpa/tr1200_ws/install/tr1200_teleop
+Invoked command in '/home/ncpa/tr1200_ws/build/tr1200_teleop' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ncpa/tr1200_ws/tr1200_ros/tr1200_teleop -DCMAKE_INSTALL_PREFIX=/home/ncpa/tr1200_ws/install/tr1200_teleop
+Invoking command in '/home/ncpa/tr1200_ws/build/tr1200_teleop': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ncpa/tr1200_ws/build/tr1200_teleop -- -j4 -l4
+Invoked command in '/home/ncpa/tr1200_ws/build/tr1200_teleop' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ncpa/tr1200_ws/build/tr1200_teleop -- -j4 -l4
+Invoking command in '/home/ncpa/tr1200_ws/build/tr1200_teleop': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ncpa/tr1200_ws/build/tr1200_teleop
+Invoked command in '/home/ncpa/tr1200_ws/build/tr1200_teleop' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ncpa/tr1200_ws/build/tr1200_teleop

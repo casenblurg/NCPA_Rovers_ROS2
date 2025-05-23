@@ -1,0 +1,245 @@
+[0.901s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.902s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x791aa8b19270>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x791aa8c86710>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x791aa8c86710>>, mixin_verb=('build',))
+[1.964s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.964s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.965s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.965s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.965s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.965s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.965s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/ncpa/tr1200_ws'
+[1.966s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.966s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.967s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.967s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.967s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.967s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.967s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.968s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.968s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[2.012s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[2.012s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[2.012s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[2.012s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[2.012s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[2.013s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[2.013s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[2.013s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[2.014s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[2.014s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[2.014s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[2.015s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[2.015s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[2.015s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[2.015s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[2.016s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[2.016s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[2.016s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[2.016s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[2.016s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[2.016s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[2.017s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[2.017s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[2.017s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[2.017s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[2.017s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[2.017s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[2.018s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[2.018s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros) by extensions ['ignore', 'ignore_ament_install']
+[2.018s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros) by extension 'ignore'
+[2.019s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros) by extension 'ignore_ament_install'
+[2.019s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros) by extensions ['colcon_pkg']
+[2.019s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros) by extension 'colcon_pkg'
+[2.019s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros) by extensions ['colcon_meta']
+[2.019s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros) by extension 'colcon_meta'
+[2.019s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros) by extensions ['ros']
+[2.019s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros) by extension 'ros'
+[2.020s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros) by extensions ['cmake', 'python']
+[2.020s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros) by extension 'cmake'
+[2.020s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros) by extension 'python'
+[2.020s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros) by extensions ['python_setup_py']
+[2.020s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros) by extension 'python_setup_py'
+[2.021s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros/tr1200_base) by extensions ['ignore', 'ignore_ament_install']
+[2.021s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros/tr1200_base) by extension 'ignore'
+[2.021s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros/tr1200_base) by extension 'ignore_ament_install'
+[2.021s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros/tr1200_base) by extensions ['colcon_pkg']
+[2.021s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros/tr1200_base) by extension 'colcon_pkg'
+[2.022s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros/tr1200_base) by extensions ['colcon_meta']
+[2.022s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros/tr1200_base) by extension 'colcon_meta'
+[2.022s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros/tr1200_base) by extensions ['ros']
+[2.022s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros/tr1200_base) by extension 'ros'
+[2.086s] DEBUG:colcon.colcon_core.package_identification:Package 'tr1200_ros/tr1200_base' with type 'ros.ament_cmake' and name 'tr1200_base'
+[2.087s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros/tr1200_control) by extensions ['ignore', 'ignore_ament_install']
+[2.087s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros/tr1200_control) by extension 'ignore'
+[2.088s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros/tr1200_control) by extension 'ignore_ament_install'
+[2.088s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros/tr1200_control) by extensions ['colcon_pkg']
+[2.088s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros/tr1200_control) by extension 'colcon_pkg'
+[2.088s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros/tr1200_control) by extensions ['colcon_meta']
+[2.089s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros/tr1200_control) by extension 'colcon_meta'
+[2.089s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros/tr1200_control) by extensions ['ros']
+[2.089s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros/tr1200_control) by extension 'ros'
+[2.095s] DEBUG:colcon.colcon_core.package_identification:Package 'tr1200_ros/tr1200_control' with type 'ros.ament_cmake' and name 'tr1200_control'
+[2.096s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros/tr1200_description) by extensions ['ignore', 'ignore_ament_install']
+[2.096s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros/tr1200_description) by extension 'ignore'
+[2.097s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros/tr1200_description) by extension 'ignore_ament_install'
+[2.097s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros/tr1200_description) by extensions ['colcon_pkg']
+[2.097s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros/tr1200_description) by extension 'colcon_pkg'
+[2.097s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros/tr1200_description) by extensions ['colcon_meta']
+[2.098s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros/tr1200_description) by extension 'colcon_meta'
+[2.098s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros/tr1200_description) by extensions ['ros']
+[2.098s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros/tr1200_description) by extension 'ros'
+[2.102s] DEBUG:colcon.colcon_core.package_identification:Package 'tr1200_ros/tr1200_description' with type 'ros.ament_cmake' and name 'tr1200_description'
+[2.103s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros/tr1200_modules) by extensions ['ignore', 'ignore_ament_install']
+[2.103s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros/tr1200_modules) by extension 'ignore'
+[2.104s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros/tr1200_modules) by extension 'ignore_ament_install'
+[2.104s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros/tr1200_modules) by extensions ['colcon_pkg']
+[2.104s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros/tr1200_modules) by extension 'colcon_pkg'
+[2.104s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros/tr1200_modules) by extensions ['colcon_meta']
+[2.104s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros/tr1200_modules) by extension 'colcon_meta'
+[2.105s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros/tr1200_modules) by extensions ['ros']
+[2.105s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros/tr1200_modules) by extension 'ros'
+[2.107s] DEBUG:colcon.colcon_core.package_identification:Package 'tr1200_ros/tr1200_modules' with type 'ros.ament_python' and name 'tr1200_modules'
+[2.108s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros/tr1200_ros) by extensions ['ignore', 'ignore_ament_install']
+[2.108s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros/tr1200_ros) by extension 'ignore'
+[2.109s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros/tr1200_ros) by extension 'ignore_ament_install'
+[2.109s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros/tr1200_ros) by extensions ['colcon_pkg']
+[2.109s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros/tr1200_ros) by extension 'colcon_pkg'
+[2.109s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros/tr1200_ros) by extensions ['colcon_meta']
+[2.109s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros/tr1200_ros) by extension 'colcon_meta'
+[2.110s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros/tr1200_ros) by extensions ['ros']
+[2.110s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros/tr1200_ros) by extension 'ros'
+[2.113s] DEBUG:colcon.colcon_core.package_identification:Package 'tr1200_ros/tr1200_ros' with type 'ros.ament_cmake' and name 'tr1200_ros'
+[2.114s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros/tr1200_teleop) by extensions ['ignore', 'ignore_ament_install']
+[2.114s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros/tr1200_teleop) by extension 'ignore'
+[2.115s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros/tr1200_teleop) by extension 'ignore_ament_install'
+[2.115s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros/tr1200_teleop) by extensions ['colcon_pkg']
+[2.115s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros/tr1200_teleop) by extension 'colcon_pkg'
+[2.115s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros/tr1200_teleop) by extensions ['colcon_meta']
+[2.115s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros/tr1200_teleop) by extension 'colcon_meta'
+[2.116s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros/tr1200_teleop) by extensions ['ros']
+[2.116s] Level 1:colcon.colcon_core.package_identification:_identify(tr1200_ros/tr1200_teleop) by extension 'ros'
+[2.118s] DEBUG:colcon.colcon_core.package_identification:Package 'tr1200_ros/tr1200_teleop' with type 'ros.ament_cmake' and name 'tr1200_teleop'
+[2.118s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[2.118s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[2.119s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[2.119s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[2.119s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[2.246s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[2.246s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[2.253s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[2.261s] Level 5:colcon.colcon_core.verb:set package 'tr1200_base' build argument 'cmake_args' from command line to 'None'
+[2.261s] Level 5:colcon.colcon_core.verb:set package 'tr1200_base' build argument 'cmake_target' from command line to 'None'
+[2.261s] Level 5:colcon.colcon_core.verb:set package 'tr1200_base' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.262s] Level 5:colcon.colcon_core.verb:set package 'tr1200_base' build argument 'cmake_clean_cache' from command line to 'False'
+[2.262s] Level 5:colcon.colcon_core.verb:set package 'tr1200_base' build argument 'cmake_clean_first' from command line to 'False'
+[2.262s] Level 5:colcon.colcon_core.verb:set package 'tr1200_base' build argument 'cmake_force_configure' from command line to 'False'
+[2.262s] Level 5:colcon.colcon_core.verb:set package 'tr1200_base' build argument 'ament_cmake_args' from command line to 'None'
+[2.262s] Level 5:colcon.colcon_core.verb:set package 'tr1200_base' build argument 'catkin_cmake_args' from command line to 'None'
+[2.262s] Level 5:colcon.colcon_core.verb:set package 'tr1200_base' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.262s] DEBUG:colcon.colcon_core.verb:Building package 'tr1200_base' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ncpa/tr1200_ws/build/tr1200_base', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ncpa/tr1200_ws/install/tr1200_base', 'merge_install': False, 'path': '/home/ncpa/tr1200_ws/tr1200_ros/tr1200_base', 'symlink_install': False, 'test_result_base': None}
+[2.264s] Level 5:colcon.colcon_core.verb:set package 'tr1200_modules' build argument 'cmake_args' from command line to 'None'
+[2.264s] Level 5:colcon.colcon_core.verb:set package 'tr1200_modules' build argument 'cmake_target' from command line to 'None'
+[2.264s] Level 5:colcon.colcon_core.verb:set package 'tr1200_modules' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.264s] Level 5:colcon.colcon_core.verb:set package 'tr1200_modules' build argument 'cmake_clean_cache' from command line to 'False'
+[2.264s] Level 5:colcon.colcon_core.verb:set package 'tr1200_modules' build argument 'cmake_clean_first' from command line to 'False'
+[2.265s] Level 5:colcon.colcon_core.verb:set package 'tr1200_modules' build argument 'cmake_force_configure' from command line to 'False'
+[2.265s] Level 5:colcon.colcon_core.verb:set package 'tr1200_modules' build argument 'ament_cmake_args' from command line to 'None'
+[2.265s] Level 5:colcon.colcon_core.verb:set package 'tr1200_modules' build argument 'catkin_cmake_args' from command line to 'None'
+[2.265s] Level 5:colcon.colcon_core.verb:set package 'tr1200_modules' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.265s] DEBUG:colcon.colcon_core.verb:Building package 'tr1200_modules' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ncpa/tr1200_ws/build/tr1200_modules', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ncpa/tr1200_ws/install/tr1200_modules', 'merge_install': False, 'path': '/home/ncpa/tr1200_ws/tr1200_ros/tr1200_modules', 'symlink_install': False, 'test_result_base': None}
+[2.267s] Level 5:colcon.colcon_core.verb:set package 'tr1200_teleop' build argument 'cmake_args' from command line to 'None'
+[2.267s] Level 5:colcon.colcon_core.verb:set package 'tr1200_teleop' build argument 'cmake_target' from command line to 'None'
+[2.267s] Level 5:colcon.colcon_core.verb:set package 'tr1200_teleop' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.267s] Level 5:colcon.colcon_core.verb:set package 'tr1200_teleop' build argument 'cmake_clean_cache' from command line to 'False'
+[2.267s] Level 5:colcon.colcon_core.verb:set package 'tr1200_teleop' build argument 'cmake_clean_first' from command line to 'False'
+[2.267s] Level 5:colcon.colcon_core.verb:set package 'tr1200_teleop' build argument 'cmake_force_configure' from command line to 'False'
+[2.268s] Level 5:colcon.colcon_core.verb:set package 'tr1200_teleop' build argument 'ament_cmake_args' from command line to 'None'
+[2.268s] Level 5:colcon.colcon_core.verb:set package 'tr1200_teleop' build argument 'catkin_cmake_args' from command line to 'None'
+[2.268s] Level 5:colcon.colcon_core.verb:set package 'tr1200_teleop' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.268s] DEBUG:colcon.colcon_core.verb:Building package 'tr1200_teleop' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ncpa/tr1200_ws/build/tr1200_teleop', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ncpa/tr1200_ws/install/tr1200_teleop', 'merge_install': False, 'path': '/home/ncpa/tr1200_ws/tr1200_ros/tr1200_teleop', 'symlink_install': False, 'test_result_base': None}
+[2.269s] Level 5:colcon.colcon_core.verb:set package 'tr1200_description' build argument 'cmake_args' from command line to 'None'
+[2.270s] Level 5:colcon.colcon_core.verb:set package 'tr1200_description' build argument 'cmake_target' from command line to 'None'
+[2.270s] Level 5:colcon.colcon_core.verb:set package 'tr1200_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.270s] Level 5:colcon.colcon_core.verb:set package 'tr1200_description' build argument 'cmake_clean_cache' from command line to 'False'
+[2.270s] Level 5:colcon.colcon_core.verb:set package 'tr1200_description' build argument 'cmake_clean_first' from command line to 'False'
+[2.270s] Level 5:colcon.colcon_core.verb:set package 'tr1200_description' build argument 'cmake_force_configure' from command line to 'False'
+[2.270s] Level 5:colcon.colcon_core.verb:set package 'tr1200_description' build argument 'ament_cmake_args' from command line to 'None'
+[2.270s] Level 5:colcon.colcon_core.verb:set package 'tr1200_description' build argument 'catkin_cmake_args' from command line to 'None'
+[2.270s] Level 5:colcon.colcon_core.verb:set package 'tr1200_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.270s] DEBUG:colcon.colcon_core.verb:Building package 'tr1200_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ncpa/tr1200_ws/build/tr1200_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ncpa/tr1200_ws/install/tr1200_description', 'merge_install': False, 'path': '/home/ncpa/tr1200_ws/tr1200_ros/tr1200_description', 'symlink_install': False, 'test_result_base': None}
+[2.272s] Level 5:colcon.colcon_core.verb:set package 'tr1200_control' build argument 'cmake_args' from command line to 'None'
+[2.272s] Level 5:colcon.colcon_core.verb:set package 'tr1200_control' build argument 'cmake_target' from command line to 'None'
+[2.272s] Level 5:colcon.colcon_core.verb:set package 'tr1200_control' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.272s] Level 5:colcon.colcon_core.verb:set package 'tr1200_control' build argument 'cmake_clean_cache' from command line to 'False'
+[2.272s] Level 5:colcon.colcon_core.verb:set package 'tr1200_control' build argument 'cmake_clean_first' from command line to 'False'
+[2.273s] Level 5:colcon.colcon_core.verb:set package 'tr1200_control' build argument 'cmake_force_configure' from command line to 'False'
+[2.273s] Level 5:colcon.colcon_core.verb:set package 'tr1200_control' build argument 'ament_cmake_args' from command line to 'None'
+[2.273s] Level 5:colcon.colcon_core.verb:set package 'tr1200_control' build argument 'catkin_cmake_args' from command line to 'None'
+[2.273s] Level 5:colcon.colcon_core.verb:set package 'tr1200_control' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.273s] DEBUG:colcon.colcon_core.verb:Building package 'tr1200_control' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ncpa/tr1200_ws/build/tr1200_control', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ncpa/tr1200_ws/install/tr1200_control', 'merge_install': False, 'path': '/home/ncpa/tr1200_ws/tr1200_ros/tr1200_control', 'symlink_install': False, 'test_result_base': None}
+[2.274s] Level 5:colcon.colcon_core.verb:set package 'tr1200_ros' build argument 'cmake_args' from command line to 'None'
+[2.275s] Level 5:colcon.colcon_core.verb:set package 'tr1200_ros' build argument 'cmake_target' from command line to 'None'
+[2.275s] Level 5:colcon.colcon_core.verb:set package 'tr1200_ros' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.275s] Level 5:colcon.colcon_core.verb:set package 'tr1200_ros' build argument 'cmake_clean_cache' from command line to 'False'
+[2.275s] Level 5:colcon.colcon_core.verb:set package 'tr1200_ros' build argument 'cmake_clean_first' from command line to 'False'
+[2.275s] Level 5:colcon.colcon_core.verb:set package 'tr1200_ros' build argument 'cmake_force_configure' from command line to 'False'
+[2.275s] Level 5:colcon.colcon_core.verb:set package 'tr1200_ros' build argument 'ament_cmake_args' from command line to 'None'
+[2.275s] Level 5:colcon.colcon_core.verb:set package 'tr1200_ros' build argument 'catkin_cmake_args' from command line to 'None'
+[2.275s] Level 5:colcon.colcon_core.verb:set package 'tr1200_ros' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.275s] DEBUG:colcon.colcon_core.verb:Building package 'tr1200_ros' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ncpa/tr1200_ws/build/tr1200_ros', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ncpa/tr1200_ws/install/tr1200_ros', 'merge_install': False, 'path': '/home/ncpa/tr1200_ws/tr1200_ros/tr1200_ros', 'symlink_install': False, 'test_result_base': None}
+[2.276s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[2.279s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[2.280s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/ncpa/tr1200_ws/tr1200_ros/tr1200_modules' with build type 'ament_python'
+[2.281s] Level 1:colcon.colcon_core.shell:create_environment_hook('tr1200_modules', 'ament_prefix_path')
+[2.303s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[2.304s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ncpa/tr1200_ws/install/tr1200_modules/share/tr1200_modules/hook/ament_prefix_path.ps1'
+[2.309s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ncpa/tr1200_ws/install/tr1200_modules/share/tr1200_modules/hook/ament_prefix_path.dsv'
+[2.312s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ncpa/tr1200_ws/install/tr1200_modules/share/tr1200_modules/hook/ament_prefix_path.sh'
+[2.316s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.317s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.323s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ncpa/tr1200_ws/tr1200_ros/tr1200_base' with build type 'ament_cmake'
+[2.323s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ncpa/tr1200_ws/tr1200_ros/tr1200_base'
+[2.324s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.325s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.330s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ncpa/tr1200_ws/tr1200_ros/tr1200_teleop' with build type 'ament_cmake'
+[2.330s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ncpa/tr1200_ws/tr1200_ros/tr1200_teleop'
+[2.332s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.332s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.123s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/ncpa/tr1200_ws/tr1200_ros/tr1200_modules'
+[3.123s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.124s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.159s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ncpa/tr1200_ws/build/tr1200_base': /usr/bin/cmake /home/ncpa/tr1200_ws/tr1200_ros/tr1200_base -DCMAKE_INSTALL_PREFIX=/home/ncpa/tr1200_ws/install/tr1200_base
+[3.177s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ncpa/tr1200_ws/build/tr1200_teleop': /usr/bin/cmake /home/ncpa/tr1200_ws/tr1200_ros/tr1200_teleop -DCMAKE_INSTALL_PREFIX=/home/ncpa/tr1200_ws/install/tr1200_teleop
+[4.581s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ncpa/tr1200_ws/build/tr1200_base' returned '1': /usr/bin/cmake /home/ncpa/tr1200_ws/tr1200_ros/tr1200_base -DCMAKE_INSTALL_PREFIX=/home/ncpa/tr1200_ws/install/tr1200_base
+[4.583s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ncpa/tr1200_ws/build/tr1200_teleop' returned '1': /usr/bin/cmake /home/ncpa/tr1200_ws/tr1200_ros/tr1200_teleop -DCMAKE_INSTALL_PREFIX=/home/ncpa/tr1200_ws/install/tr1200_teleop
+[4.592s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tr1200_base)
+[4.616s] Level 1:colcon.colcon_core.environment:checking '/home/ncpa/tr1200_ws/install/tr1200_base' for CMake module files
+[4.618s] Level 1:colcon.colcon_core.environment:checking '/home/ncpa/tr1200_ws/install/tr1200_base' for CMake config files
+[4.619s] Level 1:colcon.colcon_core.environment:checking '/home/ncpa/tr1200_ws/install/tr1200_base/bin'
+[4.619s] Level 1:colcon.colcon_core.environment:checking '/home/ncpa/tr1200_ws/install/tr1200_base/lib/pkgconfig/tr1200_base.pc'
+[4.620s] Level 1:colcon.colcon_core.environment:checking '/home/ncpa/tr1200_ws/install/tr1200_base/lib/python3.10/site-packages'
+[4.621s] Level 1:colcon.colcon_core.environment:checking '/home/ncpa/tr1200_ws/install/tr1200_base/bin'
+[4.622s] INFO:colcon.colcon_core.shell:Creating package script '/home/ncpa/tr1200_ws/install/tr1200_base/share/tr1200_base/package.ps1'
+[4.625s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ncpa/tr1200_ws/install/tr1200_base/share/tr1200_base/package.dsv'
+[4.628s] INFO:colcon.colcon_core.shell:Creating package script '/home/ncpa/tr1200_ws/install/tr1200_base/share/tr1200_base/package.sh'
+[4.631s] INFO:colcon.colcon_core.shell:Creating package script '/home/ncpa/tr1200_ws/install/tr1200_base/share/tr1200_base/package.bash'
+[4.635s] INFO:colcon.colcon_core.shell:Creating package script '/home/ncpa/tr1200_ws/install/tr1200_base/share/tr1200_base/package.zsh'
+[4.639s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ncpa/tr1200_ws/install/tr1200_base/share/colcon-core/packages/tr1200_base)
+[4.951s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[4.951s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[4.951s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '1'
+[4.952s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[5.016s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[5.017s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[5.017s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[5.023s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files
+[5.024s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[5.026s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ncpa/tr1200_ws/install/local_setup.ps1'
+[5.079s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ncpa/tr1200_ws/install/_local_setup_util_ps1.py'
+[5.089s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ncpa/tr1200_ws/install/setup.ps1'
+[5.095s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ncpa/tr1200_ws/install/local_setup.sh'
+[5.100s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ncpa/tr1200_ws/install/_local_setup_util_sh.py'
+[5.105s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ncpa/tr1200_ws/install/setup.sh'
+[5.111s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ncpa/tr1200_ws/install/local_setup.bash'
+[5.116s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ncpa/tr1200_ws/install/setup.bash'
+[5.122s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ncpa/tr1200_ws/install/local_setup.zsh'
+[5.127s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ncpa/tr1200_ws/install/setup.zsh'

@@ -1,0 +1,22 @@
+[1.114s] Invoking command in '/home/ncpa/tr1200_ws/build/tr1200_teleop': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ncpa/tr1200_ws/install/tr1200_modules:/opt/ros/humble /usr/bin/cmake --build /home/ncpa/tr1200_ws/build/tr1200_teleop -- -j4 -l4
+[1.216s] Invoked command in '/home/ncpa/tr1200_ws/build/tr1200_teleop' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ncpa/tr1200_ws/install/tr1200_modules:/opt/ros/humble /usr/bin/cmake --build /home/ncpa/tr1200_ws/build/tr1200_teleop -- -j4 -l4
+[1.311s] Invoking command in '/home/ncpa/tr1200_ws/build/tr1200_teleop': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ncpa/tr1200_ws/install/tr1200_modules:/opt/ros/humble /usr/bin/cmake --install /home/ncpa/tr1200_ws/build/tr1200_teleop
+[1.329s] -- Install configuration: ""
+[1.331s] -- Up-to-date: /home/ncpa/tr1200_ws/install/tr1200_teleop/share/tr1200_teleop/launch
+[1.332s] -- Up-to-date: /home/ncpa/tr1200_ws/install/tr1200_teleop/share/tr1200_teleop/launch/keyop.launch.py
+[1.334s] -- Up-to-date: /home/ncpa/tr1200_ws/install/tr1200_teleop/share/ament_index/resource_index/package_run_dependencies/tr1200_teleop
+[1.336s] -- Up-to-date: /home/ncpa/tr1200_ws/install/tr1200_teleop/share/ament_index/resource_index/parent_prefix_path/tr1200_teleop
+[1.337s] -- Up-to-date: /home/ncpa/tr1200_ws/install/tr1200_teleop/share/tr1200_teleop/environment/ament_prefix_path.sh
+[1.337s] -- Up-to-date: /home/ncpa/tr1200_ws/install/tr1200_teleop/share/tr1200_teleop/environment/ament_prefix_path.dsv
+[1.337s] -- Up-to-date: /home/ncpa/tr1200_ws/install/tr1200_teleop/share/tr1200_teleop/environment/path.sh
+[1.338s] -- Up-to-date: /home/ncpa/tr1200_ws/install/tr1200_teleop/share/tr1200_teleop/environment/path.dsv
+[1.339s] -- Up-to-date: /home/ncpa/tr1200_ws/install/tr1200_teleop/share/tr1200_teleop/local_setup.bash
+[1.339s] -- Up-to-date: /home/ncpa/tr1200_ws/install/tr1200_teleop/share/tr1200_teleop/local_setup.sh
+[1.339s] -- Up-to-date: /home/ncpa/tr1200_ws/install/tr1200_teleop/share/tr1200_teleop/local_setup.zsh
+[1.341s] -- Up-to-date: /home/ncpa/tr1200_ws/install/tr1200_teleop/share/tr1200_teleop/local_setup.dsv
+[1.342s] -- Installing: /home/ncpa/tr1200_ws/install/tr1200_teleop/share/tr1200_teleop/package.dsv
+[1.342s] -- Up-to-date: /home/ncpa/tr1200_ws/install/tr1200_teleop/share/ament_index/resource_index/packages/tr1200_teleop
+[1.342s] -- Up-to-date: /home/ncpa/tr1200_ws/install/tr1200_teleop/share/tr1200_teleop/cmake/tr1200_teleopConfig.cmake
+[1.343s] -- Up-to-date: /home/ncpa/tr1200_ws/install/tr1200_teleop/share/tr1200_teleop/cmake/tr1200_teleopConfig-version.cmake
+[1.343s] -- Up-to-date: /home/ncpa/tr1200_ws/install/tr1200_teleop/share/tr1200_teleop/package.xml
+[1.362s] Invoked command in '/home/ncpa/tr1200_ws/build/tr1200_teleop' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ncpa/tr1200_ws/install/tr1200_modules:/opt/ros/humble /usr/bin/cmake --install /home/ncpa/tr1200_ws/build/tr1200_teleop

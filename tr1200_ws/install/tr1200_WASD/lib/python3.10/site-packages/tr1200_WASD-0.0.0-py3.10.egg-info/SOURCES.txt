@@ -1,0 +1,16 @@
+package.xml
+setup.cfg
+setup.py
+../../build/tr1200_WASD/tr1200_WASD.egg-info/PKG-INFO
+../../build/tr1200_WASD/tr1200_WASD.egg-info/SOURCES.txt
+../../build/tr1200_WASD/tr1200_WASD.egg-info/dependency_links.txt
+../../build/tr1200_WASD/tr1200_WASD.egg-info/entry_points.txt
+../../build/tr1200_WASD/tr1200_WASD.egg-info/requires.txt
+../../build/tr1200_WASD/tr1200_WASD.egg-info/top_level.txt
+../../build/tr1200_WASD/tr1200_WASD.egg-info/zip-safe
+resource/tr1200_WASD
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py
+tr1200_WASD/__init__.py
+tr1200_WASD/teleop_node.py
