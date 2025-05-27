@@ -43,7 +43,7 @@ $ ./ssh_tr1200.sh
 ```
 When you execute this script you will be prompted with **“[sudo] password for user:”**, enter the password.
 
-Once you have logged in to the onboard computer, run the following commands.
+Once you have logged into the onboard computer, run the following commands.
 
 ```bash
 $ screen
