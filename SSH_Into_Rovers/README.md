@@ -5,7 +5,7 @@ These scripts are designed to automate the **SSH** process. If they do not work,
 ```bash
 $ ssh user@IP
 ```
-
+---
 The second option is to use the known mac address to find the **IP address** on the network. There are two network types that the rovers connect to: 
 1. enp0s31f6 **(Ethernet)**
 2. wlp2s0 **(WIFI)**
