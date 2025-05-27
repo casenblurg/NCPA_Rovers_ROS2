@@ -14,11 +14,12 @@ Create a file and name it **ssh_tr1200.sh**, open the file using your preffered 
 $ touch ssh_tr1200.sh
 $ vim ssh_tr1200.sh
 ```
+Paste the following code into the file.
 
 ```bash
 #!/bin/bash
 echo -e "Fetching NCPA Rovers IP Address..\n"
-addr=$(sudo arp-scan -I wlp2s0 -l | grep ":::::" | cut -f1)
+addr=$(sudo arp-scan -I wlp2s0 -l | grep "enter:the:rovers:wifi:mac:address" | cut -f1)
 if [ -n "$addr" ]
 then
  echo "IP found.. ssh ncpa@$addr"
@@ -27,4 +28,11 @@ else
  echo "IP not found. Is the device turned on?"
 fi
 ```
+Save and exit the file. Make the file executable and run it. 
+
+```bash
+$ chmod +x ssh_tr1200.sh
+$ ./ssh_tr1200.sh
+```
+When you execute this script you will be prompted with **“[sudo] password for user:”**.  
 
