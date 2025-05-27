@@ -2,7 +2,7 @@
 ## **Ensure the TR1200 is turned on before beginning!**
 >This section will explain step by step how to acces the TR1200 rover and begin remote control.
 
-The purpose of this documentation is to act as a guide to accessing the onboard computer on the **TR1200** as well as a guide to access the controls. The first step is to open a **terminal**. The onboard computer does not have a static IP therefore a script was made to find the IP on the network. The script uses the onboard computer's wifi mac address to find the IP address on the network. Depending on your Linux distrobution you may have to install **arp-scan**.
+The purpose of this documentation is to act as a guide to accessing the onboard computer on the **TR1200** as well as a guide to access the controls. The first step is to open a **terminal**. The onboard computer does not have a static IP, therefore a script was made to find the IP on the network. The script uses the onboard computer's wifi mac address to find the IP address on the network.**(Mac Adresses are in the correspondning Box folder)**Depending on your Linux distrobution you may have to install **arp-scan**.
 
 ```bash
 $ sudo apt update
