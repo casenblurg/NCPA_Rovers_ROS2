@@ -6,6 +6,7 @@ For additional troubleshooting and references see [TR1200 Getting Started](https
 
 
 The purpose of this documentation is to act as a guide to accessing the onboard computer on the **TR1200** as well as a guide to access the controls. The first step is to open a **terminal**. The onboard computer does not have a static IP; therefore a script was made to find the IP on the network. The script uses the onboard computer's WiFi mac address to find the IP address on the network.
+
 **(Mac addresses are in the corresponding Box folder)**
 
 Depending on your computer's Linux distribution you may have to install **arp-scan**.
