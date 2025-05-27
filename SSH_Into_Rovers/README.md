@@ -28,8 +28,7 @@ $ sudo arp-scan -I wlp2s0 -l
 After running this command, you should see output similar to the following, depending on the network you're connected to:
 
 ```bash
-	 IP              Mac                NA        
-
+    IP                   Mac                     NA        
 192.168.0.1	  00:50:8b:02:59:b8	 Hewlett Packard
 192.168.1.1	  00:14:bf:38:0d:52	 Cisco-Linksys, LLC
 192.168.1.1	  c4:04:15:17:e4:31	 NETGEAR (DUP: 2)
