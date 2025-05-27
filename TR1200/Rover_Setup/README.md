@@ -8,7 +8,7 @@ The purpose of this documentation is to act as a guide to accessing the onboard 
 $ sudo apt update
 $ sudo apt install arp-scan
 ```
-Create a file and name it **ssh_tr1200.sh**, then open the file using your preffered text editor and paste the following code into the file.
+Create a file and name it **ssh_tr1200.sh**, open the file using your preffered text editor and paste the following code into the file.
 
 ```bash
 $ touch ssh_tr1200.sh
