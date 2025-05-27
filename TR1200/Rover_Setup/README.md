@@ -1,17 +1,19 @@
 # TR1200 Setup/Guide
 ## **Ensure the TR1200 is turned on before beginning!**
->This section will explain step by step how to acces the TR1200 rover and begin remote control.
+>This section will explain step by step how to acces the TR1200 rover and begin remote control from a laptop or pc.
 
-The purpose of this documentation is to act as a guide to accessing the onboard computer on the **TR1200** as well as a guide to access the controls. The first step is to open a **terminal**. The onboard computer does not have a static IP, therefore a script was made to find the IP on the network. The script uses the onboard computer's wifi mac address to find the IP address on the network.**(Mac Adresses are in the correspondning Box folder)** Depending on your Linux distrobution you may have to install **arp-scan**.
+The purpose of this documentation is to act as a guide to accessing the onboard computer on the **TR1200** as well as a guide to access the controls. The first step is to open a **terminal**. The onboard computer does not have a static IP, therefore a script was made to find the IP on the network. The script uses the onboard computer's wifi mac address to find the IP address on the network.**(Mac adresses are in the correspondning Box folder)** Depending on your computer's Linux distrobution you may have to install **arp-scan**.
 
 ```bash
 $ sudo apt update
 $ sudo apt install arp-scan
 ```
+Create a file and name it **ssh_tr1200.sh**, then open the file using your preffered text editor and paste the following code into the file.
 
-
-blah bllah put words here 
-
+```bash
+$ touch ssh_tr1200.sh
+$ vim ssh_tr1200.sh
+```
 
 ```bash
 #!/bin/bash
