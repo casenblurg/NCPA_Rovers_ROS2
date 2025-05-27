@@ -1,5 +1,5 @@
 # TR1200 Setup/Guide
-## **Ensure the TR1200, onboard computer, and the USB to Can bus are on before beginning!**
+## **Ensure the TR1200, onboard computer, and the USB to CAN are on before beginning!**
 >This section will explain step by step how to acces the TR1200 rover and begin remote control from a laptop or pc.
 
 For additional troublehooting and references see [TR1200 Getting Started](https://docs.trossenrobotics.com/tr1200_docs/getting_started.html) and [OleMissBox](https://olemiss.app.box.com/folder/314410283580).
