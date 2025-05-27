@@ -33,7 +33,7 @@ After running this command, you should see output similar to the following, depe
 192.168.1.1	  00:14:bf:38:0d:52	 Cisco-Linksys, LLC
 192.168.1.1	  c4:04:15:17:e4:31	 NETGEAR (DUP: 2)
 192.168.1.1	  c8:d7:19:12:77:7e	 Cisco-Linksys, LLC (DUP: 3)
-192.168.2.65  a0:36:bc:ce:44:a2	 (Unknown)
+192.168.2.65      a0:36:bc:ce:44:a2	 (Unknown)
 ```
 
 Use the **MAC address** column to locate the device you're searching for. (The corresponding MAC addresses are provided in the Box.)
