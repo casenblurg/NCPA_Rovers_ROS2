@@ -22,7 +22,8 @@ If you are trying to connect to the **TR1200** you will use:
 $ sudo arp-scan -I wlp2s0 -l
 ```
 
-Note that when you use these commands you need to be connected to the same network as the device you are looking for.
+**Note:** When you use these commands you need to be connected to the same network as the device you are looking for.
+
 
 After running this command, you should see output similar to the following, depending on the network you're connected to:
 
