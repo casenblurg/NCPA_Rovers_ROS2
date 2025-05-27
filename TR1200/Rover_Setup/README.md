@@ -1,26 +1,26 @@
 # TR1200 Setup/Guide
 ## **Ensure the TR1200, onboard computer, and the USB to CAN are on before beginning!**
->This section will explain step by step how to acces the TR1200 rover and begin remote control from a laptop or pc.
+>This section will explain step by step how to access the TR1200 rover and begin remote control from a laptop or PC.
 
-For additional troublehooting and references see [TR1200 Getting Started](https://docs.trossenrobotics.com/tr1200_docs/getting_started.html) and [OleMissBox](https://olemiss.app.box.com/folder/314410283580).
+For additional troubleshooting and references see [TR1200 Getting Started](https://docs.trossenrobotics.com/tr1200_docs/getting_started.html) and [OleMissBox](https://olemiss.app.box.com/folder/314410283580)
 
 
-The purpose of this documentation is to act as a guide to accessing the onboard computer on the **TR1200** as well as a guide to access the controls. The first step is to open a **terminal**. The onboard computer does not have a static IP, therefore a script was made to find the IP on the network. The script uses the onboard computer's wifi mac address to find the IP address on the network.
-**(Mac adresses are in the correspondning Box folder)**
+The purpose of this documentation is to act as a guide to accessing the onboard computer on the **TR1200** as well as a guide to access the controls. The first step is to open a **terminal**. The onboard computer does not have a static IP; therefore a script was made to find the IP on the network. The script uses the onboard computer's WiFi mac address to find the IP address on the network.
+**(Mac addresses are in the corresponding Box folder)**
 
-Depending on your computer's Linux distrobution you may have to install **arp-scan**.
+Depending on your computer's Linux distribution you may have to install **arp-scan**.
 
 ```bash
 $ sudo apt update
 $ sudo apt install arp-scan
 ```
-Create a file and name it **ssh_tr1200.sh**, open the file using your preffered text editor and paste the following code into the file.
+Create a file and name it **ssh_tr1200.sh**, open the file using your preferred text editor and paste the following code into the file.
 
 ```bash
 $ touch ssh_tr1200.sh
 $ vim ssh_tr1200.sh
 ```
-Paste the following code into the file.
+Paste the following code into the file. (Replace **enter:the:rovers:wifi:mac:address** with the actual mac address)
 
 ```bash
 #!/bin/bash
@@ -52,8 +52,8 @@ $ source /opt/ros/humble/setup.bash
 $ ros2 launch tr1200_control control.launch.py
 ```
 
-Then press CTRL A C (hold control and press A then C, you should still be in screen
-mode as instructed earlier). This will take you to a new terminal. Run the commands:
+Then press CTRL A C (hold control and press A then C). You should still be in screen
+mode as instructed earlier. This will take you to a new terminal. Run the commands:
 
 ```bash
 $ source ~/tr1200_ws/install/setup.bash
@@ -64,10 +64,3 @@ After running this command, a window should pop up. ( “i” corresponds to for
 “,” corresponds to backwards; “l” corresponds to a right turn; “j” corresponds to a left turn and
 the rest of the letters are combinations of those four inputs) You can also increase or decrease
 movement speeds and turning speeds as explained by the popup window.
-
-
-
-
-
-
-
