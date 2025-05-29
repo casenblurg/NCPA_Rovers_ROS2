@@ -1,3 +1,9 @@
+
+
+
+
+
+
 **Troubleshooting SSH** *(This Document is for troubleshooting the **SSH** scripts)*
 
 These scripts are designed to automate the **SSH** process. If they do not work, you have two options. First, if you know the IP address of the rover, you can manually SSH into it.
@@ -44,5 +50,5 @@ Once you've identified the correct MAC address, use the associated **IP address*
 $ ssh user@IP
 ```
 
-Replace **ip** with the actual **IP address** and **user** with the actual **username**.
+Replace **IP** with the actual **IP address** and **user** with the actual **username**.
 
