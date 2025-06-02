@@ -38,5 +38,6 @@ When you run this command you should **ROS2** related outputs to the terminal.
 
 
 
-![[LT2WiringDiagram 1.png]]
+![[/home/ncpa/NCPA_Rovers/LT2/LT2WiringDiagram 1.png]]
+
 
