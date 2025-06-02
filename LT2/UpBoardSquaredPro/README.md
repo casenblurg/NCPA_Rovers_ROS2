@@ -1,7 +1,8 @@
-# LT2 PX4 Connection Overview
+# LT2 PX4 Connection Overview 
 
 This guide explains how to set up and connect the onboard computer of an **LT2 rover** to **PX4** using **MAVROS**. It also includes useful commands for operation. Please note that this guide assumes **ROS 2** and **MAVROS** are already installed and configured. 
 
+**Ensure Rover is ON**
 Start by accessing the onboard computer, whether that is through **SSH** (See: [**NCPA_Rovers_ROS2/SSH_Into_Rovers/README.md**](https://github.com/casenblurg/NCPA_Rovers_ROS2/blob/main/SSH_Into_Rovers/README.md)) or other means. Before launching **MAVROS**, you need to create and configure a `.yaml` parameter file. This file should either be placed in the same directory where you will run the **MAVROS** node, or you must specify its full path in the command.
 
 A minimal working example of the `.yaml` file (mavros_param.yaml) is shown below:
@@ -28,6 +29,12 @@ ros2 run mavros mavros_node --ros-args --params-file ./mavros_param.yaml
 When you run this command you should **ROS2** related outputs to the terminal.
 
 ---
+# Useful Commands
+
+After running **MAVROS**, access another terminal in the onboard computer and use these commands as needed:
+
+---
+`ros2 topic echo /mavros/state`: 
 
 
 
