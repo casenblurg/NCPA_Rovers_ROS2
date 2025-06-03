@@ -37,7 +37,10 @@ After running **MAVROS**, access another terminal in the onboard computer and us
 ---
 `ros2 topic echo /mavros/state`: 
 
+`ros2 service call /mavros/cmd/arming mavros_msgs/srv/CommandBool "{value: true}"`
 
+ `ros2 service call /mavros/set_mode mavros_msgs/srv/SetMode "{custom_mode: 'MANUAL'}"`
+ 
 
 
 
