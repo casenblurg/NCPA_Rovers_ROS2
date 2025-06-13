@@ -1,42 +1,28 @@
-# LT2 PX4 Connection Overview More actions
+# Documentation Overview     (This documentation is not finished!)Add commentMore actions
+# Documentation Overview    
 
-This guide explains how to set up and connect the onboard computer of an **LT2 rover** to **PX4** using **MAVROS**. It also includes useful commands for operation. Please note that this guide assumes **ROS 2** and **MAVROS** are already installed and configured. 
+**Introudction**
 
-**Ensure Rover is ON**
+The point of this documentation is to aid in **setup**, **debugging**, and **creating** software for the Rovers at the National Center for Physical Acoustics ([NCPA](https://olemiss.edu/ncpa/)) in the **Battlefield Acoustics Group**. This documentation covers the software for the two types of rovers at the **NCPA**. 
+1. LT2 (Smaller Black Rover)
+2. [TR1200](https://docs.trossenrobotics.com/tr1200_docs/) (Larger Blue Rover)
 
-Start by accessing the onboard computer, whether that is through **SSH** (See: [**NCPA_Rovers_ROS2/SSH_Into_Rovers/README.md**](https://github.com/casenblurg/NCPA_Rovers_ROS2/blob/main/SSH_Into_Rovers/README.md)) or other means. Before launching **MAVROS**, you need to create and configure a `.yaml` parameter file. This file should either be placed in the same directory where you will run the **MAVROS** node, or you must specify its full path in the command.
-
-A minimal working example of the `.yaml` file (mavros_param.yaml) is shown below:
-```yaml
-# mavros_param.yaml
-mavros:
-  ros__parameters: {}
-
-mavros_router:
-  ros__parameters: {}
-
-mavros_node:
-  ros__parameters:
-    fcu_url: serial:///dev/serial/by-id/usb-CUAV_PX4_CUAV_X7Pro_0-if00:57600 
-```
-
-The `fcu_url` parameter in this file tells **MAVROS** how to connect to the **PX4**, in this case we are using a serial connection via **USB**. Therefore, the path points to the **PX4's** **USB** connection on the the system.
-
-When the `.yaml` file is configured, run the command:
-
-```bash
-ros2 run mavros mavros_node --ros-args --params-file ./mavros_param.yaml
-```
-When you run this command you should **ROS2** related outputs to the terminal.
+There is only one **TR1200**, while there are multiple **LT2** rovers. Any of this documentation reffering to the **LT2** is specifically reffering to work that has been done on the **LT2-3**.
 
 ---
-# Useful Commands
 
-After running **MAVROS**, access another terminal in the onboard computer and use these commands as needed:
+**LT2-3**
+
+*This documentation is under the assumption that Ros2 and Mavros are already installed on the system*
+
+This rover's onboard computer is an [Up Sqaured Pro](https://up-board.org/up-squared-pro/) running **Ubuntu 20.04.1 LTS  (Focal Fossa)** and **ROS 2 Foxy**. This specific OS was retained to preserve compatibility with existing software developed by a collaborating colleagues. This specific **ROS** distribution was used due to details explained in the sentence prior. Upgrading the OS could risk introducing dependency conflicts or breaking functionality. If you are looking to upgrade the OS, it is recommended to either consult **Nhat Van/Noah Knutson**, or boot from an external hard drive/make a copy of the current OS. 
+
+The onboard computer communicates to a **Pixhawk CUAV x7** over **USB** interfaced by [Mavros](https://github.com/mavlink/mavros) which will be explained in further detail in the **LT2** section. **Mavros** is a **ROS** package that utilizes the [MavLink](https://github.com/mavlink/mavlink) protocol, this is the standard messaging protocol used by **PX4**.
 
 ---
-`ros2 topic echo /mavros/state`: 
 
-`ros2 service call /mavros/cmd/arming mavros_msgs/srv/CommandBool "{value: true}"`
+**TR1200**
 
- `ros2 service call /mavros/set_mode mavros_msgs/srv/SetMode "{custom_mode: 'MANUAL'}"`
+*This documentation is under the assumption that Ros2 is already installed on the system*
+
+This rover's onboard computer is an [Up Sqaured Pro](https://up-board.org/up-squared-pro/) running **Ubuntu 22.04 LTS  (Jammy Jellyfish)** and **ROS 2 Humble**. The communication between the rover and onboard computer is over **CAN bus** utilizing a **ROS** package provided by [Trossen Robotics](https://www.trossenrobotics.com/) [(Interbotix)](https://github.com/Interbotix/tr1200_ros). Before controlling the rover remotely, there is some setup that needs to be done which is be explained further in the **TR1200** directory.
