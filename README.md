@@ -1,51 +1,42 @@
-# 🚀 Solid Rocket Motor Test Stand – DAQ System Overview
+# LT2 PX4 Connection Overview More actions
 
-Over the course of a year and a half (**Nov 2023 – April 2025**), I designed and built a data acquisition (DAQ) system for a **solid rocket motor (SRM) test stand**. This system was developed to accurately record **thrust** and **chamber pressure** data during static fire tests of **AeroTech reloadable SRMs**.
+This guide explains how to set up and connect the onboard computer of an **LT2 rover** to **PX4** using **MAVROS**. It also includes useful commands for operation. Please note that this guide assumes **ROS 2** and **MAVROS** are already installed and configured. 
 
-The DAQ setup interfaces with both a **load cell** and a **pressure transducer**, conditions their analog signals using amplification circuitry, and logs the data for post-processing and analysis.
+**Ensure Rover is ON**
 
----
+Start by accessing the onboard computer, whether that is through **SSH** (See: [**NCPA_Rovers_ROS2/SSH_Into_Rovers/README.md**](https://github.com/casenblurg/NCPA_Rovers_ROS2/blob/main/SSH_Into_Rovers/README.md)) or other means. Before launching **MAVROS**, you need to create and configure a `.yaml` parameter file. This file should either be placed in the same directory where you will run the **MAVROS** node, or you must specify its full path in the command.
 
-## 🛠️ Hardware
+A minimal working example of the `.yaml` file (mavros_param.yaml) is shown below:
+```yaml
+# mavros_param.yaml
+mavros:
+  ros__parameters: {}
 
-| Component | Description |
-|----------|-------------|
-| [**NI cDAQ-9174**](https://www.ni.com/docs/en-US/bundle/cdaq-9174-specs/page/specs.html) | Chassis for data acquisition modules |
-| [**NI 9201**](https://www.ni.com/docs/en-US/bundle/ni-9201-specs/page/specs.html) | 12-bit analog input module (used to read sensor voltages) |
-| [**NI 9482**](https://www.ni.com/docs/en-US/bundle/ni-9482-sbrio-9482-specs/resource/ni-9482-sbrio-9482-specs.pdf) | Electromechanical relay module for control logic |
-| [**DR-ODC5**](https://www.sensata.com/sites/default/files/a/sensata-dr-series-output-modules-datasheet.pdf) | Solid-state relay used for ignition |
-| [**PS-1S400EP**](https://www.computer-world.pro/t-win-ps-1s400ep-400w-p-97811.html) | 400 W power supply unit |
-| [**Computer Supply Breakout Board**](https://www.amazon.com/GeeekPi-Breakout-Adapter-Terminal-Computer/dp/B08MC389FQ) | ATX breakout board for regulated voltage output |
-| [**INA110**](https://www.ti.com/lit/ds/symlink/ina110.pdf) | Instrumentation amplifier for signal conditioning (load cell) |
-| [**LC113B-2K Omega S‑type Load Cell**](https://mx.omega.com/pptst_eng/LC103B.html) | Measures thrust in lbf |
-| [**PX309‑3KG10V Omega Pressure Transducer**](https://assets.omega.com/pdf/test-and-measurement-equipment/pressure/pressure-transducers/PX309.pdf) | Measures chamber pressure in psi |
-| [**AeroTech RMS‑75 Combustion Chamber**](https://aerotech-rocketry.com/products/product_b2ff983a-e5fe-18d7-055b-b3266c6fedc6) | Reusable RMS‑75 motor case |
-| [**AeroTech L1420R‑PS RMS‑75/5120 Reload Kit**](https://aerotech-rocketry.com/products/product_3872d294-577c-353f-9773-6594597dfda3) | Solid propellant reload kit (Redline™) |
-| **1 µF Tantalum Capacitors** | Used for filtering power supply noise |
-| **General wiring, connectors, and test stand** | Structural and electrical integration components |
+mavros_router:
+  ros__parameters: {}
 
----
+mavros_node:
+  ros__parameters:
+    fcu_url: serial:///dev/serial/by-id/usb-CUAV_PX4_CUAV_X7Pro_0-if00:57600 
+```
 
-## 💻 Software
+The `fcu_url` parameter in this file tells **MAVROS** how to connect to the **PX4**, in this case we are using a serial connection via **USB**. Therefore, the path points to the **PX4's** **USB** connection on the the system.
 
-- **NI LabVIEW**  
-  Used to build the real-time data acquisition interface. It handled:
-  - Signal acquisition
-  - Relay control for ignition
-  - Timing control and logging of thrust and pressure data
+When the `.yaml` file is configured, run the command:
 
-- **Microsoft Excel**  
-  LabVIEW export the data into Excel spreadsheets. Each test generates:
-  - Raw load cell voltage
-  - Raw pressure transducer voltage
-  - Converted thrust (lbf)
-  - Converted chamber pressure (psi)
+```bash
+ros2 run mavros mavros_node --ros-args --params-file ./mavros_param.yaml
+```
+When you run this command you should **ROS2** related outputs to the terminal.
 
 ---
+# Useful Commands
 
-## 📘 Additional Information
+After running **MAVROS**, access another terminal in the onboard computer and use these commands as needed:
 
-The data analyzed in this repository comes from the **first hot fire test** ever recorded using this system and is used here for demonstration purposes. The goal of this repository is to showcase what can be done with acquired SRM test data — not to claim perfection. There are always better methods to explore, and continuous improvement is part of the process.
+---
+`ros2 topic echo /mavros/state`: 
 
-This project serves as a hands-on opportunity for me to strengthen my skills across **mechanical**, **electrical**, and **computer engineering**, as well as to sharpen my overall **data analysis abilities**, particularly in the context of **aerospace and rocketry**.
+`ros2 service call /mavros/cmd/arming mavros_msgs/srv/CommandBool "{value: true}"`
 
+ `ros2 service call /mavros/set_mode mavros_msgs/srv/SetMode "{custom_mode: 'MANUAL'}"`
