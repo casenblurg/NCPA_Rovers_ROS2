@@ -73,3 +73,5 @@ The parameter `UXRCE_DDS_SYNCT` has been changed from `Default` to `Disabled` in
 
 `UXRCE_DDS_SYNCT` handles timestamp synchronization, this may cause issues in the future.
 
+## Setting Up the Bridge
+When [configured correctly](#configuring-the-pixhawk)
