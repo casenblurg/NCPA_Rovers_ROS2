@@ -107,8 +107,15 @@ sudo MicroXRCEAgent serial -D /dev/tty(TBD) -b (TBD)
 
 If launched correctly, you should see:
 ```bash
-
+[1750434557.048426] info     | TermiosAgentLinux.cpp | init                     | running...             | fd: 3  
+[1750434557.048980] info     | Root.cpp           | set_verbose_level        | logger setup           | verbose_level: 4  
+[1750434558.104060] info     | Root.cpp           | create_client            | create                 | client_key: 0x00000001, session_id: 0x81  
+[1750434558.104207] info     | SessionManager.hpp | establish_session        | session established    | client_key: 0x00000001, address: 1  
+[1750434558.437796] info     | ProxyClient.cpp    | create_participant       | participant created    | client_key: 0x00000001, participant_id: 0x001(1)  
+[1750434558.659029] info     | ProxyClient.cpp    | create_topic             | topic created          | client_key: 0x00000001, topic_id: 0x800(2), participant_id: 0x001(1)
 ```
+
+Note, this will eventually stop after a second or two, this is normal behavior.
 
 If there is an error, you'll normally be stuck at this screen:
 ```bash
@@ -116,6 +123,5 @@ If there is an error, you'll normally be stuck at this screen:
 [1750434067.820371] info     | Root.cpp           | set_verbose_level        | logger setup           | verbose_level: 4
 ```
 
-Check you baud rate, and which Telemetry port was selected if this happens.
-
+Check you baud rate (both the PixHawk and command), and which Telemetry port was selected if this happens. 
 
