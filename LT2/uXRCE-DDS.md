@@ -5,10 +5,10 @@ This document uses the following terminology. While I will try to be as clear as
 
 | Term          | Definition                                                                                                                                                                                       |
 | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| uXRCE-DDS     | (aka: *XRCE-DDS*, *DDS*) Middle-ware between the PixHawk and UpBoard<sup>2</sup>.                                                                                                                        |
+| uXRCE-DDS     | (aka: *XRCE-DDS*, *DDS*) Middle-ware between the PixHawk and UpBoard<sup>2</sup>.                                                                                                                |
 | PixHawk       | PixHawk encompasses a wide range of open source flight controllers. The LT2 rovers use [*CUAV x7+*](https://docs.px4.io/main/en/flight_controller/cuav_x7.html#cuav-x7-flight-controller) model. |
-| Control Cable | RS232 to TTL cable. Plugged into COM1 on the UpBoard<sup>2</sup> and TELEM1 on the PixHawk. Note, this connection is not currently on the Wiring Diagram.                                                    |
-| Debug Cable   | USB A to C cable. The USB A side is plugged into UpBoard<sup>2</sup> and the USB C side is plugged into the PixHawk. Mainly used for Debugging, QGC, and flashing firmware onto the PixHawk.                 |
+| Control Cable | RS232 to TTL cable. Plugged into COM1 on the UpBoard<sup>2</sup> and TELEM1 on the PixHawk. Note, this connection is not currently on the Wiring Diagram.                                        |
+| Debug Cable   | USB A to C cable. The USB A side is plugged into UpBoard<sup>2</sup> and the USB C side is plugged into the PixHawk. Mainly used for Debugging, QGC, and flashing firmware onto the PixHawk.     |
 | QGC           | [QGroundControl](https://qgroundcontrol.com/). Used for changing PixHawk settings and accessing the NuttX console.                                                                               |
 
 ---
@@ -21,9 +21,10 @@ Extremely Resource Constrained Environment(s) DDS (or XRCE-DDS), is software tha
 For more information, see the PixHawk documentation [here](https://docs.px4.io/main/en/middleware/uxrce_dds.html)
 
 ---
-## Configuring the PixHawk
+# Configuring the PixHawk
 Unfortunately, categories are not sorted in any meaningful way in QGC. You can search for parameters individually so those will also be noted when applicable.
-### Baud Rates
+> Note that this document only covers changes regarding the `uxrce_dds_client`. For information regarding basic PixHawk setup, such as Air Frame, Actuator, and GPS setup, see (TODO: MAKE DOC!)
+## Baud Rates
 
 Category: `Serial`
 
@@ -39,15 +40,15 @@ Serial ports must be "in-use" in order to be displayed in the `Serial` category.
 
 Needed baud rate on TELEM1: `TBD`
 
-### Enabling the uXRCE-DDS Client
+## Enabling the uXRCE-DDS Client
 
 Category: `UXRCE-DDS Client` (inside "Standard" folder)
 
 By default, the `UXRCE_DDS_CFG` parameter is set to `Disabled`, this should be set to `TELEM1`.
 
-### Configuring the Client
+## Configuring the Client
 
-#### Domain ID
+### Domain ID
 
 Category: `UXRCE-DDS Client` (inside "System" folder)
 > Note: This category won't show up unless [`UXRCE_DDS_CFG` has been set](#enabling-the-uxrce-dds-client).
@@ -62,7 +63,7 @@ Current domain IDs per rover:
 
 For more information about domain IDs, see [the ROS2 docs](https://docs.ros.org/en/foxy/Concepts/About-Domain-ID.html).
 
-#### Timestamp synchronization
+### Timestamp synchronization
 
 Category: `UXRCE-DDS Client` (inside "System" folder)
 > Note: This category won't show up unless [`UXRCE_DDS_CFG` has been set](#enabling-the-uxrce-dds-client)
@@ -73,5 +74,48 @@ The parameter `UXRCE_DDS_SYNCT` has been changed from `Default` to `Disabled` in
 
 `UXRCE_DDS_SYNCT` handles timestamp synchronization, this may cause issues in the future.
 
-## Setting Up the Bridge
-When [configured correctly](#configuring-the-pixhawk)
+---
+# Setting Up the Bridge
+
+## Understanding the Client
+When [configured correctly](#configuring-the-pixhawk), the `uxrce_dds_client` is launched at boot in this format:
+```nsh
+nsh> uxrce_dds_client start -t serial -d /path/to/TELEMx -b SER_TELx_BAUD
+```
+
+Where `x` is the telemetry port that you have set up.
+
+While it is possible to launch and configure `uxrce_dds_client` to use the [debug cable](#terminology), this is not advised since you will locked out of QGC. This means that if you need to change a PixHawk parameter, you'll need to re-flash the firmware and set up all the parameters again.
+
+You can confirm that `uxrce_dds_client` is online but running this command in the NuttX shell:
+```nsh
+nsh> uxrce_dds_client status
+```
+
+
+## The Agent
+
+### Compiling the Agent
+As the UpBoard<sup>2</sup>s run Ubuntu 20.04, you'll need to compile the agent, `MicroXRCEAgent`, from source. Additionally, since the compiler also needs cmake versions `[3.20.0, 3.30.0)`, I recommend using version 3.25.3.
+
+> Note: It may be easier to clone Leo, Lilly, or another working rover's entire drive onto the rover you are working on with `dd`. (Since I have yet to discuss this idea with the rest of the team, I'll wait to document the compilation process as it is rather lengthy. -Joey)
+
+Once `uxrce_dds_client` is online, you can launch the agent. In the UpBoard<sup>2</sup>, run:
+```bash
+sudo MicroXRCEAgent serial -D /dev/tty(TBD) -b (TBD)
+```
+
+If launched correctly, you should see:
+```bash
+
+```
+
+If there is an error, you'll normally be stuck at this screen:
+```bash
+[1750434067.819842] info     | TermiosAgentLinux.cpp | init                     | running...             | fd: 3  
+[1750434067.820371] info     | Root.cpp           | set_verbose_level        | logger setup           | verbose_level: 4
+```
+
+Check you baud rate, and which Telemetry port was selected if this happens.
+
+
