@@ -29,7 +29,7 @@ Category: `Serial`
 
 The rs232 to TTL cable should be plugged into the TELEM1 port on the PixHawk. This is important to note again as the two different TELEM ports on the pixhawk have two different baud rates by default.
 
-Serial ports must be "in-use" in order to be displayed in the `Serial` category. (See [uXRCE-DDS](#UXRCE-DDS-Client))
+Serial ports must be "in-use" in order to be displayed in the `Serial` category. (See [Enabling the uXRCE-DDS Client](#enabling-the-uxrce-dds-client))
 
 
 | Port   | PARAM           | Baud Rate |
@@ -50,7 +50,7 @@ By default, the `UXRCE_DDS_CFG` parameter is set to `Disabled`, this should be s
 #### Domain ID
 
 Category: `UXRCE-DDS Client` (inside "System" folder)
-> Note: This category won't show up unless [`UXRCE_DDS_CFG` has been set]().
+> Note: This category won't show up unless [`UXRCE_DDS_CFG` has been set](#enabling-the-uxrce-dds-client).
 
 The `UXRCE_DDS_DOM_ID` variable is set to `0` by default. You'll need to change this to whatever you set `ROS_DOMAIN_ID` on a given rover. 
 
@@ -65,7 +65,7 @@ For more information about domain IDs, see [the ROS2 docs](https://docs.ros.org/
 #### Timestamp synchronization
 
 Category: `UXRCE-DDS Client` (inside "System" folder)
-> Note: This category won't show up unless [`UXRCE_DDS_CFG` has been set]()
+> Note: This category won't show up unless [`UXRCE_DDS_CFG` has been set](#enabling-the-uxrce-dds-client)
 
  **THIS IS CURRENTLY A HACK, it has LIMITED KNOWN effects**
 
