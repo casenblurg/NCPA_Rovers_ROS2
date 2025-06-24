@@ -23,4 +23,5 @@ Here is the cable's pin-out:
 | White  | `TX`                |
 | Orange | `RX`                |
 
+> Note: In instances where Orange is not avalible, Yellow may be used as a substitute.
 ---
