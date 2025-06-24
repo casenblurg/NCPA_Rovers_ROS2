@@ -3,13 +3,13 @@
 This document uses the following terminology. While I will try to be as clear as possible, look here for an exact definition of an unfamiliar term.
 
 
-| Term          | Definition                                                                                                                                                                                       |
-| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| uXRCE-DDS     | (aka: *XRCE-DDS*, *DDS*) Middle-ware between the PixHawk and UpBoard<sup>2</sup>.                                                                                                                |
-| PixHawk       | PixHawk encompasses a wide range of open source flight controllers. The LT2 rovers use [*CUAV x7+*](https://docs.px4.io/main/en/flight_controller/cuav_x7.html#cuav-x7-flight-controller) model. |
-| Control Cable | RS232 to TTL cable. Plugged into COM1 on the UpBoard<sup>2</sup> and TELEM1 on the PixHawk. Note, this connection is not currently on the Wiring Diagram.                                        |
-| Debug Cable   | USB A to C cable. The USB A side is plugged into UpBoard<sup>2</sup> and the USB C side is plugged into the PixHawk. Mainly used for Debugging, QGC, and flashing firmware onto the PixHawk.     |
-| QGC           | [QGroundControl](https://qgroundcontrol.com/). Used for changing PixHawk settings and accessing the NuttX console.                                                                               |
+| Term              | Definition                                                                                                                                                                                       |
+| ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| uXRCE-DDS         | (aka: *XRCE-DDS*, *DDS*) Middle-ware between the PixHawk and UpBoard<sup>2</sup>.                                                                                                                |
+| PixHawk           | PixHawk encompasses a wide range of open source flight controllers. The LT2 rovers use [*CUAV x7+*](https://docs.px4.io/main/en/flight_controller/cuav_x7.html#cuav-x7-flight-controller) model. |
+| [Control Cable]() | RS232 to TTL cable. Plugged into COM1 on the UpBoard<sup>2</sup> and TELEM1 on the PixHawk. Note, this connection is not currently on the Wiring Diagram.                                        |
+| Debug Cable       | USB A to C cable. The USB A side is plugged into UpBoard<sup>2</sup> and the USB C side is plugged into the PixHawk. Mainly used for Debugging, QGC, and flashing firmware onto the PixHawk.     |
+| QGC               | [QGroundControl](https://qgroundcontrol.com/). Used for changing PixHawk settings and accessing the NuttX console.                                                                               |
 
 ---
 # uXRCE-DDS
@@ -102,7 +102,7 @@ As the UpBoard<sup>2</sup>s run Ubuntu 20.04, you'll need to compile the agent, 
 
 Once `uxrce_dds_client` is online, you can launch the agent. In the UpBoard<sup>2</sup>, run:
 ```bash
-sudo MicroXRCEAgent serial -D /dev/tty(TBD) -b (TBD)
+$ sudo MicroXRCEAgent serial -D /dev/tty(TBD) -b (TBD)
 ```
 
 If launched correctly, you should see:
