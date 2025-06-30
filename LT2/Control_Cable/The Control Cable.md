@@ -1,6 +1,13 @@
 Summary: RS232 to TTL cable. Plugged into COM1 on the UpBoard<sup>2</sup> and TELEM1 on the PixHawk. (Note, this connection is not currently on the Wiring Diagram.)
 
 ---
+## Details
+
+78cm length, 60 cm of multicolor cable, 15 cm of single color, 3.6 cm for rs232 to UART board.
+6 conductor (see [pinout](#pinout))
+Connector enclosure in this repo.   
+
+---
 ## Purpose
 We need a way to connect to the uXRCE-DDS client on the PixHawk while keeping the USB connection open for QGC. Additionally, the most convenient serial ports available on the UpBoard<sup>2</sup> is the COM ports. 
 
