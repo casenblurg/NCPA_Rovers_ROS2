@@ -102,7 +102,7 @@ As the UpBoard<sup>2</sup>s run Ubuntu 20.04, you'll need to compile the agent, 
 
 Once `uxrce_dds_client` is online, you can launch the agent. In the UpBoard<sup>2</sup>, run:
 ```bash
-$ sudo MicroXRCEAgent serial -D /dev/tty0 -b 921600
+$ sudo MicroXRCEAgent serial -D /dev/ttyS0 -b 921600
 ```
 
 If launched correctly, you should see:
