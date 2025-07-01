@@ -52,3 +52,23 @@ $ ssh user@IP
 
 Replace **IP** with the actual **IP address** and **user** with the actual **username**.
 
+---
+
+If you dont feel like typing the password everytime you log in, you can add your local  **~/.ssh/id_rsa.pub** key to **~/authorized_keys** on the rover.
+
+
+If you dont have a public key, you can make one with:
+
+```bash
+ssh-keygen -t ed25519 -C "your_email@example.com"
+```
+[Source](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
+
+
+
+
+Then to add the key to the server (rover) with:
+
+```bash
+ssh-copy-id -i ~/.ssh/id_rsa.pub user@ip
+```
