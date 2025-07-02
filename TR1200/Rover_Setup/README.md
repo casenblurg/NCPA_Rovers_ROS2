@@ -132,4 +132,8 @@ ros2 topic pub --rate 10 --times 10  /cmd_vel geometry_msgs/msg/Twist "{angular:
 | `"{angular: {z: 0.5}}"`           | Rotational motion at **0.5 rad/s**                                          |
 
 
+---
+
+**Sources:**
+[Trossen Robotics](https://docs.trossenrobotics.com/tr1200_docs/getting_started.html)
 
