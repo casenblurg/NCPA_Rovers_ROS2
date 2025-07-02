@@ -1,4 +1,15 @@
 # TR1200 Setup/Guide
+
+## Handheld Remote Guide
+
+First, turn the rover on by pressing the power button on the back of the rover. Then grab them remote and hold down both power buttons. When the remote is powered on, move the **second switch from the left** down one click. 
+
+**WARNING THIS WILL ARM THE ROVER BE CAREFULE WITH YOUR INPUTS**
+
+---
+
+## Laptop Control Guide
+
 ## **Ensure the TR1200, onboard computer, and the USB to CAN are on before beginning!**
 >This section will explain step by step how to access the TR1200 rover and begin remote control from a laptop or PC.
 
@@ -80,3 +91,6 @@ source /opt/ros/humble/setup.bash
 ros2 launch tr1200_teleop keyop.launch.py
 ```
 
+---
+
+# Basic ROS2 Control Commands
