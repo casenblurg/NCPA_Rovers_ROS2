@@ -93,4 +93,43 @@ ros2 launch tr1200_teleop keyop.launch.py
 
 ---
 
-# Basic ROS2 Control Commands
+# Basic ROS2 Control Commands with TR1200_ws
+
+Remember to:
+```bash
+source ~/tr1200_ws/install/setup.bash
+source /opt/ros/humble/setup.bash
+```
+Also, **~/RoverStartup.sh** needs to be running in a seperate terminal before giving commands!
+
+
+---
+
+**Forwards**:
+
+```bash
+ros2 topic pub --rate 10 --times 10  /cmd_vel geometry_msgs/msg/Twist "{linear: {x: 0.1}}"
+```
+                       
+--- 
+
+**Rotation**:
+
+```bash
+ros2 topic pub --rate 10 --times 10  /cmd_vel geometry_msgs/msg/Twist "{angular: {z: 0.5}}"
+```
+
+---
+
+| Part                              | Description                                                                 |
+|-----------------------------------|-----------------------------------------------------------------------------|
+| `ros2 topic pub`                  | Publish to a topic                                                          |
+| `--rate 10`                       | Publish at 10 Hz (i.e., 10 messages per second)                             |
+| `--times 10`                      | Publish 10 messages total, then stop                                        |
+| `/cmd_vel`                        | Topic name for velocity commands                                            |
+| `geometry_msgs/msg/Twist`        | Message type: `Twist` represents velocity in free space (linear + angular) |
+| `"{linear: {x: 0.1}}"`           | Straight-line motion at **0.1 m/s** 
+| `"{angular: {z: 0.5}}"`           | Rotational motion at **0.5 rad/s**                                          |
+
+
+
