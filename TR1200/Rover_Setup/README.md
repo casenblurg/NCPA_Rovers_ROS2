@@ -43,25 +43,40 @@ $ ./ssh_tr1200.sh
 ```
 When you execute this script you will be prompted with **“[sudo] password for user:”**, enter the password.
 
-Once you have logged into the onboard computer, run the following commands.
+Once you have logged into the onboard computer, run the script:
 
 ```bash
-$ screen
-$ sudo ip link set can0 up type can bitrate 500000
-$ source ~/tr1200_ws/install/setup.bash
-$ source /opt/ros/humble/setup.bash
-$ ros2 launch tr1200_control control.launch.py
+$ ~/RoverStartup.sh
 ```
 
-Then press CTRL A C (hold control and press A then C). You should still be in screen
-mode as instructed earlier. This will take you to a new terminal. Run the commands:
+Then open another terminal and **SSH** into the rover again. Then run the script:
 
 ```bash
-$ source ~/tr1200_ws/install/setup.bash
-$ source /opt/ros/humble/setup.bash
-$ ros2 launch tr1200_teleop keyop.launch.py
+$ ~/KeyControl.sh
 ```
-After running this command, a window should pop up. ( “i” corresponds to forward;
+After running this script, a window should pop up. ( “i” corresponds to forward;
 “,” corresponds to backwards; “l” corresponds to a right turn; “j” corresponds to a left turn and
 the rest of the letters are combinations of those four inputs) You can also increase or decrease
 movement speeds and turning speeds as explained by the popup window.
+
+---
+
+## RoverStartup.sh
+The file contents are:
+
+```bash
+sudo ip link set can0 up type can bitrate 500000
+source ~/tr1200_ws/install/setup.bash
+source /opt/ros/humble/setup.bash
+ros2 launch tr1200_control control.launch.py
+```
+
+## KeyControl.sh
+the file contents are:
+
+```bash
+source ~/tr1200_ws/install/setup.bash
+source /opt/ros/humble/setup.bash
+ros2 launch tr1200_teleop keyop.launch.py
+```
+
