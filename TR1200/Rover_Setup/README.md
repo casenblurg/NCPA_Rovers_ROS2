@@ -1,4 +1,15 @@
 # TR1200 Setup/Guide
+
+## Handheld Remote Guide
+
+First, turn the rover on by pressing the power button on the back of the rover. Then grab them remote and hold down both power buttons. When the remote is powered on, move the **second switch from the left** down one click. 
+
+**WARNING THIS WILL ARM THE ROVER BE CAREFULE WITH YOUR INPUTS**
+
+---
+
+## Laptop Control Guide
+
 ## **Ensure the TR1200, onboard computer, and the USB to CAN are on before beginning!**
 >This section will explain step by step how to access the TR1200 rover and begin remote control from a laptop or PC.
 
@@ -43,25 +54,86 @@ $ ./ssh_tr1200.sh
 ```
 When you execute this script you will be prompted with **“[sudo] password for user:”**, enter the password.
 
-Once you have logged into the onboard computer, run the following commands.
+Once you have logged into the onboard computer, run the script:
 
 ```bash
-$ screen
-$ sudo ip link set can0 up type can bitrate 500000
-$ source ~/tr1200_ws/install/setup.bash
-$ source /opt/ros/humble/setup.bash
-$ ros2 launch tr1200_control control.launch.py
+$ ~/RoverStartup.sh
 ```
 
-Then press CTRL A C (hold control and press A then C). You should still be in screen
-mode as instructed earlier. This will take you to a new terminal. Run the commands:
+Then open another terminal and **SSH** into the rover again. Then run the script:
 
 ```bash
-$ source ~/tr1200_ws/install/setup.bash
-$ source /opt/ros/humble/setup.bash
-$ ros2 launch tr1200_teleop keyop.launch.py
+$ ~/KeyControl.sh
 ```
-After running this command, a window should pop up. ( “i” corresponds to forward;
+After running this script, a window should pop up. ( “i” corresponds to forward;
 “,” corresponds to backwards; “l” corresponds to a right turn; “j” corresponds to a left turn and
 the rest of the letters are combinations of those four inputs) You can also increase or decrease
 movement speeds and turning speeds as explained by the popup window.
+
+---
+
+## RoverStartup.sh
+The file contents are:
+
+```bash
+sudo ip link set can0 up type can bitrate 500000
+source ~/tr1200_ws/install/setup.bash
+source /opt/ros/humble/setup.bash
+ros2 launch tr1200_control control.launch.py
+```
+
+## KeyControl.sh
+the file contents are:
+
+```bash
+source ~/tr1200_ws/install/setup.bash
+source /opt/ros/humble/setup.bash
+ros2 launch tr1200_teleop keyop.launch.py
+```
+
+---
+
+# Basic ROS2 Control Commands with TR1200_ws
+
+Remember to:
+```bash
+source ~/tr1200_ws/install/setup.bash
+source /opt/ros/humble/setup.bash
+```
+Also, **~/RoverStartup.sh** needs to be running in a seperate terminal before giving commands!
+
+
+---
+
+**Forwards**:
+
+```bash
+ros2 topic pub --rate 10 --times 10  /cmd_vel geometry_msgs/msg/Twist "{linear: {x: 0.1}}"
+```
+                       
+--- 
+
+**Rotation**:
+
+```bash
+ros2 topic pub --rate 10 --times 10  /cmd_vel geometry_msgs/msg/Twist "{angular: {z: 0.5}}"
+```
+
+---
+
+| Part                              | Description                                                                 |
+|-----------------------------------|-----------------------------------------------------------------------------|
+| `ros2 topic pub`                  | Publish to a topic                                                          |
+| `--rate 10`                       | Publish at 10 Hz (i.e., 10 messages per second)                             |
+| `--times 10`                      | Publish 10 messages total, then stop                                        |
+| `/cmd_vel`                        | Topic name for velocity commands                                            |
+| `geometry_msgs/msg/Twist`        | Message type: `Twist` represents velocity in free space (linear + angular) |
+| `"{linear: {x: 0.1}}"`           | Straight-line motion at **0.1 m/s** 
+| `"{angular: {z: 0.5}}"`           | Rotational motion at **0.5 rad/s**                                          |
+
+
+---
+
+**Sources:**
+[Trossen Robotics](https://docs.trossenrobotics.com/tr1200_docs/getting_started.html)
+
