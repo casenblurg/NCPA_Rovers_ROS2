@@ -1,3 +1,7 @@
+# **OLD MAVROS STUFF**
+
+
+
 # LT2 PX4 Connection Overview 
 
 This guide explains how to set up and connect the onboard computer of an **LT2 rover** to **PX4** using **MAVROS**. It also includes useful commands for operation. Please note that this guide assumes **ROS 2** and **MAVROS** are already installed and configured. 
