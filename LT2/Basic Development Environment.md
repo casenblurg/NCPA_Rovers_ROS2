@@ -18,7 +18,7 @@ To communicate with `/fmu/*` topics, you must use [`px4_msgs`](https://github.co
 
 Assuming you have setup your ROS2 workspace properly and the XRCE Agent is running (explained below), you can see all available `/fmu/` topics by running:
 ```bash
-$ ros2 topic list
+ros2 topic list
 ```
 
 You should see an output like this:
@@ -73,7 +73,7 @@ If `/fmu/out/*` topics do not appear, you may have to wait a few seconds for the
 
 In order to see which `px4_msgs` corresponds to which topic, run the command:
 ```bash
-$ ros2 topic info <topic>
+ros2 topic info <topic>
 ```
 
 For example, doing this on `/fmu/in/offboard_control_mode` outputs:
@@ -123,4 +123,114 @@ Notice that not every variable needs to be instantiated and they do not need to 
 > ```c++
 >VehicleCommand::VEHICLE_CMD_DO_SET_MODE;
 >```
+
+With these basics now covered, let's go over a code breakdown.
+
+## Code
+
+### Setting up a development environment
+
+> Note: If you already have a ROS2 workspace ready, skip to [link]
+
+To create and build the workspace:
+
+1. Open a new terminal.
+2. Create and navigate into a new workspace directory using:
+
+   ```sh
+   mkdir -p ~/ws_sensor_combined/src/
+   cd ~/ws_sensor_combined/src/
+   ```
+
+  > A naming convention for workspace folders can make it easier to manage workspaces.
+
+3. Clone the example repository and [px4_msgs](https://github.com/PX4/px4_msgs) to the `/src` directory (the `main` branch is cloned by default, which corresponds to the version of PX4 we are running):
+
+   ```sh
+   git clone https://github.com/PX4/px4_msgs.git
+   git clone https://github.com/PX4/px4_ros_com.git
+   ```
+
+4. Source the ROS 2 development environment into the current terminal and compile the workspace using `colcon`:
+
+
+   ```sh
+   cd ..
+   source /opt/ros/humble/setup.bash
+   colcon build
+   ```
+
+This builds all the folders under `/src` using the sourced toolchain.
+
+[Source](https://docs.px4.io/main/en/ros2/user_guide.html#building-the-workspace).
+
+## Creating the Package
+
+1. Navigate to `src/`
+2. Use `ros2 pkg create` to create a package using `ament_cmake` and that depends on `px4_msgs` and `rclcpp`
+### The Arm Node
+Navigate to the new package's `src/` directory and create a new file called `offboard.cpp`.
+
+Before we write any code, let's list the things we need this node to do.
+
+Node Features:
+- Switching Flight Modes
+- Arm / Disarm
+- Arm Retry
+
+Simple right? Wrong. Each feature requires multiple intermediary steps. Here is a more thorough breakdown.
+
+Node Features (verbose):
+- Switching Flight Modes
+	- Publish to `/fmu/in/vehicle_command
+	- Create message
+	- Only publish message before arm attempt
+- Arm
+	- At least 10 offboard_control_mode and vehicle_attitude_setpoint messages need to be published before arm attempt
+	- Create arm message
+	- Publish to `/fmu/in/vehicle_command`
+- Disarm
+	- Create disarm message
+	- Publish to `/fmu/in/vehicle_command`
+	- Switch flight mode 
+- Arm Retry
+	- Create QoS profile
+	- Subscribe to `/fmu/out/vehicle_control_mode`using QoS profile
+	- Read `flag_armed` value
+	- Retry if value isn't `true`.
+
+Let's begin.
+
+#### Actually Programming (fr fr this time)
+
+First let's write out our includes.
+
+```c++
+#include <px4_msgs/msg/offboard_control_mode.hpp>  
+#include <px4_msgs/msg/vehicle_attitude_setpoint.hpp>  
+#include <px4_msgs/msg/vehicle_control_mode.hpp>  
+#include <px4_msgs/msg/vehicle_command.hpp>  
+#include <rclcpp/rclcpp.hpp>  
+#include <stdint.h>  
+  
+#include <chrono>  
+#include <iostream>
+```
+
+These tell us we'll be using `OffboardControlMode.msg`, `VehicleAttitudeSetpoint.msg`, `VehicleControlMode.msg`, and `VehicleCommand.msg`. The other four includes are necessary for most ROS2 nodes.
+
+Next, let's set up our namespace.
+```c++
+using namespace std::chrono;  
+using namespace std::chrono_literals;  
+using namespace px4_msgs::msg;
+```
+
+Now, create the `Offboard` class. This class will inherit from `rclcpp::Node`.
+```c++
+class Offboard : public rclcpp::Node
+{
+	...
+}
+```
 
