@@ -16,6 +16,25 @@ RS232 to TTL cable. Plugged into COM1 on the UpBoard2 and TELEM1 on the PixHawk.
 **Overview:**  
 The connection between the ground station (Ubiquiti radio dish) and the rovers antennas.
 
+### Local Machine Connection
+
+| Step                            | Setting               |
+|---------------------------------|------------------------|
+| IP Address                      | 192.168.2.10           |
+| Subnet Mask                     | 255.255.255.0          |
+| Gateway                         | 192.168.2.1            |
+| Ubiquiti Dish Connection        | POE injector (POE port)|
+| Local Machine Connection        | POE injector (LAN port)|
+
+
+### Rover Setup
+
+| Step            | Setting             |
+|-----------------|---------------------|
+| IP Address      | 192.168.2.rover#    |
+| Subnet Mask     | 255.255.255.0       |
+| Gateway         | 192.168.2.1         |
+
 ---
 
 ## [3. Troubleshooting](https://github.com/casenblurg/NCPA_Rovers_ROS2/blob/main/LT2/Troubleshooting/README.md)
@@ -26,7 +45,9 @@ A reference for diagnosing and fixing reocurring hardware and software issues en
 
 ## [4. UpBoard Mount](https://github.com/casenblurg/NCPA_Rovers_ROS2/tree/main/LT2/UpBoardMount)
 **Overview:**  
-Mechanical design and mounting instructions for securing the UpBoard computer onto the LT2 chassis. Includes CAD files and assembly notes.
+Mechanical design and mounting instructions for securing the UpBoard computer onto the LT2 chassis. Includes CAD files, print files, and reference image.
+
+![Upboard mount Image](https://github.com/casenblurg/NCPA_Rovers_ROS2/blob/main/LT2/UpBoardMount/HoleDrillGuideReference.png)
 
 ---
 
