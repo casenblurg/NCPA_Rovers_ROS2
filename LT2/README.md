@@ -6,7 +6,9 @@ This guide provides detailed documentation for the LT2 rover platform used at NC
 
 ## [1. Control Cable](https://github.com/casenblurg/NCPA_Rovers_ROS2/blob/main/LT2/Control_Cable/The%20Control%20Cable.md)
 **Overview:**  
-RS232 to TTL cable. Plugged into COM1 on the UpBoard2 and TELEM1 on the PixHawk.
+RS232 to TTL cable. Plugged into COM1 on the UpBoard2 and TELEM1 on the PixHawk. Includes enclosure CAD file, 3D print file, description, and pinout.
+
+![CadImage](https://github.com/casenblurg/NCPA_Rovers_ROS2/blob/main/LT2/Figures/RS232_Case_Picture.JPG)
 
 ---
 
