@@ -7,11 +7,13 @@ This guide provides detailed documentation for the LT2 rover platform used at NC
 ## [1. Control Cable](https://github.com/casenblurg/NCPA_Rovers_ROS2/blob/main/LT2/Control_Cable/The%20Control%20Cable.md)
 **Overview:**  
 RS232 to TTL cable. Plugged into COM1 on the UpBoard2 and TELEM1 on the PixHawk.
+
 ---
 
 ## [2. Local Area Network](https://github.com/casenblurg/NCPA_Rovers_ROS2/blob/main/LT2/LocalAreaNetwork/setup.md)
 **Overview:**  
 The connection between the ground station (Ubiquiti radio dish) and the rovers antennas.
+
 ---
 
 ## [3. Troubleshooting](https://github.com/casenblurg/NCPA_Rovers_ROS2/blob/main/LT2/Troubleshooting/README.md)
