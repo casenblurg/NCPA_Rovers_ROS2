@@ -6,19 +6,17 @@ This guide provides detailed documentation for the LT2 rover platform used at NC
 
 ## [1. Control Cable](https://github.com/casenblurg/NCPA_Rovers_ROS2/blob/main/LT2/Control_Cable/The%20Control%20Cable.md)
 **Overview:**  
-Covers wiring and configuration details for the control cable that interfaces between the onboard computer and motor controller. Includes diagrams and connection pinouts.
-
+RS232 to TTL cable. Plugged into COM1 on the UpBoard2 and TELEM1 on the PixHawk.
 ---
 
 ## [2. Local Area Network](https://github.com/casenblurg/NCPA_Rovers_ROS2/blob/main/LT2/LocalAreaNetwork/setup.md)
 **Overview:**  
-Explains how to set up a local area network using Ubiquiti radios and dish equipment for remote communication with the rover. Includes IP addressing and POE injector instructions.
-
+The connection between the ground station (Ubiquiti radio dish) and the rovers antennas.
 ---
 
 ## [3. Troubleshooting](https://github.com/casenblurg/NCPA_Rovers_ROS2/blob/main/LT2/Troubleshooting/README.md)
 **Overview:**  
-A go-to guide for diagnosing and fixing common hardware and software issues encountered during LT2 operation. Includes startup checks and debug tips.
+A reference for diagnosing and fixing reocurring hardware and software issues encountered during LT2 operation. 
 
 ---
 
@@ -36,7 +34,7 @@ Sets up a standard ROS 2 development environment tailored for the LT2 rover. Inc
 
 ## [6. uXRCE-DDS](https://github.com/casenblurg/NCPA_Rovers_ROS2/blob/main/LT2/uXRCE-DDS.md)
 **Overview:**  
-Details the setup and usage of Micro XRCE-DDS for lightweight communication between the rover's microcontroller and ROS 2 nodes, enabling efficient message passing.
+Details the setup and usage of Micro XRCE-DDS for lightweight communication between the rover's microcontroller and ROS 2 nodes, enabling message passing.
 
 ---
 
