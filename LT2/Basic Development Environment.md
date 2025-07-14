@@ -69,7 +69,7 @@ You should see an output like this:
 /rosout
 ```
 
-If `/fmu/out/*` topics do not appear, you may have to wait a few seconds for the Agent to finish subscribing to the `/fmu/out/*` topics. If they still do not show up, please re-read [uXRCE-DDS].
+If `/fmu/out/*` topics do not appear, you may have to wait a few seconds for the Agent to finish subscribing to the `/fmu/out/*` topics. If they still do not show up, please re-read [uXRCE-DDS](https://github.com/casenblurg/NCPA_Rovers_ROS2/blob/main/LT2/uXRCE-DDS.md).
 
 In order to see which `px4_msgs` corresponds to which topic, run the command:
 ```bash
