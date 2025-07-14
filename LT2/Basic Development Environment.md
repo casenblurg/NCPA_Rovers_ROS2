@@ -84,7 +84,7 @@ Publisher count: 0
 Subscription count: 1
 ```
 
-Googling "OffboardControlMode px4 message" brings us to the message's source code:
+Googling "[OffboardControlMode px4 message](https://docs.px4.io/main/en/flight_modes/offboard.html)" brings us to the message's source code:
 ```
 # Off-board control mode
 
