@@ -16,7 +16,9 @@ There is only one **TR1200**, while there are multiple **LT2** rovers. Any of th
 
 This rover's onboard computer is an [Up Sqaured Pro](https://up-board.org/up-squared-pro/) running **Ubuntu 22.04 LTS  (Jammy Jellyfish)** and **ROS2 Humble**. 
 
-The onboard computer communicates to a **Pixhawk CUAV x7** over **USB** interfaced by [Mavros](https://github.com/mavlink/mavros) which will be explained in further detail in the **LT2** section. **Mavros** is a **ROS** package that utilizes the [MavLink](https://github.com/mavlink/mavlink) protocol, this is the standard messaging protocol used by **PX4**.
+The onboard computer communicates to a **Pixhawk CUAV x7** over **USB** interfaced by [XRCE](https://docs.ncnynl.com/en/px4/en/middleware/uxrce_dds.html) which will be explained in further detail in the **LT2** section. Details [here](https://github.com/casenblurg/NCPA_Rovers_ROS2/blob/main/LT2/uXRCE-DDS.md).
+
+
 
 ---
 

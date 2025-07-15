@@ -15,7 +15,7 @@ This document uses the following terminology. While I will try to be as clear as
 # uXRCE-DDS
 Extremely Resource Constrained Environment(s) DDS (or XRCE-DDS), is software that acts as *middle-ware* between the PixHawk (known as the **client**, running on the CUAV x7+) and ROS2 (known as the **agent**, running on the UpBoard<sup>2</sup>). It operates by publishing uORB topics as ROS2 topics.
 
-![visualization](https://docs.px4.io/main/assets/architecture_xrce-dds_ros2.DXSOuyOh.svg)
+![visualization](https://docs.ncnynl.com/en/px4/assets/architecture_xrce-dds_ros2.DXSOuyOh.svg)
 <sub>Image Credit: PixHawk</sub>
 
 For more information, see the PixHawk documentation [here](https://docs.px4.io/main/en/middleware/uxrce_dds.html)
