@@ -1,18 +1,18 @@
 > Note: This documentation already assumes you have a basic understanding of key concepts such as: [*C++*](https://www.w3schools.com/cpp/), [*OOP*](https://en.wikipedia.org/wiki/Object-oriented_programming), [*ROS2*](https://docs.ros.org/en/humble/index.html), as well as other pieces of documentation in this repository. This should be one of the last documents you read.
 > 
-> Additionally, while Python can be used for all source code, it is notably slower than C++. Thus C++ will be used in this documentation. You should already be aware of the slight [package](https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Creating-Your-First-ROS2-Package.html#what-makes-up-a-ros-2-package) and [programming](https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Writing-A-Simple-Py-Service-And-Client.html) differences between Python and C++
+> Additionally, while Python can be used for all source code, it is notably slower than C++. Thus C++ will be used in this documentation. You should already be aware of the slight [package](https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Creating-Your-First-ROS2-Package.html#what-makes-up-a-ros-2-package) and [programming](https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Writing-A-Simple-Py-Service-And-Client.html) differences between Python and C++.
 
 ## Theory
 
 ### Assigning Tasks to Nodes
-ROS2 allows us to separate different processes into separate nodes. To take full advantage of this, we need to group related tasks that the rover must do into nodes. 
+ROS2 allows us to separate different processes into separate nodes. To take full advantage of this, we need to group related tasks that the rover must do into **nodes**. 
 
 Take caution not to separate out tasks *too much* as this will add unnecessary complexity. For example: Arming and Disarming probably don't need separate nodes at the beginning of a project, just as moving left, right, forward, and backwards could also be grouped into one node.
 
 Of course, none of this is a hard and fast rule. For example, if there are a series of steps -- separate from those needed to arm the rover -- it may be a good idea create another node to handle disarming.
 
 ### ROS2 Topics
-The XRCE-DDS bridge creates `/fmu/in/*` and `/fmu/out/*` topics. As the names hint at, **in topics** handle data going *into the PixHawk*, and **out topics** handle going *out from the PixHawk*. 
+The XRCE-DDS bridge creates `/fmu/in/*` and `/fmu/out/*` topics. As the names hint at, **in topics** handle data going *into the PixHawk*, and **out topics** handle data going *out from the PixHawk*. 
 
 To communicate with `/fmu/*` topics, you must use [`px4_msgs`](https://github.com/PX4/px4_msgs). These messages standardize the variables that are expected by the PixHawk. 
 
@@ -130,7 +130,7 @@ With these basics now covered, let's go over a code breakdown.
 
 ### Setting up a development environment
 
-> Note: If you already have a ROS2 workspace ready, skip to [link]
+> Note: If you already have a ROS2 workspace ready, skip to [Creating the Package](https://github.com/casenblurg/NCPA_Rovers_ROS2/edit/main/LT2/Basic%20Development%20Environment.md#creating-the-package)
 
 To create and build the workspace:
 
@@ -141,8 +141,6 @@ To create and build the workspace:
    mkdir -p ~/ws_sensor_combined/src/
    cd ~/ws_sensor_combined/src/
    ```
-
-  > A naming convention for workspace folders can make it easier to manage workspaces.
 
 3. Clone the example repository and [px4_msgs](https://github.com/PX4/px4_msgs) to the `/src` directory (the `main` branch is cloned by default, which corresponds to the version of PX4 we are running):
 
@@ -167,7 +165,7 @@ This builds all the folders under `/src` using the sourced toolchain.
 ## Creating the Package
 
 1. Navigate to `src/`
-2. Use `ros2 pkg create` to create a package using `ament_cmake` and that depends on `px4_msgs` and `rclcpp`
+2. Use `ros2 pkg create` to create a package using `ament_cmake` and set its' dependencies as: `px4_msgs` and `rclcpp`
 ### The Arm Node
 Navigate to the new package's `src/` directory and create a new file called `offboard.cpp`.
 
@@ -182,11 +180,11 @@ Simple right? Wrong. Each feature requires multiple intermediary steps. Here is 
 
 Node Features (verbose):
 - Switching Flight Modes
-	- Publish to `/fmu/in/vehicle_command
+	- Publish to `/fmu/in/vehicle_command`
 	- Create message
 	- Only publish message before arm attempt
 - Arm
-	- At least 10 offboard_control_mode and vehicle_attitude_setpoint messages need to be published before arm attempt
+	- At least 10 `offboard_control_mode` and `vehicle_attitude_setpoint` messages need to be published before arm attempt
 	- Create arm message
 	- Publish to `/fmu/in/vehicle_command`
 - Disarm
