@@ -18,6 +18,8 @@ This rover's onboard computer is an [Up Sqaured Pro](https://up-board.org/up-squ
 
 The onboard computer communicates to a **Pixhawk CUAV x7** over **USB** interfaced by [XRCE](https://docs.ncnynl.com/en/px4/en/middleware/uxrce_dds.html) which will be explained in further detail in the **LT2** section. Details [here](https://github.com/casenblurg/NCPA_Rovers_ROS2/blob/main/LT2/uXRCE-DDS.md).
 
+
+
 ---
 
 **TR1200**
