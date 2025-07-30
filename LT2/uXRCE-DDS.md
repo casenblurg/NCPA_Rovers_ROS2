@@ -38,7 +38,7 @@ Serial ports must be "in-use" in order to be displayed in the `Serial` category.
 | TELEM1 | *SER_TEL1_BAUD* | `57600`   |
 | TELEM2 | *SER_TEL2_BAUD* | `921600`  |
 
-Needed baud rate on TELEM1: `TBD`
+Needed baud rate on TELEM: 115200
 
 ## Enabling the uXRCE-DDS Client
 

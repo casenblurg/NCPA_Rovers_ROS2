@@ -232,3 +232,105 @@ class Offboard : public rclcpp::Node
 }
 ```
 
+Let's create some private variables.
+
+We'll need three publishers, one for `OffboardControlMode.msg`, `VehicleAttitudeSetpoint.msg`, and `VehicleCommand.msg`.
+
+```c++
+private:
+	// publishers
+	rclcpp::Publisher<OffboardControlMode>::SharedPtr offboard_control_mode_publisher;
+	rclcpp::Publisher<VehicleAttitudeSetpoint>::SharedPtr attitude_setpoint_publisher;
+	rclcpp::Publisher<VehicleCommand>::SharedPtr vehicle_command_publisher;
+```
+
+Now we need to define the method signatures for the publishers' methods.
+```c++
+...
+	// methods
+	void publish_attitude_setpoint();
+	void publish_offboard_control_mode();
+	void publish_vehicle_command(uint16_t command, float enabled = 0.0, float mode_id = 0.0);
+```
+
+With the method signatures defined, let's write each method.
+
+First, `publish_attitude_setpoint()`. We need this message to pass a fail safe, but the only data that matters is a valid timestamp.
+```c++
+void Offboard::publish_attitude_setpoint()
+{
+	VehicleAttitudeSetpoint msg{};
+	
+	msg.yaw_sp_move_rate = 0.0;
+	msg.q_d = {0.0, 0.0, 0.0, 0.0};
+	msg.thrust_body = {0.0, 0.0, 0.0};
+	
+	msg.timestamp = this->getclock()->now().nanoseconds() / 1000;
+	
+	attitude_setpoint_publisher->publish(msg);
+}
+```
+
+Most publishing methods follow this formula.
+1. Create message
+2. Assign data
+3. Assign timestamp
+4. Publish using shared pointer
+
+The next method requires a bit more explanation. When we want to switch to off-board mode, we need to tell the PixHawk which types of data will be sent to it. These data type are organized in a hierarchy of precedent.
+
+```
+position
+velocity
+acceleration
+attitude
+body_rate
+thrust_and_torque
+direct_actuator
+```
+
+From [the PixHawk Docs](https://docs.px4.io/main/en/flight_modes/offboard.html#ros-2-messages):
+> *"The fields are ordered in terms of priority such that `position` takes precedence over `velocity` and later fields, `velocity` takes precedence over `acceleration`, and so on. The first field that has a non-zero value (from top to bottom) defines what valid estimate is required in order to use offboard mode, and the setpoint message(s) that can be used. For example, if the `acceleration` field is the first non-zero value, then PX4 requires a valid `velocity estimate`, and the setpoint must be specified using the `TrajectorySetpoint` message."*
+
+Knowing that, let's organize the booleans in our message in order of their hierarchy.
+```c++
+void Offboard::publish_offboard_control_mode()
+{
+	OffboardControlMode msg{};
+	
+	msg.position = false;
+	msg.velocity = false;
+	msg.acceleration = false;
+	msg.attitude = true;
+	
+	msg.timestamp = this->get_clock()->now().nanoseconds() / 1000;
+	
+	offboard_control_mode_publisher->publish(msg);
+}
+```
+
+The last publisher method is very simple as we're mostly just passing the pass-by-variables in the method signature to the message.
+
+```c++
+void Offboard::publish_vehicle_command(uint16_t command, float enabled, float mode_id)
+{
+	VehicleCommand msg{};
+	
+	msg.param1 = enabled;
+	msg.param2 = mode_id;
+	msg.command = command;
+	msg.target_system = 1;
+	msg.target_commponent = 1;
+	msg.source_system = 1;
+	msg.source_component = 1;
+	msg.from_external = true;
+	
+	msg.timestamp = this->get_clock()->now().nanoseconds() / 1000;
+	
+	vehicle_command_publisher->publish(msg);
+}
+```
+
+Now let's create a public constructor. 
+
+The main job of the constructor is to 
