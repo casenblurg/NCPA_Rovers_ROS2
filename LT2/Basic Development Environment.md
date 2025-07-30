@@ -229,7 +229,7 @@ Now, create the `Offboard` class. This class will inherit from `rclcpp::Node`.
 class Offboard : public rclcpp::Node
 {
 	...
-}
+};
 ```
 
 Let's create some private variables.
@@ -244,7 +244,19 @@ private:
 	rclcpp::Publisher<VehicleCommand>::SharedPtr vehicle_command_publisher;
 ```
 
-Now we need to define the method signatures for the publishers' methods.
+Now let's define some miscellaneous variables. I'll explain what they do later.
+```c++
+...
+	// misc
+	std::atomic<uint64_t> timestamp;
+	rclcpp::TimerBase::SharedPtr timer;
+	
+	uint64_t tick;
+	
+	bool isArmed;
+```
+
+Finally, we need to define the method signatures for the publishers' methods.
 ```c++
 ...
 	// methods
@@ -331,6 +343,109 @@ void Offboard::publish_vehicle_command(uint16_t command, float enabled, float mo
 }
 ```
 
-Now let's create a public constructor. 
+Now let's create a public constructor. The main job of the constructor is to initialize all publishers, subscribers, other variables, and setup the tick loop.
 
-The main job of the constructor is to 
+Here we finally get to use those miscellaneous variables from earlier. First initialize `tick` to `0`.
+
+```c++
+public:
+	// publisher instantiations
+	tick = 0;	
+```
+
+This variable will store our current tick count. A tick will occur every `100ms` and will serve as the primary means of timing events within this node.
+
+To handle the tick loop, we'll use a [lambda function](https://www.w3schools.com/cpp/cpp_functions_lambda.asp).
+
+```c++
+...
+	auto timer_callback = [this]() -> void
+	{
+		
+	}
+```
+
+Every 10 ticks, we want to do two things: 1) Print the number of ticks elapsed for debugging, and 2) try to arm the rover if not already armed.
+
+```c++
+auto timer_callback = [this]() -> void
+{
+	if (tick % 10 == 0)
+	{
+		RCLCPP_INFO(this->get_logger(), "Tick: %ld", tick);
+	}
+
+	if (!isArmed && tick % 10 == 0)
+	{
+		...
+	}
+};
+```
+
+To arm the rover, we need to another two steps. 1) switch to offboard mode and 2) send the arm command.
+
+```c++
+if (!isArmed && tick % 10 == 0)
+{
+	// change to Offboard mode
+	this->publish_vehicle_command(VehicleCommand::VEHICLE_CMD_DO_SET_MODE, 1, 6);
+	
+	// arm the vehicle
+	this->arm();
+}
+```
+
+We'll write the `arm()` (and for that matter, the `disarm()`) method later.
+
+Finally, on every tick we want to publish the offboard control mode message, publish the attitude set-point message, and increment the tick.
+
+```c++
+...
+	publish_offboard_control_mode();
+	publish_attitude_setpoint();
+	
+	tick++;
+};
+```
+
+Lastly for the constructor, let's initialize a wall timer.
+```c++
+...
+	timer = this->create_wall_timer(100ms, timer_callback);
+}
+```
+
+The last two lines of the class's public body will be to define two method signatures.
+
+```c++
+...
+	void arm();
+	void disarm();
+```
+
+Let's now write those methods, starting with the `arm()` method.
+
+For the arm message, all we need to do is send the corresponding vehicle command with a true value. A debug message is also very helpful here.
+
+```c++
+void Offboard::arm()
+{
+	publish_vehicle_command(VehicleCommand::VEHICLE_CMD_COMPONENT_ARM_DISARM, 1.0);
+	
+	RCLCPP_INFO(this->get_logger(), "Arm command send");
+}
+```
+
+The disarm message is basically the same, just swapping out the `1.0` for `0.0`.
+
+```c++
+void Offboard::disarm()
+{
+	publish_vehicle_command(VehicleCommand::VEHICLE_CMD_COMPONENT_ARM_DISARM, 0.0);
+	
+	RCLCPP_INFO(this->get_logger(), "Disarm command send");
+}
+```
+
+**NOTE: Write disarm functionality and document it.**
+
